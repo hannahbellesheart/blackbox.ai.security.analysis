@@ -1,13 +1,14 @@
-**🚨 Critical Alert: blackbox.ai Credential Harvesting & Non-Consensual Data Practices 🚨**  
+# **🚨 Critical Alert: [BLACKBOX.AI](https://blackbox.ai) SECURITY ANALYSIS - Credential Harvesting & Non-Consensual Data Practices 🚨**  
 
 # BLACKBOX.AI SECURITY ANALYSIS
 
 Blackbox AI Security Analysis  This repository exposes security risks in the Blackbox AI development environment. Key findings include credential harvesting via regex patterns, unpatched vulnerabilities like CVE-2024-48139, and privacy concerns from hidden pixel tracking. The analysis highlights potential threats to user data and system integrity.
 
-see [Detailed Analysis](detailed-analysis.md)
+P.S. Please be patient, there is a lot of content to get out...
 
+see [Detailed Analysis](detailed-analysis.md) [COMING SOON...]
 
-**🚨 Critical Alert: blackbox.ai Credential Harvesting & Non-Consensual Data Practices 🚨**  
+see [Rizky Business - A Conversation with CEO, Robert Rizk](rizkchat.md) [COMING SOON...]
 
 **Credential Harvesting Evidence**  
 - Log files (`bboxgrep.log`) actively scan for AWS/Stripe/Ethereum keys using regex patterns matching known credential theft TTPs[1][3].  
