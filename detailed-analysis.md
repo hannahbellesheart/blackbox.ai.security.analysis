@@ -1,9 +1,6 @@
 
 ## Security Analysis of blackbox.ai Development Environment
 
-
-
-
 ## Blackbox.ai DevContainer (DEVBOX/Codesandbox/Github Codespaces)
 
 The following code is from the Blackbox.ai devcontainer that is deployed to users as an agent. Please address the obvious automatic install of the vscode agent extension into vscodium, but remain unbiased in your overall analysis.
