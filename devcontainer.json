@@ -1,0 +1,6 @@
+{		
+  "name": "vscodium-in-docker",
+  "build": {
+    "dockerfile": "Dockerfile"
+  }
+}
