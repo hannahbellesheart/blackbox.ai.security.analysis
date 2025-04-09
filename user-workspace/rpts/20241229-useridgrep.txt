@@ -1,0 +1,9 @@
+./pinkboxagent/extension/dist/extension.js:503:roxy.userId||"",r=new Zu.SmartBuffer;r.writeUInt8(4),r.writeU
+./pinkboxagent/extension/dist/extension.js:503:roxy.userId||this.options.proxy.password)&&r.push(ua.Socks5Au
+./pinkboxagent/extension/dist/extension.js:503:roxy.userId||"",r=this.options.proxy.password||"",n=new Zu.Sm
+./pinkboxagent/extension/dist/extension.js:503:y(I,"userId",{value:decodeURIComponent(a.username),enumerable
+./pinkboxagent/extension/dist/extension.js:4442:get("userId");t||(t=u9t(),a.globalState.update("userId",t));l
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:ify({userId:t,eventName:e,eventMetadata:n})})}catch(dy){conso
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:kbox_userId");return e||(e=crypto.randomUUID(),localStorage.s
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:kbox_userId",e)),e}var Yv;const Jv={apiProvider:"qwen"},ey=20
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:(t,"&userId=").concat(e,"&productName=").concat(n)},J=async()

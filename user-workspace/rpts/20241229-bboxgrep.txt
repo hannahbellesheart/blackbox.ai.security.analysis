@@ -1,0 +1,180 @@
+./pinkboxagent/extension/dist/extension.js:691:m":"am";e=e%12,e=e||12;let u=`blackbox_task_${n}-${s}-${I}_${e}-${o}
+./pinkboxagent/extension/dist/extension.js:705:ons.getExtension("Blackboxapp.blackboxagent").extensionUri}var yb=Bt
+./pinkboxagent/extension/dist/extension.js:711:!==t);try{let n=new LM({name:"blackbox",version:this.providerRef.der
+./pinkboxagent/extension/dist/extension.js:788:`)}};var KX="blackbox-diff",nO=class{constructor(t)
+./pinkboxagent/extension/dist/extension.js:802:t,`${I}: ${e?"Original \u2194 blackbox's Changes":"New File"} (Edita
+./pinkboxagent/extension/dist/extension.js:812:w.createTerminal({cwd:t,name:"blackbox"}),busy:!1,lastCommand:"",id:
+./pinkboxagent/extension/dist/extension.js:4200:Uri.parse("https://github.com/blackbox/blackbox/wiki/Troubleshooting
+./pinkboxagent/extension/dist/extension.js:4200:-%E2%80%90-blackbox-Deleting-Code-with-%22Rest-of
+./pinkboxagent/extension/dist/extension.js:4290:nly;apiConversationHistory=[];blackboxMessages=[];askResponse;askRes
+./pinkboxagent/extension/dist/extension.js:4290:n history:",t)}}async getSavedblackboxMessages(){let t=Vs.join(await
+./pinkboxagent/extension/dist/extension.js:4290:ink(r),n}}return[]}async addToblackboxMessages(t){this.blackboxMessa
+./pinkboxagent/extension/dist/extension.js:4290:ges.push(t),await this.saveblackboxMessages()}async overwriteblac
+./pinkboxagent/extension/dist/extension.js:4290:kboxMessages(t){this.blackboxMessages=t,await this.saveblac
+./pinkboxagent/extension/dist/extension.js:4293:`,r}return""}async saveblackboxMessages(){try{let t=Vs.join(a
+./pinkboxagent/extension/dist/extension.js:4293:iteFile(t,JSON.stringify(this.blackboxMessages));let r=$Xt(_Xt(PXt(t
+./pinkboxagent/extension/dist/extension.js:4293:his.blackboxMessages.slice(1)))),n=this.bl
+./pinkboxagent/extension/dist/extension.js:4293:ackboxMessages[0],s=this.blackboxMessages[fv(this.blackboxMessa
+./pinkboxagent/extension/dist/extension.js:4293:console.error("Failed to save blackbox messages:",t)}}async ask(t,r,
+./pinkboxagent/extension/dist/extension.js:4293:f(this.abort)throw new Error("blackbox instance aborted");let s;if(n
+./pinkboxagent/extension/dist/extension.js:4293:!==void 0){let e=this.blackboxMessages.at(-1),o=e&&e.partial
+./pinkboxagent/extension/dist/extension.js:4293:stMessageTs=s,await this.addToblackboxMessages({ts:s,type:"ask",ask:
+./pinkboxagent/extension/dist/extension.js:4293:r,e.partial=!1,await this.saveblackboxMessages(),await this.provider
+./pinkboxagent/extension/dist/extension.js:4293:stMessageTs=s,await this.addToblackboxMessages({ts:s,type:"ask",ask:
+./pinkboxagent/extension/dist/extension.js:4293:stMessageTs=s,await this.addToblackboxMessages({ts:s,type:"ask",ask:
+./pinkboxagent/extension/dist/extension.js:4293:f(this.abort)throw new Error("blackbox instance aborted");if(s!==voi
+./pinkboxagent/extension/dist/extension.js:4293:d 0){let I=this.blackboxMessages.at(-1),e=I&&I.partial
+./pinkboxagent/extension/dist/extension.js:4293:stMessageTs=o,await this.addToblackboxMessages({ts:o,type:"say",say:
+./pinkboxagent/extension/dist/extension.js:4293:n,I.partial=!1,await this.saveblackboxMessages(),await this.provider
+./pinkboxagent/extension/dist/extension.js:4293:stMessageTs=o,await this.addToblackboxMessages({ts:o,type:"say",say:
+./pinkboxagent/extension/dist/extension.js:4293:stMessageTs=I,await this.addToblackboxMessages({ts:I,type:"say",say:
+./pinkboxagent/extension/dist/extension.js:4293:eturn await this.say("error",`blackbox tried to use ${t}${n?` for '$
+./pinkboxagent/extension/dist/extension.js:4293:r))}async startTask(t,r){this.blackboxMessages=[],this.apiConversati
+./pinkboxagent/extension/dist/extension.js:4295:ry(){let t=await this.getSavedblackboxMessages(),r=fv(t,B=>!(B.ask==
+./pinkboxagent/extension/dist/extension.js:4295:lice(n,1)}await this.overwriteblackboxMessages(t),this.blackboxMessa
+./pinkboxagent/extension/dist/extension.js:4295:ges=await this.getSavedblackboxMessages();let s=this.blackbox
+./pinkboxagent/extension/dist/extension.js:4313:t s=await this.recursivelyMakeblackboxRequests(r,n);if(n=!1,s)break;
+./pinkboxagent/extension/dist/extension.js:4329:`+s,t>=0){let c=this.blackboxMessages[t];if(c&&c.text){let{
+./pinkboxagent/extension/dist/extension.js:4329:f(this.abort)throw new Error("blackbox instance aborted");if(this.pr
+./pinkboxagent/extension/dist/extension.js:4384:params.command;try{let A=this.blackboxMessages.at(-1);if(t.partial){
+./pinkboxagent/extension/dist/extension.js:4387:essage()}async recursivelyMakeblackboxRequests(t,r=!1){if(this.abort
+./pinkboxagent/extension/dist/extension.js:4387:)throw new Error("blackbox instance aborted");if(this.co
+./pinkboxagent/extension/dist/extension.js:4387: task into smaller steps").':"blackbox uses complex prompts and iter
+./pinkboxagent/extension/dist/extension.js:4387:eMistakeCount=0}let n=fv(this.blackboxMessages,A=>A.say==="api_req_s
+./pinkboxagent/extension/dist/extension.js:4391:er",content:A})}let o=fv(this.blackboxMessages,A=>A.say==="api_req_s
+./pinkboxagent/extension/dist/extension.js:4391:tarted");this.blackboxMessages[o].text=JSON.stringif
+./pinkboxagent/extension/dist/extension.js:4393:`)}),await this.saveblackboxMessages(),await this.provider
+./pinkboxagent/extension/dist/extension.js:4393:ateToWebview();let d=Hze(this.blackboxMessages,A=>A.say==="api_req_s
+./pinkboxagent/extension/dist/extension.js:4393:ntainsFileFolderMentions=this.blackboxMessages[d]?.text?.includes("<
+./pinkboxagent/extension/dist/extension.js:4393:0,MC.commands.executeCommand("blackbox.subtractCredits",Z.toString()
+./pinkboxagent/extension/dist/extension.js:4393:)),this.blackboxMessages[o].text=JSON.stringif
+./pinkboxagent/extension/dist/extension.js:4393:y({...JSON.parse(this.blackboxMessages[o].text||"{}"),tokens
+./pinkboxagent/extension/dist/extension.js:4393:er.revertChanges();let Z=this.blackboxMessages.at(-1);Z&&Z.partial&&
+./pinkboxagent/extension/dist/extension.js:4395:}]`}]}),Y(y,g),await this.saveblackboxMessages(),this.didFinishAbort
+./pinkboxagent/extension/dist/extension.js:4399:this.providerRef.deref()?.initblackboxWithHistoryItem(g.historyItem)
+./pinkboxagent/extension/dist/extension.js:4399:f(this.abort)throw new Error("blackbox instance aborted");this.didCo
+./pinkboxagent/extension/dist/extension.js:4399:tMessage(),Y(),await this.saveblackboxMessages(),await this.provider
+./pinkboxagent/extension/dist/extension.js:4399:),R=await this.recursivelyMakeblackboxRequests(this.userMessageConte
+./pinkboxagent/extension/dist/extension.js:4424:ter_models.json",mcpSettings:"blackbox_mcp_settings.json"},OC=class 
+./pinkboxagent/extension/dist/extension.js:4424:his.outputChannel.appendLine("blackboxProvider instantiated"),a.acti
+./pinkboxagent/extension/dist/extension.js:4424:ew tO(this)}static sideBarId="blackboxai-dev.SidebarProvider";static
+./pinkboxagent/extension/dist/extension.js:4424: tabPanelId="blackboxai-dev.TabPanelProvider";stati
+./pinkboxagent/extension/dist/extension.js:4424:s=new Set;disposables=[];view;blackbox;workspaceTracker;mcpHub;lates
+./pinkboxagent/extension/dist/extension.js:4424:Channel.appendLine("Disposing blackboxProvider..."),await this.clear
+./pinkboxagent/extension/dist/extension.js:4424:iew view resolved")}async initblackboxWithTask(t,r){await this.clear
+./pinkboxagent/extension/dist/extension.js:4424:I}=await this.getState();this.blackbox=new aS(this,n,s,I,t,r)}async 
+./pinkboxagent/extension/dist/extension.js:4424:initblackboxWithHistoryItem(t){await this.
+./pinkboxagent/extension/dist/extension.js:4424:s}=await this.getState();this.blackbox=new aS(this,r,n,s,void 0,void
+./pinkboxagent/extension/dist/extension.js:4431:ect-src 'self' https://www.useblackbox.io https://invite-server.onre
+./pinkboxagent/extension/dist/extension.js:4434:            <title>blackbox</title>
+./pinkboxagent/extension/dist/extension.js:4442:;case"newTask":await this.initblackboxWithTask(r.text,r.images);brea
+./pinkboxagent/extension/dist/extension.js:4442:"openRouterModelInfo",L),this.blackbox&&(this.blackbox.api=W6(r.apiC
+./pinkboxagent/extension/dist/extension.js:4442:eadOnly",r.bool??void 0),this.blackbox&&(this.blackbox.alwaysAllowRe
+./pinkboxagent/extension/dist/extension.js:4442:;break;case"askResponse":this.blackbox?.handleWebviewAskResponse(r.a
+./pinkboxagent/extension/dist/extension.js:4442:exportCurrentTask":let s=this.blackbox?.taskId;s&&this.exportTaskWit
+./pinkboxagent/extension/dist/extension.js:4442:reak;case"cancelTask":if(this.blackbox){let{historyItem:d}=await thi
+./pinkboxagent/extension/dist/extension.js:4442:s.getTaskWithId(this.blackbox.taskId);this.blackbox.abortTa
+./pinkboxagent/extension/dist/extension.js:4442:sk(),await yu(()=>this.blackbox===void 0||this.blackbox.didFi
+./pinkboxagent/extension/dist/extension.js:4442:Failed to abort task")}),this.blackbox&&(this.blackbox.abandoned=!0)
+./pinkboxagent/extension/dist/extension.js:4442:,await this.initblackboxWithHistoryItem(d)}break;case"
+./pinkboxagent/extension/dist/extension.js:4442:Instructions",t||void 0),this.blackbox&&(this.blackbox.customInstruc
+./pinkboxagent/extension/dist/extension.js:4442:efault.homedir(),"Documents","blackbox","MCP");try{await $A.default.
+./pinkboxagent/extension/dist/extension.js:4442:!0})}catch{return"~/Documents/blackbox/MCP"}return t}async ensureSet
+./pinkboxagent/extension/dist/extension.js:4442:){_s.commands.executeCommand("blackbox.displayCredits")}async ensure
+./pinkboxagent/extension/dist/extension.js:4442:showTaskWithId(t){if(t!==this.blackbox?.taskId){let{historyItem:r}=a
+./pinkboxagent/extension/dist/extension.js:4442:tTaskWithId(t);await this.initblackboxWithHistoryItem(r)}await this.
+./pinkboxagent/extension/dist/extension.js:4442: deleteTaskWithId(t){t===this.blackbox?.taskId&&await this.clearTask
+./pinkboxagent/extension/dist/extension.js:4442::s,uriScheme:_s.env.uriScheme,blackboxMessages:this.blackbox?.blackb
+./pinkboxagent/extension/dist/extension.js:4442:entId}}async clearTask(){this.blackbox?.abortTask(),this.blackbox=vo
+./pinkboxagent/extension/dist/extension.js:4442:is.storeSecret(r,void 0);this.blackbox&&(this.blackbox.abortTask(),t
+./pinkboxagent/extension/dist/extension.js:4442:his.blackbox=void 0),_s.window.showInforma
+./pinkboxagent/extension/dist/extension.js:4442:t("installed"),n="Blackboxapp.blackbox";console.log(`Checking for ex
+./pinkboxagent/extension/dist/extension.js:4442:and("workbench.view.extension.blackboxai-dev-ActivityBar"),sdr(),a.g
+./pinkboxagent/extension/dist/extension.js:4442:r.window.createOutputChannel("blackbox"),a.subscriptions.push(_g),_g
+./pinkboxagent/extension/dist/extension.js:4442:.appendLine("blackbox extension activated");let t=n
+./pinkboxagent/extension/dist/extension.js:4442:),Pr.commands.executeCommand("blackbox.addCredits",h)}}}),a.subscrip
+./pinkboxagent/extension/dist/extension.js:4442:(Pr.commands.registerCommand("blackbox.plusButtonClicked",async()=>{
+./pinkboxagent/extension/dist/extension.js:4442:(Pr.commands.registerCommand("blackbox.mcpButtonClicked",()=>{t.post
+./pinkboxagent/extension/dist/extension.js:4442:(Pr.commands.registerCommand("blackbox.inputBoxButtonClicked",()=>{P
+./pinkboxagent/extension/dist/extension.js:4442:r.commands.executeCommand("blackbox.showInputBox")}));let r=Pr.co
+./pinkboxagent/extension/dist/extension.js:4442:mmands.registerCommand("blackbox.displayCredits",()=>(t.postMe
+./pinkboxagent/extension/dist/extension.js:4442:=Pr.commands.registerCommand("blackbox.addCredits",async d=>{let A=p
+./pinkboxagent/extension/dist/extension.js:4442:=Pr.commands.registerCommand("blackbox.subtractCredits",async d=>{le
+./pinkboxagent/extension/dist/extension.js:4442:=Pr.commands.registerCommand("blackbox.setCoupon",async d=>{await a.
+./pinkboxagent/extension/dist/extension.js:4442:nc()=>{_g.appendLine("Opening blackbox in new tab");let d=new OC(a,_
+./pinkboxagent/extension/dist/extension.js:4442:teWebviewPanel(OC.tabPanelId,"blackbox",h,{enableScripts:!0,retainCo
+./pinkboxagent/extension/dist/extension.js:4442:(Pr.commands.registerCommand("blackbox.settingsButtonClicked",()=>{t
+./pinkboxagent/extension/dist/extension.js:4442:(Pr.commands.registerCommand("blackbox.historyButtonClicked",()=>{t.
+./pinkboxagent/extension/dist/extension.js:4442:(Pr.commands.registerCommand("blackbox.showInputBox",async d=>{let A
+./pinkboxagent/extension/dist/extension.js:4442:function odr(){_g.appendLine("blackbox extension deactivated")}0&&(m
+./pinkboxagent/extension/package.json:2:  "name": "blackboxagent",
+./pinkboxagent/extension/package.json:15:    "name": "blackbox"
+./pinkboxagent/extension/package.json:23:  "homepage": "https://www.blackbox.ai",
+./pinkboxagent/extension/package.json:40:    "blackbox.ai",
+./pinkboxagent/extension/package.json:94:          "id": "blackboxai-dev-ActivityBar",
+./pinkboxagent/extension/package.json:95:          "title": "blackbox",
+./pinkboxagent/extension/package.json:101:      "blackboxai-dev-ActivityBar": [
+./pinkboxagent/extension/package.json:104:          "id": "blackboxai-dev.SidebarProvider",
+./pinkboxagent/extension/package.json:111:        "command": "blackbox.inputBoxButtonClicked",
+./pinkboxagent/extension/package.json:116:        "command": "blackbox.plusButtonClicked",
+./pinkboxagent/extension/package.json:121:        "command": "blackbox.mcpButtonClicked",
+./pinkboxagent/extension/package.json:126:        "command": "blackbox.historyButtonClicked",
+./pinkboxagent/extension/package.json:131:        "command": "blackbox.popoutButtonClicked",
+./pinkboxagent/extension/package.json:136:        "command": "blackbox.settingsButtonClicked",
+./pinkboxagent/extension/package.json:144:          "command": "blackbox.plusButtonClicked",
+./pinkboxagent/extension/package.json:146:          "when": "view == blackboxai-dev.SidebarProvider"
+./pinkboxagent/extension/package.json:149:          "command": "blackbox.inputBoxButtonClicked",
+./pinkboxagent/extension/package.json:151:          "when": "view == blackboxai-dev.SidebarProvider"
+./pinkboxagent/extension/package.json:154:          "command": "blackbox.mcpButtonClicked",
+./pinkboxagent/extension/package.json:156:          "when": "view == blackboxai-dev.SidebarProvider"
+./pinkboxagent/extension/package.json:159:          "command": "blackbox.historyButtonClicked",
+./pinkboxagent/extension/package.json:161:          "when": "view == blackboxai-dev.SidebarProvider"
+./pinkboxagent/extension/README.md:6:[BLACKBOX AI](https://www.blackbox.ai 'Get Started on BLACKBOX A
+./pinkboxagent/extension/README.md:42:# Blackbox AI Commit <a name="blackbox-commit"></a>
+./pinkboxagent/extension/README.md:44:tocommit.gif)](https://www.useblackbox.io/chat?videoId=V_3h3fjeHGM)
+./pinkboxagent/extension/README.md:48:rt Call](https://calendly.com/blackboxapp/30min)
+./pinkboxagent/extension/README.md:53:Product Terms](https://www.useblackbox.io/terms) & [Privacy Policy](
+./pinkboxagent/extension/README.md:53:https://www.useblackbox.io/privacy).
+./pinkboxagent/extension/webview-ui/build/index.html:1:ect-src 'self' https://www.useblackbox.io; script-src 'self' 'unsafe
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:i]=(0,e.useState)({version:"",blackboxMessages:[],taskHistory:[],sho
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:alMessage;i((t=>{const n=pf(t.blackboxMessages,(t=>t.ts===e.ts));if(
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:-1!==n){const r=[...t.blackboxMessages];return r[n]=e,{...t,
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:blackboxMessages:r}}return t}));break}
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:,n){try{fetch("https://www.useblackbox.io/tlm",{method:"POST",header
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:,fontWeight:"bold"},children:"blackbox is having trouble..."})];case
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:,fontWeight:"bold"},children:"blackbox wants to execute this command
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:,fontWeight:"bold"},children:"blackbox has a question:"})];default:r
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:{fontWeight:"bold"},children:"blackbox wants to edit this file:"})]}
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:{fontWeight:"bold"},children:"blackbox wants to create a new file:"}
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:ld"},children:"ask"===l.type?"blackbox wants to read this file:":"bl
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:ld"},children:"ask"===l.type?"blackbox wants to view the top level f
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:iles in this directory:":"blackbox viewed the top level files in
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:ld"},children:"ask"===l.type?"blackbox wants to recursively view all
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2: files in this directory:":"blackbox recursively viewed all files 
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:ld"},children:"ask"===l.type?"blackbox wants to view source code def
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:mes used in this directory:":"blackbox viewed source code definition
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:jsxs)(Sf.Fragment,{children:["blackbox wants to search this director
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:jsxs)(Sf.Fragment,{children:["blackbox searched this directory for "
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:(0,Sf.jsxs)("div",{children:["blackbox won't be able to view the com
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:"a",{href:"https://github.com/blackbox/blackbox/wiki/Troubleshooting
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:f.jsx)(Sf.Fragment,{children:"blackbox wants to use the browser:"})}
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:){let e=localStorage.getItem("blackbox_userId");return e||(e=crypto.
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:mUUID(),localStorage.setItem("blackbox_userId",e)),e}var Yv;const Jv
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:dSuccess:o}=t;const{version:s,blackboxMessages:a,taskHistory:l}=_f()
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:true"===localStorage.getItem("blackbox_redeem_success"))&&$<.015){ee
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:(yv("Chat Request",Xv(),{tag:"blackbox-vscode-agent"}),0===a.length)
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:true"===localStorage.getItem("blackbox_redeem_success");if(H&&!n&&$<
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:;return"".concat("https://www.blackbox.ai","/api/buy-credits?product
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:&(o(!0),localStorage.setItem("blackbox_redeem_success","true"))};fun
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:rn;te(),localStorage.getItem("blackbox_redeem_success")||setTimeout(
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:>{let e=localStorage.getItem("blackbox_redeem_success"),t=localStora
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:true"===localStorage.getItem("blackbox_redeem_success")}):(0,Sf.jsxs
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:})]}),!(localStorage.getItem("blackbox_redeem_success")||i)&&(0,Sf.j
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:ldren:!(localStorage.getItem("blackbox_redeem_success")||i||$>=.01)&
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:Sf.jsx)(ta,{href:"mailto:team@blackbox.ai",style:{display:"inline"},
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:children:"team@blackbox.ai"})]}),(0,Sf.jsxs)("p",{sty
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:alue)&&(localStorage.setItem("blackbox_redeem_success","true"),l(!0)
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:value}),localStorage.setItem("blackbox_coupon_code",t.value));break;
+./pinkboxagent/extension.vsixmanifest:4:Identity Language="en-US" Id="blackboxagent" Version="2.5.8" Publish
+./pinkboxagent/extension.vsixmanifest:7:atgpt,openai,sonnet,anthropic,blackbox.ai,codex,co-pilot,pilot,autoc
+./pinkboxagent/extension.vsixmanifest:21:nks.Learn" Value="https://www.blackbox.ai" />

@@ -1,0 +1,1093 @@
+./pinkboxagent/extension/dist/extension.js:1:essible:!0},"application/mbms-user-service-description+xml":{sou
+./pinkboxagent/extension/dist/extension.js:1:,"application/vnd.3gpp.mcdata-user-profile+xml":{source:"iana",c
+./pinkboxagent/extension/dist/extension.js:1:},"application/vnd.3gpp.mcptt-user-profile+xml":{source:"iana",c
+./pinkboxagent/extension/dist/extension.js:1:"application/vnd.3gpp.mcvideo-user-profile+xml":{source:"iana",c
+./pinkboxagent/extension/dist/extension.js:1:ble:!0},"application/vnd.oipf.userprofile+xml":{source:"iana",co
+./pinkboxagent/extension/dist/extension.js:1::!0},"application/vnd.oma.cab-user-prefs+xml":{source:"iana",com
+./pinkboxagent/extension/dist/extension.js:1:-officedocument.spreadsheetml.usernames+xml":{source:"iana",comp
+./pinkboxagent/extension/dist/extension.js:2:peof navigator<"u"&&navigator.userAgent&&navigator.userAgent.toL
+./pinkboxagent/extension/dist/extension.js:2:peof navigator<"u"&&navigator.userAgent&&(a=navigator.userAgent.
+./pinkboxagent/extension/dist/extension.js:2:peof navigator<"u"&&navigator.userAgent&&navigator.userAgent.toL
+./pinkboxagent/extension/dist/extension.js:6:p())}function rke(a){return a.username!==""||a.password!==""}fun
+./pinkboxagent/extension/dist/extension.js:6:this.url){this.url={scheme:"",username:"",password:"",host:null,
+./pinkboxagent/extension/dist/extension.js:6:ase.scheme,isNaN(t)?(this.url.username=this.base.username,this.u
+./pinkboxagent/extension/dist/extension.js:6:ative slash":t===63?(this.url.username=this.base.username,this.u
+./pinkboxagent/extension/dist/extension.js:6:ate="query"):t===35?(this.url.username=this.base.username,this.u
+./pinkboxagent/extension/dist/extension.js:6:e="relative slash"):(this.url.username=this.base.username,this.u
+./pinkboxagent/extension/dist/extension.js:6:s.state="authority":(this.url.username=this.base.username,this.u
+./pinkboxagent/extension/dist/extension.js:6:this.url.password+=e:this.url.username+=e}this.buffer=""}else if
+./pinkboxagent/extension/dist/extension.js:6:;if(a.host!==null?(r+="//",(a.username!==""||a.password!=="")&&(
+./pinkboxagent/extension/dist/extension.js:6:r+=a.username,a.password!==""&&(r+=":"+
+./pinkboxagent/extension/dist/extension.js:6:etTheUsername=function(a,t){a.username="";let r=oF.ucs2.decode(t
+./pinkboxagent/extension/dist/extension.js:6:;for(let n=0;n<r.length;++n)a.username+=oW(r[n],jse)};wu.exports
+./pinkboxagent/extension/dist/extension.js:6:Override:"scheme start"})}get username(){return this._url.userna
+./pinkboxagent/extension/dist/extension.js:6:me}set username(t){xl.cannotHaveAUsername
+./pinkboxagent/extension/dist/extension.js:6:.defineProperty(qs.prototype,"username",{get(){return this[fi].u
+./pinkboxagent/extension/dist/extension.js:6:a){a=Sd.USVString(a),this[fi].username=a},enumerable:!0,configur
+./pinkboxagent/extension/dist/extension.js:6:=function(){let w=new hF("The user aborted a request.");n(w),s.b
+./pinkboxagent/extension/dist/extension.js:13:oredPaths.delete(o+vhe),this._userIgnored=void 0,!0)),this.optio
+./pinkboxagent/extension/dist/extension.js:13:ignoredPaths.add(s+vhe),this._userIgnored=void 0}),this}close(){
+./pinkboxagent/extension/dist/extension.js:13:forEach(r=>r.destroy()),this._userIgnored=void 0,this._readyCoun
+./pinkboxagent/extension/dist/extension.js:13:ea.test(t))return!0;if(!this._userIgnored){let{cwd:n}=this.optio
+./pinkboxagent/extension/dist/extension.js:13:map(vze(n)).concat(I,e);this._userIgnored=Ehe(o,void 0,Che)}retu
+./pinkboxagent/extension/dist/extension.js:13:rn this._userIgnored([t,r])}_isntIgnored(t,
+./pinkboxagent/extension/dist/extension.js:16:ensure(S,"ref"),H=Y.ensure(S,"userUnit"),Q=Y.ensure(S,"view");re
+./pinkboxagent/extension/dist/extension.js:16:){return{rotate:F[0],ref:F[1],userUnit:F[2],view:F[3]}})})}),f.o
+./pinkboxagent/extension/dist/extension.js:16:peof navigator<"u"&&navigator.userAgent||"",e=/Android/.test(I),
+./pinkboxagent/extension/dist/extension.js:16:meType("text/plain; charset=x-user-defined"))}}),typeof VBArray<
+./pinkboxagent/extension/dist/extension.js:16:ator||(PDFJS.locale=navigator.userLanguage||"en-US")}(),function
+./pinkboxagent/extension/dist/extension.js:17:(),this._query=Q._query,this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:17:slice(),this._query="?",this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:17:uery,this._fragment="#",this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:17:host,this._port=Q._port,this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:17:host,this._port=Q._port,this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:18:null?this._password+=te:this._username+=te}k=""}else if(T===G||T
+./pinkboxagent/extension/dist/extension.js:24:="",this._schemeData="",this._username="",this._password=null,th
+./pinkboxagent/extension/dist/extension.js:24:is._url;var J="";return(this._username!==""||this._password!==nu
+./pinkboxagent/extension/dist/extension.js:24:ll)&&(J=this._username+(this._password!==null?":
+./pinkboxagent/extension/dist/extension.js:24:,s=n.navigator;a.exports=s&&s.userAgent||""},function(a,t,r){"us
+./pinkboxagent/extension/dist/extension.js:24:hadow)(this,"cropBox",y)},get userUnit(){var y=this.getPageProp(
+./pinkboxagent/extension/dist/extension.js:24:=0)&&(y=x),(0,e.shadow)(this,"userUnit",y)},get view(){var y=thi
+./pinkboxagent/extension/dist/extension.js:25:"u"&&/Windows/.test(navigator.userAgent)&&(t.SEAC_ANALYSIS_ENABL
+./pinkboxagent/extension/dist/extension.js:25:ndows.*Chrome/.test(navigator.userAgent)&&(Y=!0)}(),t.SEAC_ANALY
+./pinkboxagent/extension/dist/extension.js:26:return this.pageInfo.ref},get userUnit(){return this.pageInfo.us
+./pinkboxagent/extension/dist/extension.js:27:peof navigator<"u"&&navigator.userAgent||"",e=/Android/.test(I),
+./pinkboxagent/extension/dist/extension.js:27:meType("text/plain; charset=x-user-defined"))}}),typeof VBArray<
+./pinkboxagent/extension/dist/extension.js:27:ator||(PDFJS.locale=navigator.userLanguage||"en-US")}(),function
+./pinkboxagent/extension/dist/extension.js:28:(),this._query=Q._query,this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:28:slice(),this._query="?",this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:28:uery,this._fragment="#",this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:28:host,this._port=Q._port,this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:28:host,this._port=Q._port,this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:29:null?this._password+=te:this._username+=te}k=""}else if(T===G||T
+./pinkboxagent/extension/dist/extension.js:35:="",this._schemeData="",this._username="",this._password=null,th
+./pinkboxagent/extension/dist/extension.js:35:is._url;var J="";return(this._username!==""||this._password!==nu
+./pinkboxagent/extension/dist/extension.js:35:ll)&&(J=this._username+(this._password!==null?":
+./pinkboxagent/extension/dist/extension.js:35:,s=n.navigator;a.exports=s&&s.userAgent||""},function(a,t,r){"us
+./pinkboxagent/extension/dist/extension.js:35:\d+).*? Gecko/.exec(navigator.userAgent);return h&&h[1]>=14&&(u=
+./pinkboxagent/extension/dist/extension.js:40:ensure(S,"ref"),H=Y.ensure(S,"userUnit"),Q=Y.ensure(S,"view");re
+./pinkboxagent/extension/dist/extension.js:40:){return{rotate:F[0],ref:F[1],userUnit:F[2],view:F[3]}})})}),f.o
+./pinkboxagent/extension/dist/extension.js:40:peof navigator<"u"&&navigator.userAgent||"",e=/Android/.test(I),
+./pinkboxagent/extension/dist/extension.js:40:meType("text/plain; charset=x-user-defined"))}}),typeof VBArray<
+./pinkboxagent/extension/dist/extension.js:40:ator||(PDFJS.locale=navigator.userLanguage||"en-US")}(),function
+./pinkboxagent/extension/dist/extension.js:41:(),this._query=Q._query,this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:41:slice(),this._query="?",this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:41:uery,this._fragment="#",this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:41:host,this._port=Q._port,this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:41:host,this._port=Q._port,this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:42:null?this._password+=te:this._username+=te}k=""}else if(T===G||T
+./pinkboxagent/extension/dist/extension.js:48:="",this._schemeData="",this._username="",this._password=null,th
+./pinkboxagent/extension/dist/extension.js:48:is._url;var J="";return(this._username!==""||this._password!==nu
+./pinkboxagent/extension/dist/extension.js:48:ll)&&(J=this._username+(this._password!==null?":
+./pinkboxagent/extension/dist/extension.js:48:hadow)(this,"cropBox",y)},get userUnit(){var y=this.getPageProp(
+./pinkboxagent/extension/dist/extension.js:48:=0)&&(y=x),(0,e.shadow)(this,"userUnit",y)},get view(){var y=thi
+./pinkboxagent/extension/dist/extension.js:49:"u"&&/Windows/.test(navigator.userAgent)&&(t.SEAC_ANALYSIS_ENABL
+./pinkboxagent/extension/dist/extension.js:49:ndows.*Chrome/.test(navigator.userAgent)&&(Y=!0)}(),t.SEAC_ANALY
+./pinkboxagent/extension/dist/extension.js:50:return this.pageInfo.ref},get userUnit(){return this.pageInfo.us
+./pinkboxagent/extension/dist/extension.js:51:peof navigator<"u"&&navigator.userAgent||"",e=/Android/.test(I),
+./pinkboxagent/extension/dist/extension.js:51:meType("text/plain; charset=x-user-defined"))}}),typeof VBArray<
+./pinkboxagent/extension/dist/extension.js:51:ator||(PDFJS.locale=navigator.userLanguage||"en-US")}(),function
+./pinkboxagent/extension/dist/extension.js:52:(),this._query=Q._query,this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:52:slice(),this._query="?",this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:52:uery,this._fragment="#",this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:52:host,this._port=Q._port,this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:52:host,this._port=Q._port,this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:53:null?this._password+=te:this._username+=te}k=""}else if(T===G||T
+./pinkboxagent/extension/dist/extension.js:59:="",this._schemeData="",this._username="",this._password=null,th
+./pinkboxagent/extension/dist/extension.js:59:is._url;var J="";return(this._username!==""||this._password!==nu
+./pinkboxagent/extension/dist/extension.js:59:ll)&&(J=this._username+(this._password!==null?":
+./pinkboxagent/extension/dist/extension.js:59:\d+).*? Gecko/.exec(navigator.userAgent);return h&&h[1]>=14&&(u=
+./pinkboxagent/extension/dist/extension.js:63:ensure(D,"ref"),U=Y.ensure(D,"userUnit"),J=Y.ensure(D,"view");re
+./pinkboxagent/extension/dist/extension.js:63:){return{rotate:H[0],ref:H[1],userUnit:H[2],view:H[3]}})})}),g.o
+./pinkboxagent/extension/dist/extension.js:63:hadow)(this,"cropBox",R)},get userUnit(){var R=this.getPageProp(
+./pinkboxagent/extension/dist/extension.js:63:=0)&&(R=w),(0,e.shadow)(this,"userUnit",R)},get view(){var R=thi
+./pinkboxagent/extension/dist/extension.js:64:"u"&&/Windows/.test(navigator.userAgent)&&(t.SEAC_ANALYSIS_ENABL
+./pinkboxagent/extension/dist/extension.js:64:ndows.*Chrome/.test(navigator.userAgent)&&(Y=!0)}(),t.SEAC_ANALY
+./pinkboxagent/extension/dist/extension.js:64:peof navigator<"u"&&navigator.userAgent||"",e=/Android/.test(I),
+./pinkboxagent/extension/dist/extension.js:64:meType("text/plain; charset=x-user-defined"))}}),typeof VBArray<
+./pinkboxagent/extension/dist/extension.js:64:ator||(PDFJS.locale=navigator.userLanguage||"en-US")}(),function
+./pinkboxagent/extension/dist/extension.js:66:(),this._query=Q._query,this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:66:slice(),this._query="?",this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:66:uery,this._fragment="#",this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:66:host,this._port=Q._port,this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:66:host,this._port=Q._port,this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:67:null?this._password+=te:this._username+=te}k=""}else if(T===G||T
+./pinkboxagent/extension/dist/extension.js:73:="",this._schemeData="",this._username="",this._password=null,th
+./pinkboxagent/extension/dist/extension.js:73:is._url;var J="";return(this._username!==""||this._password!==nu
+./pinkboxagent/extension/dist/extension.js:73:ll)&&(J=this._username+(this._password!==null?":
+./pinkboxagent/extension/dist/extension.js:74:return this.pageInfo.ref},get userUnit(){return this.pageInfo.us
+./pinkboxagent/extension/dist/extension.js:75:\d+).*? Gecko/.exec(navigator.userAgent);return h&&h[1]>=14&&(u=
+./pinkboxagent/extension/dist/extension.js:76:peof navigator<"u"&&navigator.userAgent||"",e=/Android/.test(I),
+./pinkboxagent/extension/dist/extension.js:76:meType("text/plain; charset=x-user-defined"))}}),typeof VBArray<
+./pinkboxagent/extension/dist/extension.js:76:ator||(PDFJS.locale=navigator.userLanguage||"en-US")}(),function
+./pinkboxagent/extension/dist/extension.js:78:(),this._query=Q._query,this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:78:slice(),this._query="?",this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:78:uery,this._fragment="#",this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:78:host,this._port=Q._port,this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:78:host,this._port=Q._port,this._username=Q._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:79:null?this._password+=te:this._username+=te}k=""}else if(T===G||T
+./pinkboxagent/extension/dist/extension.js:85:="",this._schemeData="",this._username="",this._password=null,th
+./pinkboxagent/extension/dist/extension.js:85:is._url;var J="";return(this._username!==""||this._password!==nu
+./pinkboxagent/extension/dist/extension.js:85:ll)&&(J=this._username+(this._password!==null?":
+./pinkboxagent/extension/dist/extension.js:85:ensure(F,"ref"),k=R.ensure(F,"userUnit"),O=R.ensure(F,"view");re
+./pinkboxagent/extension/dist/extension.js:85:){return{rotate:z[0],ref:z[1],userUnit:z[2],view:z[3]}})})}),p.o
+./pinkboxagent/extension/dist/extension.js:86:(),this._query=m._query,this._username=m._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:86:slice(),this._query="?",this._username=m._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:86:uery,this._fragment="#",this._username=m._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:86:host,this._port=m._port,this._username=m._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:86:host,this._port=m._port,this._username=m._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:87:=null?this._password+=V:this._username+=V}D=""}else if(J===X||J=
+./pinkboxagent/extension/dist/extension.js:93:="",this._schemeData="",this._username="",this._password=null,th
+./pinkboxagent/extension/dist/extension.js:93:is._url;var v="";return(this._username!==""||this._password!==nu
+./pinkboxagent/extension/dist/extension.js:93:ll)&&(v=this._username+(this._password!==null?":
+./pinkboxagent/extension/dist/extension.js:93:,s=n.navigator;a.exports=s&&s.userAgent||""},function(a,t,r){"us
+./pinkboxagent/extension/dist/extension.js:93:hadow)(this,"cropBox",g)},get userUnit(){var g=this.pageDict.get
+./pinkboxagent/extension/dist/extension.js:93:=0)&&(g=X),(0,e.shadow)(this,"userUnit",g)},get view(){var g=thi
+./pinkboxagent/extension/dist/extension.js:95:"u"&&/Windows/.test(navigator.userAgent)&&(t.SEAC_ANALYSIS_ENABL
+./pinkboxagent/extension/dist/extension.js:95:ndows.*Chrome/.test(navigator.userAgent)&&(Y=!0)}(),t.SEAC_ANALY
+./pinkboxagent/extension/dist/extension.js:97:(),this._query=m._query,this._username=m._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:97:slice(),this._query="?",this._username=m._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:97:uery,this._fragment="#",this._username=m._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:97:host,this._port=m._port,this._username=m._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:97:host,this._port=m._port,this._username=m._username,this._passwor
+./pinkboxagent/extension/dist/extension.js:98:=null?this._password+=V:this._username+=V}D=""}else if(J===X||J=
+./pinkboxagent/extension/dist/extension.js:104:="",this._schemeData="",this._username="",this._password=null,th
+./pinkboxagent/extension/dist/extension.js:104:is._url;var v="";return(this._username!==""||this._password!==nu
+./pinkboxagent/extension/dist/extension.js:104:ll)&&(v=this._username+(this._password!==null?":
+./pinkboxagent/extension/dist/extension.js:104:,s=n.navigator;a.exports=s&&s.userAgent||""},function(a,t,r){"us
+./pinkboxagent/extension/dist/extension.js:104:return this.pageInfo.ref},get userUnit(){return this.pageInfo.us
+./pinkboxagent/extension/dist/extension.js:105:\d+).*? Gecko/.exec(navigator.userAgent);return h&&h[1]>=14&&(u=
+./pinkboxagent/extension/dist/extension.js:106:peof navigator<"u"&&navigator.userAgent||"",e=/Trident/.test(I),
+./pinkboxagent/extension/dist/extension.js:336:-KR","UTF-16BE","UTF-16LE","x-user-defined"]});var Xst=We((ZJr,q
+./pinkboxagent/extension/dist/extension.js:336:6LE","utf-16le":"UTF-16LE","x-user-defined":"x-user-defined"}});
+./pinkboxagent/extension/dist/extension.js:336:(a);if(n!==null&&(r=n),r==="x-user-defined"){let s="";for(let I 
+./pinkboxagent/extension/dist/extension.js:337:l==="blank:"?"no-referrer":(a.username="",a.password="",a.hash="
+./pinkboxagent/extension/dist/extension.js:374::s,origin:I,port:e,protocol:o,username:d,password:A,hostname:u}=
+./pinkboxagent/extension/dist/extension.js:378: URL from "+t,{cause:B})}if(X.username||X.password)throw new Typ
+./pinkboxagent/extension/dist/extension.js:378:ation:a.historyNavigation??!1,userActivation:a.userActivation??!
+./pinkboxagent/extension/dist/extension.js:378:tCount+=1,r.mode==="cors"&&(s.username||s.password)&&!yZe(r,s))r
+./pinkboxagent/extension/dist/extension.js:378:responseTainting==="cors"&&(s.username||s.password))return Promi
+./pinkboxagent/extension/dist/extension.js:378:va(I),I.headersList.contains("user-agent",!0)||I.headersList.app
+./pinkboxagent/extension/dist/extension.js:378:end("user-agent",nEa),I.cache==="defaul
+./pinkboxagent/extension/dist/extension.js:378:16le":return"UTF-16LE";case"x-user-defined":return"x-user-define
+./pinkboxagent/extension/dist/extension.js:380:ccurred","ABORT_ERR (20): the user aborted an operation","URL_MI
+./pinkboxagent/extension/dist/extension.js:383:2]),t[4]){var r=t[4].match(jI.userinfoPattern);if(r&&(this.usern
+./pinkboxagent/extension/dist/extension.js:383:#]*)(\?([^#]*))?(#(.*))?$/;jI.userinfoPattern=/^([^@:]*)(:([^@]*
+./pinkboxagent/extension/dist/extension.js:383:.isAbsolute()&&(a+="//",(this.username||this.password)&&(a+=this
+./pinkboxagent/extension/dist/extension.js:383:.username||"",this.password&&(a+=":
+./pinkboxagent/extension/dist/extension.js:383:==void 0?(n.scheme=r.scheme,n.username=r.username,n.password=r.p
+./pinkboxagent/extension/dist/extension.js:383:e=t.scheme,r.host!==void 0?(n.username=r.username,n.password=r.p
+./pinkboxagent/extension/dist/extension.js:383:I(r.path),n.query=r.query):(n.username=t.username,n.password=t.p
+./pinkboxagent/extension/dist/extension.js:383:,t=r.toString(),this.href=t}},username:{get:function(){var a=thi
+./pinkboxagent/extension/dist/extension.js:383:s._url;return a.username||""},set:function(a){var 
+./pinkboxagent/extension/dist/extension.js:383:\/@\\:]/g,bI.percentEncode),r.username=a,t=r.toString()),this.hr
+./pinkboxagent/extension/dist/extension.js:388:productSub:{value:"20100101"},userAgent:{value:""},vendor:{value
+./pinkboxagent/extension/dist/extension.js:455:mise.all([this.setUserAgent(s.userAgent),this.setViewport(s.view
+./pinkboxagent/extension/dist/extension.js:465:turnByValue:t,awaitPromise:!0,userGesture:!0}).catch(t2t);if(w)t
+./pinkboxagent/extension/dist/extension.js:467:turnByValue:t,awaitPromise:!0,userGesture:!0})}catch(c){throw c 
+./pinkboxagent/extension/dist/extension.js:467:etwork.setUserAgentOverride",{userAgent:this.#o,userAgentMetadat
+./pinkboxagent/extension/dist/extension.js:467:this.#n.add(r.requestId));let{username:s,password:I}=this.#r||{u
+./pinkboxagent/extension/dist/extension.js:467:ChallengeResponse:{response:n,username:s,password:I}}).catch(JJ.
+./pinkboxagent/extension/dist/extension.js:467:level","blink.console","blink.user_timing","latencyInfo","disabl
+./pinkboxagent/extension/dist/extension.js:467:wait this.#m()).product}async userAgent(){return(await this.#m()
+./pinkboxagent/extension/dist/extension.js:467:).userAgent}async close(){await this
+./pinkboxagent/extension/dist/extension.js:467:t:"chrome",revision:"unknown",userAgent:"chrome",jsVersion:"unkn
+./pinkboxagent/extension/dist/extension.js:467:=[{name:"Blackberry PlayBook",userAgent:"Mozilla/5.0 (PlayBook; 
+./pinkboxagent/extension/dist/extension.js:467:lackberry PlayBook landscape",userAgent:"Mozilla/5.0 (PlayBook; 
+./pinkboxagent/extension/dist/extension.js:467:e:!0}},{name:"BlackBerry Z30",userAgent:"Mozilla/5.0 (BB10; Touc
+./pinkboxagent/extension/dist/extension.js:467:me:"BlackBerry Z30 landscape",userAgent:"Mozilla/5.0 (BB10; Touc
+./pinkboxagent/extension/dist/extension.js:467:pe:!0}},{name:"Galaxy Note 3",userAgent:"Mozilla/5.0 (Linux; U; 
+./pinkboxagent/extension/dist/extension.js:467:ame:"Galaxy Note 3 landscape",userAgent:"Mozilla/5.0 (Linux; U; 
+./pinkboxagent/extension/dist/extension.js:467:e:!0}},{name:"Galaxy Note II",userAgent:"Mozilla/5.0 (Linux; U; 
+./pinkboxagent/extension/dist/extension.js:467:me:"Galaxy Note II landscape",userAgent:"Mozilla/5.0 (Linux; U; 
+./pinkboxagent/extension/dist/extension.js:467:ape:!0}},{name:"Galaxy S III",userAgent:"Mozilla/5.0 (Linux; U; 
+./pinkboxagent/extension/dist/extension.js:467:name:"Galaxy S III landscape",userAgent:"Mozilla/5.0 (Linux; U; 
+./pinkboxagent/extension/dist/extension.js:467:dscape:!0}},{name:"Galaxy S5",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:},{name:"Galaxy S5 landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:dscape:!0}},{name:"Galaxy S8",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:},{name:"Galaxy S8 landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:scape:!0}},{name:"Galaxy S9+",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:,{name:"Galaxy S9+ landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:pe:!0}},{name:"Galaxy Tab S4",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:ame:"Galaxy Tab S4 landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:isLandscape:!0}},{name:"iPad",userAgent:"Mozilla/5.0 (iPad; CPU 
+./pinkboxagent/extension/dist/extension.js:467:e:!1}},{name:"iPad landscape",userAgent:"Mozilla/5.0 (iPad; CPU 
+./pinkboxagent/extension/dist/extension.js:467:ape:!0}},{name:"iPad (gen 6)",userAgent:"Mozilla/5.0 (iPad; CPU 
+./pinkboxagent/extension/dist/extension.js:467:name:"iPad (gen 6) landscape",userAgent:"Mozilla/5.0 (iPad; CPU 
+./pinkboxagent/extension/dist/extension.js:467:ape:!0}},{name:"iPad (gen 7)",userAgent:"Mozilla/5.0 (iPad; CPU 
+./pinkboxagent/extension/dist/extension.js:467:name:"iPad (gen 7) landscape",userAgent:"Mozilla/5.0 (iPad; CPU 
+./pinkboxagent/extension/dist/extension.js:467:dscape:!0}},{name:"iPad Mini",userAgent:"Mozilla/5.0 (iPad; CPU 
+./pinkboxagent/extension/dist/extension.js:467:},{name:"iPad Mini landscape",userAgent:"Mozilla/5.0 (iPad; CPU 
+./pinkboxagent/extension/dist/extension.js:467:ndscape:!0}},{name:"iPad Pro",userAgent:"Mozilla/5.0 (iPad; CPU 
+./pinkboxagent/extension/dist/extension.js:467:}},{name:"iPad Pro landscape",userAgent:"Mozilla/5.0 (iPad; CPU 
+./pinkboxagent/extension/dist/extension.js:467:cape:!0}},{name:"iPad Pro 11",userAgent:"Mozilla/5.0 (iPad; CPU 
+./pinkboxagent/extension/dist/extension.js:467:{name:"iPad Pro 11 landscape",userAgent:"Mozilla/5.0 (iPad; CPU 
+./pinkboxagent/extension/dist/extension.js:467:ndscape:!0}},{name:"iPhone 4",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:}},{name:"iPhone 4 landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:ndscape:!0}},{name:"iPhone 5",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:}},{name:"iPhone 5 landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:ndscape:!0}},{name:"iPhone 6",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:}},{name:"iPhone 6 landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:pe:!0}},{name:"iPhone 6 Plus",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:ame:"iPhone 6 Plus landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:ndscape:!0}},{name:"iPhone 7",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:}},{name:"iPhone 7 landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:pe:!0}},{name:"iPhone 7 Plus",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:ame:"iPhone 7 Plus landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:ndscape:!0}},{name:"iPhone 8",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:}},{name:"iPhone 8 landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:pe:!0}},{name:"iPhone 8 Plus",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:ame:"iPhone 8 Plus landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:dscape:!0}},{name:"iPhone SE",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:},{name:"iPhone SE landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:ndscape:!0}},{name:"iPhone X",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:}},{name:"iPhone X landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:dscape:!0}},{name:"iPhone XR",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:},{name:"iPhone XR landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:dscape:!0}},{name:"iPhone 11",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:},{name:"iPhone 11 landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:pe:!0}},{name:"iPhone 11 Pro",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:ame:"iPhone 11 Pro landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:0}},{name:"iPhone 11 Pro Max",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:"iPhone 11 Pro Max landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:dscape:!0}},{name:"iPhone 12",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:},{name:"iPhone 12 landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:pe:!0}},{name:"iPhone 12 Pro",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:ame:"iPhone 12 Pro landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:0}},{name:"iPhone 12 Pro Max",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:"iPhone 12 Pro Max landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:e:!0}},{name:"iPhone 12 Mini",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:me:"iPhone 12 Mini landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:dscape:!0}},{name:"iPhone 13",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:},{name:"iPhone 13 landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:pe:!0}},{name:"iPhone 13 Pro",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:ame:"iPhone 13 Pro landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:0}},{name:"iPhone 13 Pro Max",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:"iPhone 13 Pro Max landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:e:!0}},{name:"iPhone 13 Mini",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:me:"iPhone 13 Mini landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:dscape:!0}},{name:"iPhone 14",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:},{name:"iPhone 14 landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:e:!0}},{name:"iPhone 14 Plus",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:me:"iPhone 14 Plus landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:pe:!0}},{name:"iPhone 14 Pro",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:ame:"iPhone 14 Pro landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:0}},{name:"iPhone 14 Pro Max",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:"iPhone 14 Pro Max landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:dscape:!0}},{name:"iPhone 15",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:},{name:"iPhone 15 landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:e:!0}},{name:"iPhone 15 Plus",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:me:"iPhone 15 Plus landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:pe:!0}},{name:"iPhone 15 Pro",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:ame:"iPhone 15 Pro landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:0}},{name:"iPhone 15 Pro Max",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:"iPhone 15 Pro Max landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:467:scape:!0}},{name:"JioPhone 2",userAgent:"Mozilla/5.0 (Mobile; LY
+./pinkboxagent/extension/dist/extension.js:467:,{name:"JioPhone 2 landscape",userAgent:"Mozilla/5.0 (Mobile; LY
+./pinkboxagent/extension/dist/extension.js:467::!0}},{name:"Kindle Fire HDX",userAgent:"Mozilla/5.0 (Linux; U; 
+./pinkboxagent/extension/dist/extension.js:467:e:"Kindle Fire HDX landscape",userAgent:"Mozilla/5.0 (Linux; U; 
+./pinkboxagent/extension/dist/extension.js:467:e:!0}},{name:"LG Optimus L70",userAgent:"Mozilla/5.0 (Linux; U; 
+./pinkboxagent/extension/dist/extension.js:467:me:"LG Optimus L70 landscape",userAgent:"Mozilla/5.0 (Linux; U; 
+./pinkboxagent/extension/dist/extension.js:467:},{name:"Microsoft Lumia 550",userAgent:"Mozilla/5.0 (Windows Ph
+./pinkboxagent/extension/dist/extension.js:467:},{name:"Microsoft Lumia 950",userAgent:"Mozilla/5.0 (Windows Ph
+./pinkboxagent/extension/dist/extension.js:467:icrosoft Lumia 950 landscape",userAgent:"Mozilla/5.0 (Windows Ph
+./pinkboxagent/extension/dist/extension.js:467:ndscape:!0}},{name:"Nexus 10",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:}},{name:"Nexus 10 landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:andscape:!0}},{name:"Nexus 4",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:1}},{name:"Nexus 4 landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:andscape:!0}},{name:"Nexus 5",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:1}},{name:"Nexus 5 landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:ndscape:!0}},{name:"Nexus 5X",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:}},{name:"Nexus 5X landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:andscape:!0}},{name:"Nexus 6",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:1}},{name:"Nexus 6 landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:ndscape:!0}},{name:"Nexus 6P",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:}},{name:"Nexus 6P landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:andscape:!0}},{name:"Nexus 7",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:1}},{name:"Nexus 7 landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467::!0}},{name:"Nokia Lumia 520",userAgent:"Mozilla/5.0 (compatible
+./pinkboxagent/extension/dist/extension.js:467:e:"Nokia Lumia 520 landscape",userAgent:"Mozilla/5.0 (compatible
+./pinkboxagent/extension/dist/extension.js:467:ndscape:!0}},{name:"Nokia N9",userAgent:"Mozilla/5.0 (MeeGo; Nok
+./pinkboxagent/extension/dist/extension.js:467:}},{name:"Nokia N9 landscape",userAgent:"Mozilla/5.0 (MeeGo; Nok
+./pinkboxagent/extension/dist/extension.js:467:andscape:!0}},{name:"Pixel 2",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:1}},{name:"Pixel 2 landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:scape:!0}},{name:"Pixel 2 XL",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:,{name:"Pixel 2 XL landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:andscape:!0}},{name:"Pixel 3",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:1}},{name:"Pixel 3 landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:andscape:!0}},{name:"Pixel 4",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:1}},{name:"Pixel 4 landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:pe:!0}},{name:"Pixel 4a (5G)",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:ame:"Pixel 4a (5G) landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:andscape:!0}},{name:"Pixel 5",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:1}},{name:"Pixel 5 landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:andscape:!0}},{name:"Moto G4",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:1}},{name:"Moto G4 landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:467:PromptClosed="browsingContext.userPromptClosed",r.UserPromptOpen
+./pinkboxagent/extension/dist/extension.js:467:ed="browsingContext.userPromptOpened"})(t=a.EventNames
+./pinkboxagent/extension/dist/extension.js:467:nstructor(t,r){super("no such user context",t,r)}};$a.NoSuchUser
+./pinkboxagent/extension/dist/extension.js:467:proxyBypassList=n.join(",")),{userContext:(await this.#e.sendCom
+./pinkboxagent/extension/dist/extension.js:467: removeUserContext(t){let r=t.userContext;if(r==="default")throw
+./pinkboxagent/extension/dist/extension.js:467:dArgumentException("`default` user context cannot be removed");t
+./pinkboxagent/extension/dist/extension.js:467:t.getBrowserContexts");return{userContexts:[{userContext:"defaul
+./pinkboxagent/extension/dist/extension.js:467:.t.browserContextIds.map(r=>({userContext:r}))]}}};$P.BrowserPro
+./pinkboxagent/extension/dist/extension.js:467: be a top-level context");n=r.userContext}t.userContext!==void 0
+./pinkboxagent/extension/dist/extension.js:467:&&(n=t.userContext);let s=this.#t.getAllC
+./pinkboxagent/extension/dist/extension.js:467:ontexts().filter(A=>A.userContext===n),I=!1;switch(t.typ
+./pinkboxagent/extension/dist/extension.js:467:r.handleUserPrompt(t.accept,t.userText)}catch(n){throw n.message
+./pinkboxagent/extension/dist/extension.js:468:ttps://example.com");return r.username=a,r.username}function $3a
+./pinkboxagent/extension/dist/extension.js:468:ttps://example.com");return t.username=a,t.username}function r4a
+./pinkboxagent/extension/dist/extension.js:468:k;case 2:break;case 3:this.#a.username=this.#N();break;case 4:th
+./pinkboxagent/extension/dist/extension.js:468:.#o=Yft(t)}},fCe=["protocol","username","password","hostname","p
+./pinkboxagent/extension/dist/extension.js:468:string(0,r.protocol.length-1),username:r.username,password:r.pas
+./pinkboxagent/extension/dist/extension.js:468:===void 0&&t.port===void 0&&t.username===void 0&&(a.username=ag(
+./pinkboxagent/extension/dist/extension.js:468:n.username,r)),!r&&t.protocol===void
+./pinkboxagent/extension/dist/extension.js:468:===void 0&&t.port===void 0&&t.username===void 0&&t.password===vo
+./pinkboxagent/extension/dist/extension.js:468:l=t4a(t.protocol,r)),typeof t.username=="string"&&(a.username=q3
+./pinkboxagent/extension/dist/extension.js:468:a(t.username,r)),typeof t.password=="s
+./pinkboxagent/extension/dist/extension.js:468:0},I={pathname:CZ,protocol:CZ,username:CZ,password:CZ,hostname:C
+./pinkboxagent/extension/dist/extension.js:468:),o.encodePart=vCe;break;case"username":Object.assign(o,FZ),o.en
+./pinkboxagent/extension/dist/extension.js:468:et r={pathname:"",protocol:"",username:"",password:"",hostname:"
+./pinkboxagent/extension/dist/extension.js:468:et r={pathname:"",protocol:"",username:"",password:"",hostname:"
+./pinkboxagent/extension/dist/extension.js:468:){return this.#r.protocol}get username(){return this.#r.username
+./pinkboxagent/extension/dist/extension.js:469:missions(t){try{let r=t["goog:userContext"]||t.userContext;await
+./pinkboxagent/extension/dist/extension.js:469:ship,t.serializationOptions,t.userActivation)}async evaluate(t){
+./pinkboxagent/extension/dist/extension.js:469:ship,t.serializationOptions,t.userActivation)}async disown(t){le
+./pinkboxagent/extension/dist/extension.js:469:WindowRect:!1,webSocketUrl:"",userAgent:n.userAgent}}}async subs
+./pinkboxagent/extension/dist/extension.js:470:ntext for id")}#n(t){return t.userContext==="default"?void 0:t.u
+./pinkboxagent/extension/dist/extension.js:470:}#i(t){let r=t.context;return{userContext:this.#t.getContext(r).
+./pinkboxagent/extension/dist/extension.js:470:userContext}}#l(t){let r=new Map,n
+./pinkboxagent/extension/dist/extension.js:470:d 0&&!["type","sourceOrigin","userContext"].includes(I)&&r.set(I
+./pinkboxagent/extension/dist/extension.js:470:fy(Object.fromEntries(r))}`),{userContext:t.userContext??"defaul
+./pinkboxagent/extension/dist/extension.js:470::n}}}#I(t){return t===void 0?{userContext:"default"}:t.type==="c
+./pinkboxagent/extension/dist/extension.js:470:izationOptions:a.#h("deep",s),userGesture:I,includeCommandLineAP
+./pinkboxagent/extension/dist/extension.js:479:extId:this.executionContextId,userGesture:o})}catch(h){throw h.c
+./pinkboxagent/extension/dist/extension.js:479:pe.debug}:browsingContext`;#e;userContext;#t=null;#a=new Set;#r;
+./pinkboxagent/extension/dist/extension.js:479:#c=s,this.#e=t,this.#t=r,this.userContext=n,this.#I=I,this.#r=e,
+./pinkboxagent/extension/dist/extension.js:479:{context:this.#e,url:this.url,userContext:this.userContext,origi
+./pinkboxagent/extension/dist/extension.js:479:ted:r,type:this.#g??"UNKNOWN",userText:r&&t.userInput?t.userInpu
+./pinkboxagent/extension/dist/extension.js:479:Impl.create(r.id,r.parentId,s.userContext,s.cdpTarget,this.#n,th
+./pinkboxagent/extension/dist/extension.js:479:e(t.frameId,t.parentFrameId,r.userContext,r.cdpTarget,this.#n,th
+./pinkboxagent/extension/dist/extension.js:479:response:"ProvideCredentials",username:t.credentials.username,pa
+./pinkboxagent/extension/dist/extension.js:479:ls"){let{credentials:I}=t;r=I.username,n=I.password}let s=(0,Ti.
+./pinkboxagent/extension/dist/extension.js:479:on);await this.#w({response:s,username:r,password:n})}async prov
+./pinkboxagent/extension/dist/extension.js:479:#n===I}get#I(){return this.#a.userContext.browser.session}get di
+./pinkboxagent/extension/dist/extension.js:479:){return this.browsingContext.userContext.browser.session}get ta
+./pinkboxagent/extension/dist/extension.js:479:e())})}get#I(){return this.#r.userContext.browser.session}get di
+./pinkboxagent/extension/dist/extension.js:479:this.#n)).on("browsingContext.userPromptClosed",o=>{o.context===
+./pinkboxagent/extension/dist/extension.js:479:){return this.browsingContext.userContext.browser.session}get cl
+./pinkboxagent/extension/dist/extension.js:479:ew Map;defaultRealm;id;parent;userContext;originalOpener;constru
+./pinkboxagent/extension/dist/extension.js:479:,this.id=D,this.parent=N,this.userContext=p,this.originalOpener=
+./pinkboxagent/extension/dist/extension.js:479:.use(new lL.EventEmitter(this.userContext)).once("closed",({reas
+./pinkboxagent/extension/dist/extension.js:479:id)return;let L=xFe.from(this.userContext,this,D.context,D.url,D
+./pinkboxagent/extension/dist/extension.js:479:y:D})}),N.on("browsingContext.userPromptOpened",D=>{if(D.context
+./pinkboxagent/extension/dist/extension.js:479:rompt.from(this,D);this.emit("userprompt",{userPrompt:L})})}get#
+./pinkboxagent/extension/dist/extension.js:479:s(){return this.userContext.browser.session}get ch
+./pinkboxagent/extension/dist/extension.js:479:ipt(p,N={}){return await this.userContext.browser.addPreloadScri
+./pinkboxagent/extension/dist/extension.js:479:ult:{intercept:N}}=await this.userContext.browser.session.send("
+./pinkboxagent/extension/dist/extension.js:479:vePreloadScript(p){await this.userContext.browser.removePreloadS
+./pinkboxagent/extension/dist/extension.js:479: closed, probably because the user context closed.",this.emit("c
+./pinkboxagent/extension/dist/extension.js:479:xtCreated",h=>{if(h.parent||h.userContext!==this.#r)return;let c
+./pinkboxagent/extension/dist/extension.js:479:ontext:u.referenceContext?.id,userContext:this.#r}),c=this.#t.ge
+./pinkboxagent/extension/dist/extension.js:479:("browser.removeUserContext",{userContext:this.#r})}finally{this
+./pinkboxagent/extension/dist/extension.js:479:,partition:{type:"storageKey",userContext:this.#r,sourceOrigin:u
+./pinkboxagent/extension/dist/extension.js:479:e:"storageKey",sourceOrigin:u,userContext:this.id}})}async setPe
+./pinkboxagent/extension/dist/extension.js:479:origin:A,descriptor:u,state:h,userContext:this.#r})}[(r=[wY.iner
+./pinkboxagent/extension/dist/extension.js:479:is.#e.handle({accept:t.accept,userText:t.text})}};g$.BidiDialog=
+./pinkboxagent/extension/dist/extension.js:479:t#I(){return this.#a?.page()._userAgentHeaders??{}}headers(){let
+./pinkboxagent/extension/dist/extension.js:479:,credentials:{type:"password",username:t.username,password:t.pas
+./pinkboxagent/extension/dist/extension.js:482:luate(A,!0,{resultOwnership:e,userActivation:!0,serializationOpt
+./pinkboxagent/extension/dist/extension.js:484:rialize(u)),resultOwnership:e,userActivation:!0,serializationOpt
+./pinkboxagent/extension/dist/extension.js:484:s)}),this.browsingContext.on("userprompt",({userPrompt:W})=>{thi
+./pinkboxagent/extension/dist/extension.js:488:yed",I=>{this.#n.delete(I)})}_userAgentHeaders={};#s;#o;async se
+./pinkboxagent/extension/dist/extension.js:488:ent Browser does not support `userAgentMetadata`");if(this.#t.br
+./pinkboxagent/extension/dist/extension.js:488:etwork.setUserAgentOverride",{userAgent:I,userAgentMetadata:e});
+./pinkboxagent/extension/dist/extension.js:488:;I=I??await this.#t.browser().userAgent(),this._userAgentHeaders
+./pinkboxagent/extension/dist/extension.js:488:ect.defineProperty(navigator,"userAgent",{value:h})},A=[this.#a]
+./pinkboxagent/extension/dist/extension.js:488:await this.#a.browsingContext.userContext.browser.removeIntercep
+./pinkboxagent/extension/dist/extension.js:488:0?await this.browserContext().userContext.setCookie(c,d.partitio
+./pinkboxagent/extension/dist/extension.js:488:){this.#e=I}#t=N1t(this,n);#a;userContext;#r=new WeakMap;#n=new 
+./pinkboxagent/extension/dist/extension.js:488:I,e,o){super(),this.#t=I,this.userContext=e,this.#a=o.defaultVie
+./pinkboxagent/extension/dist/extension.js:488:wport}#l(){for(let I of this.userContext.browsingContexts)this.
+./pinkboxagent/extension/dist/extension.js:488:#I(I);this.userContext.on("browsingcontext",(
+./pinkboxagent/extension/dist/extension.js:488:ginalOpener)for(let o of this.userContext.browsingContexts)o.id=
+./pinkboxagent/extension/dist/extension.js:488:tter.emit("popup",e)})}),this.userContext.on("closed",()=>{this.
+./pinkboxagent/extension/dist/extension.js:488:Operations(),!1),o=await this.userContext.createBrowsingContext(
+./pinkboxagent/extension/dist/extension.js:488:c close(){(0,bLa.assert)(this.userContext.id!==F1t.UserContext.D
+./pinkboxagent/extension/dist/extension.js:488:t be closed!");try{await this.userContext.remove()}catch(I){(0,d
+./pinkboxagent/extension/dist/extension.js:488:}async pages(){return[...this.userContext.browsingContexts].map(
+./pinkboxagent/extension/dist/extension.js:488:ON.keys()).map(d=>{let A=this.userContext.setPermissions(I,{name
+./pinkboxagent/extension/dist/extension.js:488:permission:e,origin:o})=>this.userContext.setPermissions(o,{name
+./pinkboxagent/extension/dist/extension.js:488:omise.all(I)}get id(){if(this.userContext.id!==F1t.UserContext.D
+./pinkboxagent/extension/dist/extension.js:488:EFAULT)return this.userContext.id}}})();jh.BidiBrowse
+./pinkboxagent/extension/dist/extension.js:488:is.#I()}async#l(){let{result:{userContexts:A}}=await this.sessio
+./pinkboxagent/extension/dist/extension.js:488:,{});for(let u of A)this.#s(u.userContext)}async#I(){let A=new S
+./pinkboxagent/extension/dist/extension.js:488:{return this.disconnected}get userContexts(){return this.#r.valu
+./pinkboxagent/extension/dist/extension.js:488:eateUserContext(){let{result:{userContext:A}}=await this.session
+./pinkboxagent/extension/dist/extension.js:488:ion}#o(){for(let e of this.#n.userContexts)this.#d(e);this.#n.on
+./pinkboxagent/extension/dist/extension.js:488:ection(){return this.#s}async userAgent(){return this.#n.session
+./pinkboxagent/extension/dist/extension.js:488:.capabilities.userAgent}#d(e){let o=YLa.BidiBrow
+./pinkboxagent/extension/dist/extension.js:488:rContexts(){return[...this.#n.userContexts].map(e=>this.#l.get(e
+./pinkboxagent/extension/dist/extension.js:488:s.headers.Origin=s.origin),(I.username||I.password)&&(s.auth=`${
+./pinkboxagent/extension/dist/extension.js:488:I.username}:${I.password}`),o){let w
+./pinkboxagent/extension/dist/extension.js:495:):{...this.proxyHeaders};if(n.username||n.password){let A=`${dec
+./pinkboxagent/extension/dist/extension.js:495:odeURIComponent(n.username)}:${decodeURIComponent(n.
+./pinkboxagent/extension/dist/extension.js:501:`;if(n.username||n.password){let c=`${dec
+./pinkboxagent/extension/dist/extension.js:501:odeURIComponent(n.username)}:${decodeURIComponent(n.
+./pinkboxagent/extension/dist/extension.js:503:ke(){let t=this.options.proxy.userId||"",r=new Zu.SmartBuffer;r.
+./pinkboxagent/extension/dist/extension.js:503:h.NoAuth];(this.options.proxy.userId||this.options.proxy.passwor
+./pinkboxagent/extension/dist/extension.js:503:on(){let t=this.options.proxy.userId||"",r=this.options.proxy.pa
+./pinkboxagent/extension/dist/extension.js:503:ost:n,port:s,type:r};return a.username&&Object.defineProperty(I,
+./pinkboxagent/extension/dist/extension.js:503:"userId",{value:decodeURIComponent(
+./pinkboxagent/extension/dist/extension.js:503:a.username),enumerable:!1}),a.passwo
+./pinkboxagent/extension/dist/extension.js:512:void 0,this.group=void 0,this.user=void 0,this.uniqueID=void 0,t
+./pinkboxagent/extension/dist/extension.js:512:h(n.size=parseInt(t[18],10),n.user=t[16],n.group=t[17],n.hardLin
+./pinkboxagent/extension/dist/extension.js:512:[19]+" "+t[20],n.permissions={user:swe(t[4],t[5],t[6]),group:swe
+./pinkboxagent/extension/dist/extension.js:512:r=a.substr(-3);t.permissions={user:parseInt(r[0],10),group:parse
+./pinkboxagent/extension/dist/extension.js:512:}},"unix.ownername":(a,t)=>{t.user=a},"unix.owner":(a,t)=>{t.use
+./pinkboxagent/extension/dist/extension.js:512:r===void 0&&(t.user=a)},get"unix.uid"(){return th
+./pinkboxagent/extension/dist/extension.js:512: UTF8 ON"),await this.login(t.user,t.password),await this.useDef
+./pinkboxagent/extension/dist/extension.js:513:seInt(a.port||"0",10)||21,A=a.username?decodeURIComponent(a.user
+./pinkboxagent/extension/dist/extension.js:513:await I.access({host:o,port:d,user:A,password:u,...t});try{s=awa
+./pinkboxagent/extension/dist/extension.js:543:e(){if(!se){var Ee={USER:"web_user",LOGNAME:"web_user",PATH:"/",
+./pinkboxagent/extension/dist/extension.js:543:PWD:"/",HOME:"/home/web_user",LANG:(typeof navigator=="obj
+./pinkboxagent/extension/dist/extension.js:543:manager.testmode":!0,"general.useragent.updates.enabled":!1,"geo
+./pinkboxagent/extension/dist/extension.js:543:s"),r=a1.default.join(a.path,"user.js"),n=Object.entries(a.prefe
+./pinkboxagent/extension/dist/extension.js:543:rences).map(([I,e])=>`user_pref(${JSON.stringify(I)}, ${
+./pinkboxagent/extension/dist/extension.js:624:await this.cleanUserDataDir(w.userDataDir,{isTemp:w.isTempUserDa
+./pinkboxagent/extension/dist/extension.js:631:.findIndex(W=>W.startsWith("--user-data-dir"));u<0&&(A=!0,d.push
+./pinkboxagent/extension/dist/extension.js:631:(`--user-data-dir=${await(0,Frr.mkdtem
+./pinkboxagent/extension/dist/extension.js:631:ssert)(typeof h=="string","`--user-data-dir` is malformed");let 
+./pinkboxagent/extension/dist/extension.js:631::c,args:d,isTempUserDataDir:A,userDataDir:h}}async cleanUserData
+./pinkboxagent/extension/dist/extension.js:631::d=!1,headless:A=!d,args:u=[],userDataDir:h}=t;return h&&o.push(
+./pinkboxagent/extension/dist/extension.js:631:`--user-data-dir=${yrr.default.resolv
+./pinkboxagent/extension/dist/extension.js:631:lePath(),{isTempUserDataDir:u,userDataDir:A,args:d,executablePat
+./pinkboxagent/extension/dist/extension.js:631:n=".puppeteer",s=["prefs.js","user.js"],I=await Promise.allSettl
+./pinkboxagent/extension/dist/extension.js:631::r=!1,headless:n=!r,args:s=[],userDataDir:I=null}=t,e=[];switch(
+./pinkboxagent/extension/dist/extension.js:645:mise.all([this.setUserAgent(s.userAgent),this.setViewport(s.view
+./pinkboxagent/extension/dist/extension.js:645:level","blink.console","blink.user_timing","latencyInfo","disabl
+./pinkboxagent/extension/dist/extension.js:645:#n===I}get#I(){return this.#a.userContext.browser.session}get di
+./pinkboxagent/extension/dist/extension.js:645:){return this.browsingContext.userContext.browser.session}get ta
+./pinkboxagent/extension/dist/extension.js:645:e())})}get#I(){return this.#r.userContext.browser.session}get di
+./pinkboxagent/extension/dist/extension.js:645:this.#n)).on("browsingContext.userPromptClosed",o=>{o.context===
+./pinkboxagent/extension/dist/extension.js:645:){return this.browsingContext.userContext.browser.session}get cl
+./pinkboxagent/extension/dist/extension.js:645:ew Map;defaultRealm;id;parent;userContext;originalOpener;constru
+./pinkboxagent/extension/dist/extension.js:645:,this.id=D,this.parent=N,this.userContext=p,this.originalOpener=
+./pinkboxagent/extension/dist/extension.js:645:}#I(){this.#n.use(new Ia(this.userContext)).once("closed",({reas
+./pinkboxagent/extension/dist/extension.js:645:id)return;let L=cXe.from(this.userContext,this,D.context,D.url,D
+./pinkboxagent/extension/dist/extension.js:645:y:D})}),N.on("browsingContext.userPromptOpened",D=>{if(D.context
+./pinkboxagent/extension/dist/extension.js:645:L=Fkt.from(this,D);this.emit("userprompt",{userPrompt:L})})}get#
+./pinkboxagent/extension/dist/extension.js:645:s(){return this.userContext.browser.session}get ch
+./pinkboxagent/extension/dist/extension.js:645:ipt(p,N={}){return await this.userContext.browser.addPreloadScri
+./pinkboxagent/extension/dist/extension.js:645:ult:{intercept:N}}=await this.userContext.browser.session.send("
+./pinkboxagent/extension/dist/extension.js:645:vePreloadScript(p){await this.userContext.browser.removePreloadS
+./pinkboxagent/extension/dist/extension.js:645: closed, probably because the user context closed.",this.emit("c
+./pinkboxagent/extension/dist/extension.js:645:xtCreated",h=>{if(h.parent||h.userContext!==this.#r)return;let c
+./pinkboxagent/extension/dist/extension.js:645:ontext:u.referenceContext?.id,userContext:this.#r}),c=this.#t.ge
+./pinkboxagent/extension/dist/extension.js:645:("browser.removeUserContext",{userContext:this.#r})}finally{this
+./pinkboxagent/extension/dist/extension.js:645:,partition:{type:"storageKey",userContext:this.#r,sourceOrigin:u
+./pinkboxagent/extension/dist/extension.js:645:e:"storageKey",sourceOrigin:u,userContext:this.id}})}async setPe
+./pinkboxagent/extension/dist/extension.js:645:origin:A,descriptor:u,state:h,userContext:this.#r})}[(r=[Oc],n=[
+./pinkboxagent/extension/dist/extension.js:645:is.#e.handle({accept:t.accept,userText:t.text})}}});var v0,b5=pt
+./pinkboxagent/extension/dist/extension.js:645:t#I(){return this.#a?.page()._userAgentHeaders??{}}headers(){let
+./pinkboxagent/extension/dist/extension.js:645:,credentials:{type:"password",username:t.username,password:t.pas
+./pinkboxagent/extension/dist/extension.js:648:luate(A,!0,{resultOwnership:e,userActivation:!0,serializationOpt
+./pinkboxagent/extension/dist/extension.js:650:rialize(u)),resultOwnership:e,userActivation:!0,serializationOpt
+./pinkboxagent/extension/dist/extension.js:650:s)}),this.browsingContext.on("userprompt",({userPrompt:W})=>{thi
+./pinkboxagent/extension/dist/extension.js:654:yed",I=>{this.#n.delete(I)})}_userAgentHeaders={};#s;#o;async se
+./pinkboxagent/extension/dist/extension.js:654:ent Browser does not support `userAgentMetadata`");if(this.#t.br
+./pinkboxagent/extension/dist/extension.js:654:etwork.setUserAgentOverride",{userAgent:I,userAgentMetadata:e});
+./pinkboxagent/extension/dist/extension.js:654:;I=I??await this.#t.browser().userAgent(),this._userAgentHeaders
+./pinkboxagent/extension/dist/extension.js:654:ect.defineProperty(navigator,"userAgent",{value:h})},A=[this.#a]
+./pinkboxagent/extension/dist/extension.js:654:await this.#a.browsingContext.userContext.browser.removeIntercep
+./pinkboxagent/extension/dist/extension.js:654:0?await this.browserContext().userContext.setCookie(c,d.partitio
+./pinkboxagent/extension/dist/extension.js:654:){this.#e=I}#t=Tkt(this,n);#a;userContext;#r=new WeakMap;#n=new 
+./pinkboxagent/extension/dist/extension.js:654:I,e,o){super(),this.#t=I,this.userContext=e,this.#a=o.defaultVie
+./pinkboxagent/extension/dist/extension.js:654:wport}#l(){for(let I of this.userContext.browsingContexts)this.
+./pinkboxagent/extension/dist/extension.js:654:#I(I);this.userContext.on("browsingcontext",(
+./pinkboxagent/extension/dist/extension.js:654:ginalOpener)for(let o of this.userContext.browsingContexts)o.id=
+./pinkboxagent/extension/dist/extension.js:654:tter.emit("popup",e)})}),this.userContext.on("closed",()=>{this.
+./pinkboxagent/extension/dist/extension.js:654:Operations(),!1),o=await this.userContext.createBrowsingContext(
+./pinkboxagent/extension/dist/extension.js:654:Xor(I)}}async close(){jt(this.userContext.id!==A5.DEFAULT,"Defau
+./pinkboxagent/extension/dist/extension.js:654:t be closed!");try{await this.userContext.remove()}catch(I){ea(I
+./pinkboxagent/extension/dist/extension.js:654:}async pages(){return[...this.userContext.browsingContexts].map(
+./pinkboxagent/extension/dist/extension.js:654:mD.keys()).map(d=>{let A=this.userContext.setPermissions(I,{name
+./pinkboxagent/extension/dist/extension.js:654:permission:e,origin:o})=>this.userContext.setPermissions(o,{name
+./pinkboxagent/extension/dist/extension.js:654:omise.all(I)}get id(){if(this.userContext.id!==A5.DEFAULT)return
+./pinkboxagent/extension/dist/extension.js:654: this.userContext.id}}})()});var Bor,G5,
+./pinkboxagent/extension/dist/extension.js:654:is.#I()}async#l(){let{result:{userContexts:A}}=await this.sessio
+./pinkboxagent/extension/dist/extension.js:654:,{});for(let u of A)this.#s(u.userContext)}async#I(){let A=new S
+./pinkboxagent/extension/dist/extension.js:654:{return this.disconnected}get userContexts(){return this.#r.valu
+./pinkboxagent/extension/dist/extension.js:654:eateUserContext(){let{result:{userContext:A}}=await this.session
+./pinkboxagent/extension/dist/extension.js:654:ion}#o(){for(let e of this.#n.userContexts)this.#d(e);this.#n.on
+./pinkboxagent/extension/dist/extension.js:654:ection(){return this.#s}async userAgent(){return this.#n.session
+./pinkboxagent/extension/dist/extension.js:654:.capabilities.userAgent}#d(e){let o=vXe.from(thi
+./pinkboxagent/extension/dist/extension.js:654:rContexts(){return[...this.#n.userContexts].map(e=>this.#l.get(e
+./pinkboxagent/extension/dist/extension.js:654:ion","referer","retry-after","user-agent"]),Q4e=a=>{let t={},r,n
+./pinkboxagent/extension/dist/extension.js:657:;s&&(n=new URL(s))}if(n){if(n.username&&(n.auth=(n.username||"")
+./pinkboxagent/extension/dist/extension.js:657:assword||"")),n.auth){(n.auth.username||n.auth.password)&&(n.aut
+./pinkboxagent/extension/dist/extension.js:657:h=(n.auth.username||"")+":"+(n.auth.password
+./pinkboxagent/extension/dist/extension.js:657:let p;if(t.auth){let U=t.auth.username||"",J=t.auth.password||""
+./pinkboxagent/extension/dist/extension.js:657:;p=U+":"+J}if(!p&&R.username){let U=R.username,J=R.pas
+./pinkboxagent/extension/dist/extension.js:657:|trident)/i.test(gi.navigator.userAgent),r=document.createElemen
+./pinkboxagent/extension/dist/extension.js:657:thorization","Basic "+btoa((o.username||"")+":"+(o.password?unes
+./pinkboxagent/extension/dist/extension.js:667:}of a){let n=r.exec(navigator.userAgent);if(n){let s=n[1]||0,I=n
+./pinkboxagent/extension/dist/extension.js:674:}of a){let n=r.exec(navigator.userAgent);if(n){let s=n[1]||0,I=n
+./pinkboxagent/extension/dist/extension.js:688:r.content});else if(r.role==="user"){let{nonToolMessages:n,toolM
+./pinkboxagent/extension/dist/extension.js:688:e"?(I.push(d),"(see following user message for image)"):d.text).
+./pinkboxagent/extension/dist/extension.js:689:)}),n.length>0&&t.push({role:"user",content:n.map(e=>e.type==="i
+./pinkboxagent/extension/dist/extension.js:690:e=r.reduce((A,u,h)=>u.role==="user"?[...A,h]:A,[]),o=e[e.length-
+./pinkboxagent/extension/dist/extension.js:691:`,h=t.map(W=>{let Y=W.role==="user"?"**User:**":"**Assistant:**"
+./pinkboxagent/extension/dist/extension.js:705:Yqt=Wt.object({role:Wt.enum(["user","assistant"]),content:Wt.uni
+./pinkboxagent/extension/dist/extension.js:705:Sqt=Wt.object({role:Wt.enum(["user","assistant"]),content:Wt.uni
+./pinkboxagent/extension/dist/extension.js:705:(Wt.string())),role:Wt.enum(["user","assistant"]),content:Wt.dis
+./pinkboxagent/extension/dist/extension.js:718:)}var zn={toolDenied:()=>"The user denied this operation.",toolD
+./pinkboxagent/extension/dist/extension.js:718:eniedWithFeedback:a=>`The user denied this operation and pro
+./pinkboxagent/extension/dist/extension.js:730:If you have completed the user's task, use the attempt_compl
+./pinkboxagent/extension/dist/extension.js:731:ditional information from the user, use the ask_followup_questio
+./pinkboxagent/extension/dist/extension.js:733:aving trouble proceeding. The user has provided the following fe
+./pinkboxagent/extension/dist/extension.js:796:urn{newProblemsMessage:void 0,userEdits:void 0,finalContent:void
+./pinkboxagent/extension/dist/extension.js:802:);return{newProblemsMessage:o,userEdits:void 0,finalContent:h}}i
+./pinkboxagent/extension/dist/extension.js:802:);return{newProblemsMessage:o,userEdits:h,finalContent:A}}else r
+./pinkboxagent/extension/dist/extension.js:802:eturn{newProblemsMessage:o,userEdits:void 0,finalContent:A}}a
+./pinkboxagent/extension/dist/extension.js:819:Bytes,s=n===void 0?1024:n,I=r.userEncoding,e=r.transportLayerEnc
+./pinkboxagent/extension/dist/extension.js:819:oding=r===Ss.META_TAG&&n==="x-user-defined"?"windows-1252":(r===
+./pinkboxagent/extension/dist/extension.js:819:"--disable-setuid-sandbox","--user-agent=Mozilla/5.0 (Macintosh;
+./pinkboxagent/extension/dist/extension.js:1138:.exe";try{let{shell:t}=(0,K4t.userInfo)();if(t)return t}catch{}r
+./pinkboxagent/extension/dist/extension.js:1144:ls that are executed upon the user's approval. You can use one t
+./pinkboxagent/extension/dist/extension.js:1144:esult of that tool use in the user's response. You use tools ste
+./pinkboxagent/extension/dist/extension.js:1167:to accomplish any step in the user's task. You must tailor your 
+./pinkboxagent/extension/dist/extension.js:1167:command to the user's system and provide a clear 
+./pinkboxagent/extension/dist/extension.js:1307: you may have created, as the user will let you know if the file
+./pinkboxagent/extension/dist/extension.js:1318:ch code files relevant to the user's query.
+./pinkboxagent/extension/dist/extension.js:1320:- query: (required) the user's query
+./pinkboxagent/extension/dist/extension.js:1324:<query>the user's query</query>
+./pinkboxagent/extension/dist/extension.js:1329:per message, and wait for the user's response including a screen
+./pinkboxagent/extension/dist/extension.js:1392:Description: Ask the user a question to gather addition
+./pinkboxagent/extension/dist/extension.js:1392:direct communication with the user. Use this tool judiciously to
+./pinkboxagent/extension/dist/extension.js:1394:ired) The question to ask the user. This should be a clear, spec
+./pinkboxagent/extension/dist/extension.js:1401:ion: After each tool use, the user will respond with the result 
+./pinkboxagent/extension/dist/extension.js:1401:he result of your work to the user. Optionally you may provide a
+./pinkboxagent/extension/dist/extension.js:1401: the result of your work. The user may respond with feedback if 
+./pinkboxagent/extension/dist/extension.js:1402:til you've confirmed from the user that any previous tool uses w
+./pinkboxagent/extension/dist/extension.js:1402: if you've confirmed from the user that any previous tool uses w
+./pinkboxagent/extension/dist/extension.js:1404:equire further input from the user. Don't end your result with q
+./pinkboxagent/extension/dist/extension.js:1405:ive demo of the result to the user. For example, use \`open inde
+./pinkboxagent/extension/dist/extension.js:1489:5. After each tool use, the user will respond with the result 
+./pinkboxagent/extension/dist/extension.js:1494:6. ALWAYS wait for user confirmation after each tool 
+./pinkboxagent/extension/dist/extension.js:1494:mation of the result from the user.
+./pinkboxagent/extension/dist/extension.js:1496:step-by-step, waiting for the user's message after each tool use
+./pinkboxagent/extension/dist/extension.js:1502:and carefully considering the user's response after each tool us
+./pinkboxagent/extension/dist/extension.js:1537:The user may ask you something along t
+./pinkboxagent/extension/dist/extension.js:1539:rowser windows, or prompt for user input during runtime. All cre
+./pinkboxagent/extension/dist/extension.js:1539:o get a refresh token for the user, but the MCP server cannot in
+./pinkboxagent/extension/dist/extension.js:1539: flow. While you can walk the user through obtaining an applicat
+./pinkboxagent/extension/dist/extension.js:1539:inal piece of the puzzle: the user's refresh token (i.e. you mig
+./pinkboxagent/extension/dist/extension.js:1541:Unless the user specifies otherwise, new MCP 
+./pinkboxagent/extension/dist/extension.js:1545:For example, if the user wanted to give you the abilit
+./pinkboxagent/extension/dist/extension.js:1545:hat you might use to show the user your new capabilities.
+./pinkboxagent/extension/dist/extension.js:1850:gure the MCP server, walk the user through the process of gettin
+./pinkboxagent/extension/dist/extension.js:1850: URLs to make it easy for the user to retrieve the necessary inf
+./pinkboxagent/extension/dist/extension.js:1850:owup_question tool to ask the user for the key, in this case the
+./pinkboxagent/extension/dist/extension.js:1862:      "OPENWEATHER_API_KEY": "user-provided-api-key"
+./pinkboxagent/extension/dist/extension.js:1869:(Note: the user may also ask you to install t
+./pinkboxagent/extension/dist/extension.js:1873:ces, you may suggest ways the user can command you to invoke the
+./pinkboxagent/extension/dist/extension.js:1873:available, you can invite the user to ask "what's the weather in
+./pinkboxagent/extension/dist/extension.js:1877:The user may ask to add tools or resou
+./pinkboxagent/extension/dist/extension.js:1877: MCP server repository on the user's system by looking at the se
+./pinkboxagent/extension/dist/extension.js:1883:The user may not always request the us
+./pinkboxagent/extension/dist/extension.js:1883:mplement MCP servers when the user explicitly requests it (e.g.,
+./pinkboxagent/extension/dist/extension.js:1885:ew ones when requested by the user. You already have access to t
+./pinkboxagent/extension/dist/extension.js:1891:u execute CLI commands on the user's computer, list files, view 
+./pinkboxagent/extension/dist/extension.js:1892:- When the user initially gives you a task, a
+./pinkboxagent/extension/dist/extension.js:1893:code snippets or files to the user's query. This is extremely us
+./pinkboxagent/extension/dist/extension.js:1893:tory are helpful to solve the user's request. Everytime the user
+./pinkboxagent/extension/dist/extension.js:1893:ool to support you answer the user's request.":""}
+./pinkboxagent/extension/dist/extension.js:1897:d tool to run commands on the user's computer whenever you feel 
+./pinkboxagent/extension/dist/extension.js:1897:it can help accomplish the user's task. When you need to exec
+./pinkboxagent/extension/dist/extension.js:1897:e the commands are run in the user's VSCode terminal. The user m
+./pinkboxagent/extension/dist/extension.js:1898:ecessary in accomplishing the user's task. This tool is particul
+./pinkboxagent/extension/dist/extension.js:1911:xt provided to understand the user's environment and tailor your
+./pinkboxagent/extension/dist/extension.js:1912:and flexibility. Based on the user's task you may use it to find
+./pinkboxagent/extension/dist/extension.js:1913: tool every requests that the user asks, this really helps you g
+./pinkboxagent/extension/dist/extension.js:1913:ut to the search_code are the user's query and the current worki
+./pinkboxagent/extension/dist/extension.js:1914: project directory unless the user specifies otherwise. Use appr
+./pinkboxagent/extension/dist/extension.js:1920:ls provided to accomplish the user's request efficiently and eff
+./pinkboxagent/extension/dist/extension.js:1920: to present the result to the user. The user may provide feedbac
+./pinkboxagent/extension/dist/extension.js:1921:u are only allowed to ask the user questions using the ask_follo
+./pinkboxagent/extension/dist/extension.js:1921:ls to avoid having to ask the user questions, you should do so. 
+./pinkboxagent/extension/dist/extension.js:1921:For example, if the user mentions a file that may be i
+./pinkboxagent/extension/dist/extension.js:1921:there, rather than asking the user to provide the file path them
+./pinkboxagent/extension/dist/extension.js:1922:nd proceed with the task. The user's terminal may be unable to s
+./pinkboxagent/extension/dist/extension.js:1922:_question tool to request the user to copy and paste it back to 
+./pinkboxagent/extension/dist/extension.js:1924:- The user may provide a file's contents
+./pinkboxagent/extension/dist/extension.js:1925:l is to try to accomplish the user's task, NOT engage in a back 
+./pinkboxagent/extension/dist/extension.js:1926:- The user may ask generic non-developme
+./pinkboxagent/extension/dist/extension.js:1927:equire further input from the user.
+./pinkboxagent/extension/dist/extension.js:1929:process as you accomplish the user's task.
+./pinkboxagent/extension/dist/extension.js:1930:- At the end of each user message, you will automatical
+./pinkboxagent/extension/dist/extension.js:1930:rmation is not written by the user themselves, but is auto-gener
+./pinkboxagent/extension/dist/extension.js:1930:at it as a direct part of the user's request or response. Use it
+./pinkboxagent/extension/dist/extension.js:1930:cisions, but don't assume the user is explicitly asking about or
+./pinkboxagent/extension/dist/extension.js:1930:actions clearly to ensure the user understands, as they may not 
+./pinkboxagent/extension/dist/extension.js:1932: code, severely impacting the user's project.
+./pinkboxagent/extension/dist/extension.js:1933:t seeking permission form the user.
+./pinkboxagent/extension/dist/extension.js:1935: is critical you wait for the user's response after each tool us
+./pinkboxagent/extension/dist/extension.js:1935:d create a file, wait for the user's response it was created suc
+./pinkboxagent/extension/dist/extension.js:1935: file if needed, wait for the user's response it was created suc
+./pinkboxagent/extension/dist/extension.js:1935:launch the site, wait for the user's response confirming the sit
+./pinkboxagent/extension/dist/extension.js:1935:ality if needed, wait for the user's response confirming the but
+./pinkboxagent/extension/dist/extension.js:1941:e a plan for the task and get user's approval before proceeding 
+./pinkboxagent/extension/dist/extension.js:1951: block to get notified to the user for confirmation.
+./pinkboxagent/extension/dist/extension.js:1952:uld confirm the plan with the user and take the user's inputs be
+./pinkboxagent/extension/dist/extension.js:1953:irmation of the plan from the user.
+./pinkboxagent/extension/dist/extension.js:1972:1. Analyze the user's task and set clear, achieva
+./pinkboxagent/extension/dist/extension.js:1974:levant tool to accomplish the user's task. Next, go through each
+./pinkboxagent/extension/dist/extension.js:1974:ant tool and determine if the user has directly provided or give
+./pinkboxagent/extension/dist/extension.js:1974: params) and instead, ask the user to provide the missing parame
+./pinkboxagent/extension/dist/extension.js:1975:4. Once you've completed the user's task, you must use the atte
+./pinkboxagent/extension/dist/extension.js:1975:the result of the task to the user. You may also provide a CLI c
+./pinkboxagent/extension/dist/extension.js:1976:5. The user may provide feedback, which y
+./pinkboxagent/extension/dist/extension.js:2128:- [] Confirm with the user for any additional requiremen
+./pinkboxagent/extension/dist/extension.js:2285:ls that are executed upon the user's approval. You can use one t
+./pinkboxagent/extension/dist/extension.js:2285:esult of that tool use in the user's response. You use tools ste
+./pinkboxagent/extension/dist/extension.js:2308:to accomplish any step in the user's task. You must tailor your 
+./pinkboxagent/extension/dist/extension.js:2308:command to the user's system and provide a clear 
+./pinkboxagent/extension/dist/extension.js:2455: you may have created, as the user will let you know if the file
+./pinkboxagent/extension/dist/extension.js:2466:ch code files relevant to the user's query.
+./pinkboxagent/extension/dist/extension.js:2468:- query: (required) the user's query
+./pinkboxagent/extension/dist/extension.js:2472:<query>the user's query</query>
+./pinkboxagent/extension/dist/extension.js:2477:per message, and wait for the user's response including a screen
+./pinkboxagent/extension/dist/extension.js:2540:Description: Ask the user a question to gather addition
+./pinkboxagent/extension/dist/extension.js:2540:direct communication with the user. Use this tool judiciously to
+./pinkboxagent/extension/dist/extension.js:2542:ired) The question to ask the user. This should be a clear, spec
+./pinkboxagent/extension/dist/extension.js:2549:ion: After each tool use, the user will respond with the result 
+./pinkboxagent/extension/dist/extension.js:2549:he result of your work to the user. Optionally you may provide a
+./pinkboxagent/extension/dist/extension.js:2549: the result of your work. The user may respond with feedback if 
+./pinkboxagent/extension/dist/extension.js:2550:til you've confirmed from the user that any previous tool uses w
+./pinkboxagent/extension/dist/extension.js:2550: if you've confirmed from the user that any previous tool uses w
+./pinkboxagent/extension/dist/extension.js:2552:equire further input from the user. Don't end your result with q
+./pinkboxagent/extension/dist/extension.js:2553:ive demo of the result to the user. For example, use \`open inde
+./pinkboxagent/extension/dist/extension.js:2640:5. After each tool use, the user will respond with the result 
+./pinkboxagent/extension/dist/extension.js:2645:6. ALWAYS wait for user confirmation after each tool 
+./pinkboxagent/extension/dist/extension.js:2645:mation of the result from the user.
+./pinkboxagent/extension/dist/extension.js:2647:step-by-step, waiting for the user's message after each tool use
+./pinkboxagent/extension/dist/extension.js:2653:and carefully considering the user's response after each tool us
+./pinkboxagent/extension/dist/extension.js:2688:The user may ask you something along t
+./pinkboxagent/extension/dist/extension.js:2690:rowser windows, or prompt for user input during runtime. All cre
+./pinkboxagent/extension/dist/extension.js:2690:o get a refresh token for the user, but the MCP server cannot in
+./pinkboxagent/extension/dist/extension.js:2690: flow. While you can walk the user through obtaining an applicat
+./pinkboxagent/extension/dist/extension.js:2690:inal piece of the puzzle: the user's refresh token (i.e. you mig
+./pinkboxagent/extension/dist/extension.js:2692:Unless the user specifies otherwise, new MCP 
+./pinkboxagent/extension/dist/extension.js:2696:For example, if the user wanted to give you the abilit
+./pinkboxagent/extension/dist/extension.js:2696:hat you might use to show the user your new capabilities.
+./pinkboxagent/extension/dist/extension.js:3001:gure the MCP server, walk the user through the process of gettin
+./pinkboxagent/extension/dist/extension.js:3001: URLs to make it easy for the user to retrieve the necessary inf
+./pinkboxagent/extension/dist/extension.js:3001:owup_question tool to ask the user for the key, in this case the
+./pinkboxagent/extension/dist/extension.js:3013:      "OPENWEATHER_API_KEY": "user-provided-api-key"
+./pinkboxagent/extension/dist/extension.js:3020:(Note: the user may also ask you to install t
+./pinkboxagent/extension/dist/extension.js:3024:ces, you may suggest ways the user can command you to invoke the
+./pinkboxagent/extension/dist/extension.js:3024:available, you can invite the user to ask "what's the weather in
+./pinkboxagent/extension/dist/extension.js:3028:The user may ask to add tools or resou
+./pinkboxagent/extension/dist/extension.js:3028: MCP server repository on the user's system by looking at the se
+./pinkboxagent/extension/dist/extension.js:3034:The user may not always request the us
+./pinkboxagent/extension/dist/extension.js:3034:mplement MCP servers when the user explicitly requests it (e.g.,
+./pinkboxagent/extension/dist/extension.js:3036:ew ones when requested by the user. You already have access to t
+./pinkboxagent/extension/dist/extension.js:3042:u execute CLI commands on the user's computer, list files, view 
+./pinkboxagent/extension/dist/extension.js:3043:- When the user initially gives you a task, a
+./pinkboxagent/extension/dist/extension.js:3044:code snippets or files to the user's query. This is extremely us
+./pinkboxagent/extension/dist/extension.js:3044:tory are helpful to solve the user's request. Everytime the user
+./pinkboxagent/extension/dist/extension.js:3044:ool to support you answer the user's request.":""}
+./pinkboxagent/extension/dist/extension.js:3048:d tool to run commands on the user's computer whenever you feel 
+./pinkboxagent/extension/dist/extension.js:3048:it can help accomplish the user's task. When you need to exec
+./pinkboxagent/extension/dist/extension.js:3048:e the commands are run in the user's VSCode terminal. The user m
+./pinkboxagent/extension/dist/extension.js:3049:ecessary in accomplishing the user's task. This tool is particul
+./pinkboxagent/extension/dist/extension.js:3062:xt provided to understand the user's environment and tailor your
+./pinkboxagent/extension/dist/extension.js:3063:and flexibility. Based on the user's task you may use it to find
+./pinkboxagent/extension/dist/extension.js:3064: tool every requests that the user asks, this really helps you g
+./pinkboxagent/extension/dist/extension.js:3064:ut to the search_code are the user's query and the current worki
+./pinkboxagent/extension/dist/extension.js:3065: project directory unless the user specifies otherwise. Use appr
+./pinkboxagent/extension/dist/extension.js:3071:ls provided to accomplish the user's request efficiently and eff
+./pinkboxagent/extension/dist/extension.js:3071: to present the result to the user. The user may provide feedbac
+./pinkboxagent/extension/dist/extension.js:3072:u are only allowed to ask the user questions using the ask_follo
+./pinkboxagent/extension/dist/extension.js:3072:ls to avoid having to ask the user questions, you should do so. 
+./pinkboxagent/extension/dist/extension.js:3072:For example, if the user mentions a file that may be i
+./pinkboxagent/extension/dist/extension.js:3072:there, rather than asking the user to provide the file path them
+./pinkboxagent/extension/dist/extension.js:3073:nd proceed with the task. The user's terminal may be unable to s
+./pinkboxagent/extension/dist/extension.js:3073:_question tool to request the user to copy and paste it back to 
+./pinkboxagent/extension/dist/extension.js:3075:- The user may provide a file's contents
+./pinkboxagent/extension/dist/extension.js:3076:l is to try to accomplish the user's task, NOT engage in a back 
+./pinkboxagent/extension/dist/extension.js:3077:- The user may ask generic non-developme
+./pinkboxagent/extension/dist/extension.js:3078:equire further input from the user.
+./pinkboxagent/extension/dist/extension.js:3080:process as you accomplish the user's task.
+./pinkboxagent/extension/dist/extension.js:3081:- At the end of each user message, you will automatical
+./pinkboxagent/extension/dist/extension.js:3081:rmation is not written by the user themselves, but is auto-gener
+./pinkboxagent/extension/dist/extension.js:3081:at it as a direct part of the user's request or response. Use it
+./pinkboxagent/extension/dist/extension.js:3081:cisions, but don't assume the user is explicitly asking about or
+./pinkboxagent/extension/dist/extension.js:3081:actions clearly to ensure the user understands, as they may not 
+./pinkboxagent/extension/dist/extension.js:3083: code, severely impacting the user's project.
+./pinkboxagent/extension/dist/extension.js:3084:t seeking permission form the user.
+./pinkboxagent/extension/dist/extension.js:3086: is critical you wait for the user's response after each tool us
+./pinkboxagent/extension/dist/extension.js:3086:d create a file, wait for the user's response it was created suc
+./pinkboxagent/extension/dist/extension.js:3086: file if needed, wait for the user's response it was created suc
+./pinkboxagent/extension/dist/extension.js:3086:launch the site, wait for the user's response confirming the sit
+./pinkboxagent/extension/dist/extension.js:3086:ality if needed, wait for the user's response confirming the but
+./pinkboxagent/extension/dist/extension.js:3093:e a plan for the task and get user's approval before proceeding 
+./pinkboxagent/extension/dist/extension.js:3103: block to get notified to the user for confirmation.
+./pinkboxagent/extension/dist/extension.js:3104:uld confirm the plan with the user and take the user's inputs be
+./pinkboxagent/extension/dist/extension.js:3105:irmation of the plan from the user.
+./pinkboxagent/extension/dist/extension.js:3124:1. Analyze the user's task and set clear, achieva
+./pinkboxagent/extension/dist/extension.js:3126:levant tool to accomplish the user's task. Next, go through each
+./pinkboxagent/extension/dist/extension.js:3126:ant tool and determine if the user has directly provided or give
+./pinkboxagent/extension/dist/extension.js:3126: params) and instead, ask the user to provide the missing parame
+./pinkboxagent/extension/dist/extension.js:3127:4. Once you've completed the user's task, you must use the atte
+./pinkboxagent/extension/dist/extension.js:3127:the result of the task to the user. You may also provide a CLI c
+./pinkboxagent/extension/dist/extension.js:3128:5. The user may provide feedback, which y
+./pinkboxagent/extension/dist/extension.js:3280:- [] Confirm with the user for any additional requiremen
+./pinkboxagent/extension/dist/extension.js:3441:tructions are provided by the user, and should be followed to th
+./pinkboxagent/extension/dist/extension.js:3443:n aBt(a,t){return`Analyze the user's request and Identify releva
+./pinkboxagent/extension/dist/extension.js:3458:ls that are executed upon the user's approval. You can use one t
+./pinkboxagent/extension/dist/extension.js:3458:esult of that tool use in the user's response. You use tools ste
+./pinkboxagent/extension/dist/extension.js:3481:to accomplish any step in the user's task. You must tailor your 
+./pinkboxagent/extension/dist/extension.js:3481:command to the user's system and provide a clear 
+./pinkboxagent/extension/dist/extension.js:3544: you may have created, as the user will let you know if the file
+./pinkboxagent/extension/dist/extension.js:3555:ch code files relevant to the user's query.
+./pinkboxagent/extension/dist/extension.js:3557:- query: (required) the user's query
+./pinkboxagent/extension/dist/extension.js:3561:<query>the user's query</query>
+./pinkboxagent/extension/dist/extension.js:3566:per message, and wait for the user's response including a screen
+./pinkboxagent/extension/dist/extension.js:3629:Description: Ask the user a question to gather addition
+./pinkboxagent/extension/dist/extension.js:3629:direct communication with the user. Use this tool judiciously to
+./pinkboxagent/extension/dist/extension.js:3631:ired) The question to ask the user. This should be a clear, spec
+./pinkboxagent/extension/dist/extension.js:3638:ion: After each tool use, the user will respond with the result 
+./pinkboxagent/extension/dist/extension.js:3638:he result of your work to the user. Optionally you may provide a
+./pinkboxagent/extension/dist/extension.js:3638: the result of your work. The user may respond with feedback if 
+./pinkboxagent/extension/dist/extension.js:3639:til you've confirmed from the user that any previous tool uses w
+./pinkboxagent/extension/dist/extension.js:3639: if you've confirmed from the user that any previous tool uses w
+./pinkboxagent/extension/dist/extension.js:3641:equire further input from the user. Don't end your result with q
+./pinkboxagent/extension/dist/extension.js:3642:ive demo of the result to the user. For example, use \`open inde
+./pinkboxagent/extension/dist/extension.js:3707:5. After each tool use, the user will respond with the result 
+./pinkboxagent/extension/dist/extension.js:3712:6. ALWAYS wait for user confirmation after each tool 
+./pinkboxagent/extension/dist/extension.js:3712:mation of the result from the user.
+./pinkboxagent/extension/dist/extension.js:3714:step-by-step, waiting for the user's message after each tool use
+./pinkboxagent/extension/dist/extension.js:3720:and carefully considering the user's response after each tool us
+./pinkboxagent/extension/dist/extension.js:3755:The user may ask you something along t
+./pinkboxagent/extension/dist/extension.js:3757:rowser windows, or prompt for user input during runtime. All cre
+./pinkboxagent/extension/dist/extension.js:3757:o get a refresh token for the user, but the MCP server cannot in
+./pinkboxagent/extension/dist/extension.js:3757: flow. While you can walk the user through obtaining an applicat
+./pinkboxagent/extension/dist/extension.js:3757:inal piece of the puzzle: the user's refresh token (i.e. you mig
+./pinkboxagent/extension/dist/extension.js:3759:Unless the user specifies otherwise, new MCP 
+./pinkboxagent/extension/dist/extension.js:3763:For example, if the user wanted to give you the abilit
+./pinkboxagent/extension/dist/extension.js:3763:hat you might use to show the user your new capabilities.
+./pinkboxagent/extension/dist/extension.js:4068:gure the MCP server, walk the user through the process of gettin
+./pinkboxagent/extension/dist/extension.js:4068: URLs to make it easy for the user to retrieve the necessary inf
+./pinkboxagent/extension/dist/extension.js:4068:owup_question tool to ask the user for the key, in this case the
+./pinkboxagent/extension/dist/extension.js:4080:      "OPENWEATHER_API_KEY": "user-provided-api-key"
+./pinkboxagent/extension/dist/extension.js:4087:(Note: the user may also ask you to install t
+./pinkboxagent/extension/dist/extension.js:4091:ces, you may suggest ways the user can command you to invoke the
+./pinkboxagent/extension/dist/extension.js:4091:available, you can invite the user to ask "what's the weather in
+./pinkboxagent/extension/dist/extension.js:4095:The user may ask to add tools or resou
+./pinkboxagent/extension/dist/extension.js:4095: MCP server repository on the user's system by looking at the se
+./pinkboxagent/extension/dist/extension.js:4101:The user may not always request the us
+./pinkboxagent/extension/dist/extension.js:4101:mplement MCP servers when the user explicitly requests it (e.g.,
+./pinkboxagent/extension/dist/extension.js:4103:ew ones when requested by the user. You already have access to t
+./pinkboxagent/extension/dist/extension.js:4109:u execute CLI commands on the user's computer, list files, view 
+./pinkboxagent/extension/dist/extension.js:4110:- When the user initially gives you a task, a
+./pinkboxagent/extension/dist/extension.js:4111:code snippets or files to the user's query. This is extremely us
+./pinkboxagent/extension/dist/extension.js:4111:tory are helpful to solve the user's request. Everytime the user
+./pinkboxagent/extension/dist/extension.js:4111:ool to support you answer the user's request.":""}
+./pinkboxagent/extension/dist/extension.js:4115:d tool to run commands on the user's computer whenever you feel 
+./pinkboxagent/extension/dist/extension.js:4115:it can help accomplish the user's task. When you need to exec
+./pinkboxagent/extension/dist/extension.js:4115:e the commands are run in the user's VSCode terminal. The user m
+./pinkboxagent/extension/dist/extension.js:4116:ecessary in accomplishing the user's task. This tool is particul
+./pinkboxagent/extension/dist/extension.js:4129:xt provided to understand the user's environment and tailor your
+./pinkboxagent/extension/dist/extension.js:4130:and flexibility. Based on the user's task you may use it to find
+./pinkboxagent/extension/dist/extension.js:4131: tool every requests that the user asks, this really helps you g
+./pinkboxagent/extension/dist/extension.js:4131:ut to the search_code are the user's query and the current worki
+./pinkboxagent/extension/dist/extension.js:4132: project directory unless the user specifies otherwise. Use appr
+./pinkboxagent/extension/dist/extension.js:4136:ls provided to accomplish the user's request efficiently and eff
+./pinkboxagent/extension/dist/extension.js:4136: to present the result to the user. The user may provide feedbac
+./pinkboxagent/extension/dist/extension.js:4137:u are only allowed to ask the user questions using the ask_follo
+./pinkboxagent/extension/dist/extension.js:4137:ls to avoid having to ask the user questions, you should do so. 
+./pinkboxagent/extension/dist/extension.js:4137:For example, if the user mentions a file that may be i
+./pinkboxagent/extension/dist/extension.js:4137:there, rather than asking the user to provide the file path them
+./pinkboxagent/extension/dist/extension.js:4138:nd proceed with the task. The user's terminal may be unable to s
+./pinkboxagent/extension/dist/extension.js:4138:_question tool to request the user to copy and paste it back to 
+./pinkboxagent/extension/dist/extension.js:4140:- The user may provide a file's contents
+./pinkboxagent/extension/dist/extension.js:4141:l is to try to accomplish the user's task, NOT engage in a back 
+./pinkboxagent/extension/dist/extension.js:4142:- The user may ask generic non-developme
+./pinkboxagent/extension/dist/extension.js:4143:equire further input from the user.
+./pinkboxagent/extension/dist/extension.js:4145:process as you accomplish the user's task.
+./pinkboxagent/extension/dist/extension.js:4146:- At the end of each user message, you will automatical
+./pinkboxagent/extension/dist/extension.js:4146:rmation is not written by the user themselves, but is auto-gener
+./pinkboxagent/extension/dist/extension.js:4146:at it as a direct part of the user's request or response. Use it
+./pinkboxagent/extension/dist/extension.js:4146:cisions, but don't assume the user is explicitly asking about or
+./pinkboxagent/extension/dist/extension.js:4146:actions clearly to ensure the user understands, as they may not 
+./pinkboxagent/extension/dist/extension.js:4148: code, severely impacting the user's project.
+./pinkboxagent/extension/dist/extension.js:4149:t seeking permission form the user.
+./pinkboxagent/extension/dist/extension.js:4151: is critical you wait for the user's response after each tool us
+./pinkboxagent/extension/dist/extension.js:4151:d create a file, wait for the user's response it was created suc
+./pinkboxagent/extension/dist/extension.js:4151: file if needed, wait for the user's response it was created suc
+./pinkboxagent/extension/dist/extension.js:4151:launch the site, wait for the user's response confirming the sit
+./pinkboxagent/extension/dist/extension.js:4151:ality if needed, wait for the user's response confirming the but
+./pinkboxagent/extension/dist/extension.js:4158:e a plan for the task and get user's approval before proceeding 
+./pinkboxagent/extension/dist/extension.js:4168: block to get notified to the user for confirmation.
+./pinkboxagent/extension/dist/extension.js:4169:uld confirm the plan with the user and take the user's inputs be
+./pinkboxagent/extension/dist/extension.js:4170:irmation of the plan from the user.
+./pinkboxagent/extension/dist/extension.js:4189:1. Analyze the user's task and set clear, achieva
+./pinkboxagent/extension/dist/extension.js:4191:levant tool to accomplish the user's task. Next, go through each
+./pinkboxagent/extension/dist/extension.js:4191:ant tool and determine if the user has directly provided or give
+./pinkboxagent/extension/dist/extension.js:4191: params) and instead, ask the user to provide the missing parame
+./pinkboxagent/extension/dist/extension.js:4192:4. Once you've completed the user's task, you must use the atte
+./pinkboxagent/extension/dist/extension.js:4192:the result of the task to the user. You may also provide a CLI c
+./pinkboxagent/extension/dist/extension.js:4193:5. The user may provide feedback, which y
+./pinkboxagent/extension/dist/extension.js:4210:turnByValue:t,awaitPromise:!0,userGesture:!0}).catch(mkt);if(w)t
+./pinkboxagent/extension/dist/extension.js:4212:turnByValue:t,awaitPromise:!0,userGesture:!0})}catch(c){throw c 
+./pinkboxagent/extension/dist/extension.js:4212:etwork.setUserAgentOverride",{userAgent:this.#o,userAgentMetadat
+./pinkboxagent/extension/dist/extension.js:4212:this.#n.add(r.requestId));let{username:s,password:I}=this.#r||{u
+./pinkboxagent/extension/dist/extension.js:4212:ChallengeResponse:{response:n,username:s,password:I}}).catch(ea)
+./pinkboxagent/extension/dist/extension.js:4212:wait this.#m()).product}async userAgent(){return(await this.#m()
+./pinkboxagent/extension/dist/extension.js:4212:).userAgent}async close(){await this
+./pinkboxagent/extension/dist/extension.js:4212:=[{name:"Blackberry PlayBook",userAgent:"Mozilla/5.0 (PlayBook; 
+./pinkboxagent/extension/dist/extension.js:4212:lackberry PlayBook landscape",userAgent:"Mozilla/5.0 (PlayBook; 
+./pinkboxagent/extension/dist/extension.js:4212:e:!0}},{name:"BlackBerry Z30",userAgent:"Mozilla/5.0 (BB10; Touc
+./pinkboxagent/extension/dist/extension.js:4212:me:"BlackBerry Z30 landscape",userAgent:"Mozilla/5.0 (BB10; Touc
+./pinkboxagent/extension/dist/extension.js:4212:pe:!0}},{name:"Galaxy Note 3",userAgent:"Mozilla/5.0 (Linux; U; 
+./pinkboxagent/extension/dist/extension.js:4212:ame:"Galaxy Note 3 landscape",userAgent:"Mozilla/5.0 (Linux; U; 
+./pinkboxagent/extension/dist/extension.js:4212:e:!0}},{name:"Galaxy Note II",userAgent:"Mozilla/5.0 (Linux; U; 
+./pinkboxagent/extension/dist/extension.js:4212:me:"Galaxy Note II landscape",userAgent:"Mozilla/5.0 (Linux; U; 
+./pinkboxagent/extension/dist/extension.js:4212:ape:!0}},{name:"Galaxy S III",userAgent:"Mozilla/5.0 (Linux; U; 
+./pinkboxagent/extension/dist/extension.js:4212:name:"Galaxy S III landscape",userAgent:"Mozilla/5.0 (Linux; U; 
+./pinkboxagent/extension/dist/extension.js:4212:dscape:!0}},{name:"Galaxy S5",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:},{name:"Galaxy S5 landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:dscape:!0}},{name:"Galaxy S8",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:},{name:"Galaxy S8 landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:scape:!0}},{name:"Galaxy S9+",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:,{name:"Galaxy S9+ landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:pe:!0}},{name:"Galaxy Tab S4",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:ame:"Galaxy Tab S4 landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:isLandscape:!0}},{name:"iPad",userAgent:"Mozilla/5.0 (iPad; CPU 
+./pinkboxagent/extension/dist/extension.js:4212:e:!1}},{name:"iPad landscape",userAgent:"Mozilla/5.0 (iPad; CPU 
+./pinkboxagent/extension/dist/extension.js:4212:ape:!0}},{name:"iPad (gen 6)",userAgent:"Mozilla/5.0 (iPad; CPU 
+./pinkboxagent/extension/dist/extension.js:4212:name:"iPad (gen 6) landscape",userAgent:"Mozilla/5.0 (iPad; CPU 
+./pinkboxagent/extension/dist/extension.js:4212:ape:!0}},{name:"iPad (gen 7)",userAgent:"Mozilla/5.0 (iPad; CPU 
+./pinkboxagent/extension/dist/extension.js:4212:name:"iPad (gen 7) landscape",userAgent:"Mozilla/5.0 (iPad; CPU 
+./pinkboxagent/extension/dist/extension.js:4212:dscape:!0}},{name:"iPad Mini",userAgent:"Mozilla/5.0 (iPad; CPU 
+./pinkboxagent/extension/dist/extension.js:4212:},{name:"iPad Mini landscape",userAgent:"Mozilla/5.0 (iPad; CPU 
+./pinkboxagent/extension/dist/extension.js:4212:ndscape:!0}},{name:"iPad Pro",userAgent:"Mozilla/5.0 (iPad; CPU 
+./pinkboxagent/extension/dist/extension.js:4212:}},{name:"iPad Pro landscape",userAgent:"Mozilla/5.0 (iPad; CPU 
+./pinkboxagent/extension/dist/extension.js:4212:cape:!0}},{name:"iPad Pro 11",userAgent:"Mozilla/5.0 (iPad; CPU 
+./pinkboxagent/extension/dist/extension.js:4212:{name:"iPad Pro 11 landscape",userAgent:"Mozilla/5.0 (iPad; CPU 
+./pinkboxagent/extension/dist/extension.js:4212:ndscape:!0}},{name:"iPhone 4",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:}},{name:"iPhone 4 landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:ndscape:!0}},{name:"iPhone 5",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:}},{name:"iPhone 5 landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:ndscape:!0}},{name:"iPhone 6",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:}},{name:"iPhone 6 landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:pe:!0}},{name:"iPhone 6 Plus",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:ame:"iPhone 6 Plus landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:ndscape:!0}},{name:"iPhone 7",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:}},{name:"iPhone 7 landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:pe:!0}},{name:"iPhone 7 Plus",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:ame:"iPhone 7 Plus landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:ndscape:!0}},{name:"iPhone 8",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:}},{name:"iPhone 8 landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:pe:!0}},{name:"iPhone 8 Plus",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:ame:"iPhone 8 Plus landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:dscape:!0}},{name:"iPhone SE",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:},{name:"iPhone SE landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:ndscape:!0}},{name:"iPhone X",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:}},{name:"iPhone X landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:dscape:!0}},{name:"iPhone XR",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:},{name:"iPhone XR landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:dscape:!0}},{name:"iPhone 11",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:},{name:"iPhone 11 landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:pe:!0}},{name:"iPhone 11 Pro",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:ame:"iPhone 11 Pro landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:0}},{name:"iPhone 11 Pro Max",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:"iPhone 11 Pro Max landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:dscape:!0}},{name:"iPhone 12",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:},{name:"iPhone 12 landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:pe:!0}},{name:"iPhone 12 Pro",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:ame:"iPhone 12 Pro landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:0}},{name:"iPhone 12 Pro Max",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:"iPhone 12 Pro Max landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:e:!0}},{name:"iPhone 12 Mini",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:me:"iPhone 12 Mini landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:dscape:!0}},{name:"iPhone 13",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:},{name:"iPhone 13 landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:pe:!0}},{name:"iPhone 13 Pro",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:ame:"iPhone 13 Pro landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:0}},{name:"iPhone 13 Pro Max",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:"iPhone 13 Pro Max landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:e:!0}},{name:"iPhone 13 Mini",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:me:"iPhone 13 Mini landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:dscape:!0}},{name:"iPhone 14",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:},{name:"iPhone 14 landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:e:!0}},{name:"iPhone 14 Plus",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:me:"iPhone 14 Plus landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:pe:!0}},{name:"iPhone 14 Pro",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:ame:"iPhone 14 Pro landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:0}},{name:"iPhone 14 Pro Max",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:"iPhone 14 Pro Max landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:dscape:!0}},{name:"iPhone 15",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:},{name:"iPhone 15 landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:e:!0}},{name:"iPhone 15 Plus",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:me:"iPhone 15 Plus landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:pe:!0}},{name:"iPhone 15 Pro",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:ame:"iPhone 15 Pro landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:0}},{name:"iPhone 15 Pro Max",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:"iPhone 15 Pro Max landscape",userAgent:"Mozilla/5.0 (iPhone; CP
+./pinkboxagent/extension/dist/extension.js:4212:scape:!0}},{name:"JioPhone 2",userAgent:"Mozilla/5.0 (Mobile; LY
+./pinkboxagent/extension/dist/extension.js:4212:,{name:"JioPhone 2 landscape",userAgent:"Mozilla/5.0 (Mobile; LY
+./pinkboxagent/extension/dist/extension.js:4212::!0}},{name:"Kindle Fire HDX",userAgent:"Mozilla/5.0 (Linux; U; 
+./pinkboxagent/extension/dist/extension.js:4212:e:"Kindle Fire HDX landscape",userAgent:"Mozilla/5.0 (Linux; U; 
+./pinkboxagent/extension/dist/extension.js:4212:e:!0}},{name:"LG Optimus L70",userAgent:"Mozilla/5.0 (Linux; U; 
+./pinkboxagent/extension/dist/extension.js:4212:me:"LG Optimus L70 landscape",userAgent:"Mozilla/5.0 (Linux; U; 
+./pinkboxagent/extension/dist/extension.js:4212:},{name:"Microsoft Lumia 550",userAgent:"Mozilla/5.0 (Windows Ph
+./pinkboxagent/extension/dist/extension.js:4212:},{name:"Microsoft Lumia 950",userAgent:"Mozilla/5.0 (Windows Ph
+./pinkboxagent/extension/dist/extension.js:4212:icrosoft Lumia 950 landscape",userAgent:"Mozilla/5.0 (Windows Ph
+./pinkboxagent/extension/dist/extension.js:4212:ndscape:!0}},{name:"Nexus 10",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:}},{name:"Nexus 10 landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:andscape:!0}},{name:"Nexus 4",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:1}},{name:"Nexus 4 landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:andscape:!0}},{name:"Nexus 5",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:1}},{name:"Nexus 5 landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:ndscape:!0}},{name:"Nexus 5X",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:}},{name:"Nexus 5X landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:andscape:!0}},{name:"Nexus 6",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:1}},{name:"Nexus 6 landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:ndscape:!0}},{name:"Nexus 6P",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:}},{name:"Nexus 6P landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:andscape:!0}},{name:"Nexus 7",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:1}},{name:"Nexus 7 landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212::!0}},{name:"Nokia Lumia 520",userAgent:"Mozilla/5.0 (compatible
+./pinkboxagent/extension/dist/extension.js:4212:e:"Nokia Lumia 520 landscape",userAgent:"Mozilla/5.0 (compatible
+./pinkboxagent/extension/dist/extension.js:4212:ndscape:!0}},{name:"Nokia N9",userAgent:"Mozilla/5.0 (MeeGo; Nok
+./pinkboxagent/extension/dist/extension.js:4212:}},{name:"Nokia N9 landscape",userAgent:"Mozilla/5.0 (MeeGo; Nok
+./pinkboxagent/extension/dist/extension.js:4212:andscape:!0}},{name:"Pixel 2",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:1}},{name:"Pixel 2 landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:scape:!0}},{name:"Pixel 2 XL",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:,{name:"Pixel 2 XL landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:andscape:!0}},{name:"Pixel 3",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:1}},{name:"Pixel 3 landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:andscape:!0}},{name:"Pixel 4",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:1}},{name:"Pixel 4 landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:pe:!0}},{name:"Pixel 4a (5G)",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:ame:"Pixel 4a (5G) landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:andscape:!0}},{name:"Pixel 5",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:1}},{name:"Pixel 5 landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:andscape:!0}},{name:"Moto G4",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:1}},{name:"Moto G4 landscape",userAgent:"Mozilla/5.0 (Linux; And
+./pinkboxagent/extension/dist/extension.js:4212:manager.testmode":!0,"general.useragent.updates.enabled":!1,"geo
+./pinkboxagent/extension/dist/extension.js:4212:s"),r=zg.default.join(a.path,"user.js"),n=Object.entries(a.prefe
+./pinkboxagent/extension/dist/extension.js:4212:rences).map(([I,e])=>`user_pref(${JSON.stringify(I)}, ${
+./pinkboxagent/extension/dist/extension.js:4282:await this.cleanUserDataDir(w.userDataDir,{isTemp:w.isTempUserDa
+./pinkboxagent/extension/dist/extension.js:4289:.findIndex(W=>W.startsWith("--user-data-dir"));u<0&&(A=!0,d.push
+./pinkboxagent/extension/dist/extension.js:4289:(`--user-data-dir=${await(0,TLt.mkdtem
+./pinkboxagent/extension/dist/extension.js:4289:[1];jt(typeof h=="string","`--user-data-dir` is malformed");let 
+./pinkboxagent/extension/dist/extension.js:4289::c,args:d,isTempUserDataDir:A,userDataDir:h}}async cleanUserData
+./pinkboxagent/extension/dist/extension.js:4289::d=!1,headless:A=!d,args:u=[],userDataDir:h}=t;return h&&o.push(
+./pinkboxagent/extension/dist/extension.js:4289:`--user-data-dir=${jLt.default.resolv
+./pinkboxagent/extension/dist/extension.js:4289:lePath(),{isTempUserDataDir:u,userDataDir:A,args:d,executablePat
+./pinkboxagent/extension/dist/extension.js:4289:n=".puppeteer",s=["prefs.js","user.js"],I=await Promise.allSettl
+./pinkboxagent/extension/dist/extension.js:4289::r=!1,headless:n=!r,args:s=[],userDataDir:I=null}=t,e=[];switch(
+./pinkboxagent/extension/dist/extension.js:4289:"--disable-setuid-sandbox","--user-agent=Mozilla/5.0 (Macintosh;
+./pinkboxagent/extension/dist/extension.js:4290:ntMessageHasPendingUpdates=!1;userMessageContent=[];userMessageC
+./pinkboxagent/extension/dist/extension.js:4295:geResponse"&&(await this.say("user_feedback",o,d),A=o,u=d);let h
+./pinkboxagent/extension/dist/extension.js:4304:[...h],W=[]}else if(B.role==="user"){let R=h[h.length-2],y=Array
+./pinkboxagent/extension/dist/extension.js:4304:pected: Last message is not a user or assistant message")}else t
+./pinkboxagent/extension/dist/extension.js:4306:attempted a tool use that the user did not provide a result for,
+./pinkboxagent/extension/dist/extension.js:4311:<user_message>
+./pinkboxagent/extension/dist/extension.js:4313:</user_message>`:"")}),u&&u.length>0
+./pinkboxagent/extension/dist/extension.js:4314:o=o.trim(),s?(await this.say("user_feedback",s.text,s.images),[!
+./pinkboxagent/extension/dist/extension.js:4314:mmand is still running in the user's terminal.${o.length>0?`
+./pinkboxagent/extension/dist/extension.js:4318:The user provided the following feedba
+./pinkboxagent/extension/dist/extension.js:4323:mmand is still running in the user's terminal.${o.length>0?`
+./pinkboxagent/extension/dist/extension.js:4329:dCompleteReadingStream&&(this.userMessageContentReady=!0),this.p
+./pinkboxagent/extension/dist/extension.js:4329:didRejectTool){t.partial?this.userMessageContent.push({type:"tex
+./pinkboxagent/extension/dist/extension.js:4329:upted and not executed due to user rejecting a previous tool.`})
+./pinkboxagent/extension/dist/extension.js:4329::this.userMessageContent.push({type:"tex
+./pinkboxagent/extension/dist/extension.js:4329::`Skipping tool ${r()} due to user rejecting a previous tool.`})
+./pinkboxagent/extension/dist/extension.js:4329:(this.didAlreadyUseTool){this.userMessageContent.push({type:"tex
+./pinkboxagent/extension/dist/extension.js:4329:tool.`});break}let n=o=>{this.userMessageContent.push({type:"tex
+./pinkboxagent/extension/dist/extension.js:4329:t:`}),typeof o=="string"?this.userMessageContent.push({type:"tex
+./pinkboxagent/extension/dist/extension.js:4329: not return anything)"}):this.userMessageContent.push(...o),this
+./pinkboxagent/extension/dist/extension.js:4329:ageResponse"?(await this.say("user_feedback",u,h),n(zn.toolResul
+./pinkboxagent/extension/dist/extension.js:4338:reak}let{newProblemsMessage:W,userEdits:Y,finalContent:w}=await 
+./pinkboxagent/extension/dist/extension.js:4338:ditFile=!0,Y?(await this.say("user_feedback_diff",JSON.stringify
+./pinkboxagent/extension/dist/extension.js:4338:ath:Zb(gn,o),diff:Y})),n(`The user made the following updates to
+./pinkboxagent/extension/dist/extension.js:4342:riginal modifications and the user's edits, has been successfull
+./pinkboxagent/extension/dist/extension.js:4351:3. If the user's edits have addressed part o
+./pinkboxagent/extension/dist/extension.js:4355:reak}let{newProblemsMessage:X,userEdits:B,finalContent:R}=await 
+./pinkboxagent/extension/dist/extension.js:4355:ditFile=!0,B?(await this.say("user_feedback_diff",JSON.stringify
+./pinkboxagent/extension/dist/extension.js:4355:ath:Zb(gn,o),diff:B})),n(`The user made the following updates to
+./pinkboxagent/extension/dist/extension.js:4359:riginal modifications and the user's edits, has been successfull
+./pinkboxagent/extension/dist/extension.js:4368:3. If the user's edits have addressed part o
+./pinkboxagent/extension/dist/extension.js:4372:tionHistory.find(c=>c.role==="user"),A=d?Array.isArray(d.content
+./pinkboxagent/extension/dist/extension.js:4382:llowup",o,!1);await this.say("user_feedback",d??"",A),n(zn.toolR
+./pinkboxagent/extension/dist/extension.js:4384:){n("");break}await this.say("user_feedback",c??"",W);let Y=[];u
+./pinkboxagent/extension/dist/extension.js:4384:Y.push({type:"text",text:`The user has provided feedback on the 
+./pinkboxagent/extension/dist/extension.js:4387:sh(...zn.imageBlocks(W)),this.userMessageContent.push({type:"tex
+./pinkboxagent/extension/dist/extension.js:4387:,text:`${r()} Result:`}),this.userMessageContent.push(...Y);brea
+./pinkboxagent/extension/dist/extension.js:4387:essageContent.length-1&&(this.userMessageContentReady=!0),this.c
+./pinkboxagent/extension/dist/extension.js:4387:ch can be mitigated with some user guidance (e.g. "Try breaking 
+./pinkboxagent/extension/dist/extension.js:4391:ApiConversationHistory({role:"user",content:t});else{let A=t.map
+./pinkboxagent/extension/dist/extension.js:4391:ApiConversationHistory({role:"user",content:A})}let o=fv(this.bl
+./pinkboxagent/extension/dist/extension.js:4395:ror":"Response interrupted by user"}]`}]}),Y(y,g),await this.sav
+./pinkboxagent/extension/dist/extension.js:4395:CompleteReadingStream=!1,this.userMessageContent=[],this.userMes
+./pinkboxagent/extension/dist/extension.js:4395:essageContent.length>g&&(this.userMessageContentReady=!1),this.p
+./pinkboxagent/extension/dist/extension.js:4395:.."),this.abandoned||await w("user_cancelled");break}if(this.did
+./pinkboxagent/extension/dist/extension.js:4397:[Response interrupted by user feedback]`;break}if(this.didA
+./pinkboxagent/extension/dist/extension.js:4399:,text:X}]}),await yu(()=>this.userMessageContentReady),this.assi
+./pinkboxagent/extension/dist/extension.js:4399:=>Z.type==="tool_use")||(this.userMessageContent.push({type:"tex
+./pinkboxagent/extension/dist/extension.js:4399:velyMakeblackboxRequests(this.userMessageContent)):(await this.s
+./pinkboxagent/extension/dist/extension.js:4442:this.context.globalState.get("userCredits",0),S=sW(s);return{api
+./pinkboxagent/extension/dist/extension.js:4442:{try{let t=a.globalState.get("userId");t||(t=u9t(),a.globalState
+./pinkboxagent/extension/dist/extension.js:4442:.update("userId",t));let r=a.globalState.ge
+./pinkboxagent/extension/dist/extension.js:4442:ation: ${r}`)})}var WG=0,f3e="userCredits";function cdr(a){WG=a.
+Binary file ./pinkboxagent/extension/dist/tree-sitter-cpp.wasm matches
+Binary file ./pinkboxagent/extension/dist/tree-sitter-swift.wasm matches
+./pinkboxagent/extension/webview-ui/build/static/css/main.css:1:none;text-rendering:auto;-moz-user-select:none;user-select:none;
+./pinkboxagent/extension/webview-ui/build/static/css/main.css:1:-webkit-user-select:none;-ms-user-select:none}@keyframes codico
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:rgin: calc("," * 1px) 0;\n\t\tuser-select: none;\n\t\tfont-size:
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:n\t\tposition: relative;\n\t\tuser-select: none;\n\t\tmin-width:
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:trol {\n\t\tcursor: ",";\n\t\tuser-select: none;\n\t}\n\t:host([
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:\tcalc(("," / 4) * 1px);\n\t\tuser-select: none;\n\t\twhite-spac
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:n: all 0.2s ease-in-out;\n\t\tuser-select: none;\n\t}\n\t.contro
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:",";\n\t\toutline: none;\n\t\tuser-select: none;\n\t}\n\t.contro
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:",";\n\t\toutline: none;\n\t\tuser-select: none;\n\t}\n\t.root {
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:Ref;void 0!==this._ref&&this._userRef===t||(this._ref=e=>{null==
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:?e(t):e.current=t}(t,e),this._userRef=t});const n={ref:this._ref
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:ct:"none",msUserSelect:"none",userSelect:"none"},C={height:g,wid
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:(ad|od|hone)/i.test(navigator.userAgent)&&/WebKit/i.test(navigat
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:or.userAgent))),Hc=cl((e=>{let[{scrol
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:pe","target","target-within","user-invalid","valid","visited","w
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:pe","target","target-within","user-invalid","valid","visited","w
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:pe","target","target-within","user-invalid","valid","visited","w
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:botNameRead","cityNameWrite","userNameWrite","readJoystickY","re
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:getModifiers","keyboardRead","userNameRead","waitContinue","proc
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:y","uname","unlink","uptime","users","who","whoami","yes"]},cont
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:complete_Class","parent","php_user_filter","self","static","stdC
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:form_group_for_type","current_user","cursor","cycle","date","day
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:"select","sensitive","session_user","set","show","similar","sin"
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:system","system_time","system_user","table","tablesample","tan",
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:n","unnest","update","upper","user","using","value","values","va
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:form_group_for_type","current_user","session_user","system_time"
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:,"system_user","current_time","localtime","
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:ait":"pointer",opacity:d?.7:1,userSelect:"none",WebkitUserSelect
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:Reads:a,totalCost:l,onClose:c,userCredits:u,onAddCredits:d,hasCo
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:ursor:"pointer",marginLeft:-2,userSelect:"none",WebkitUserSelect
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:n/json"},body:JSON.stringify({userId:t,eventName:e,eventMetadata
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:t-fail"}),[null!=g?r("error","user_cancelled"===g?"var(--vscode-
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:k):(0,Sf.jsx)(kv,{}),null!=g?"user_cancelled"===g?(0,Sf.jsx)("sp
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:g:"9px 10px",cursor:"pointer",userSelect:"none",WebkitUserSelect
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:ace-between",cursor:"pointer",userSelect:"none",WebkitUserSelect
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:(Sv,{markdown:l.text})});case"user_feedback":return(0,Sf.jsxs)("
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:e:{marginTop:"8px"}})]});case"user_feedback_diff":const e=JSON.p
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:ocalStorage.getItem("blackbox_userId");return e||(e=crypto.rando
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:ocalStorage.setItem("blackbox_userId",e)),e}var Yv;const Jv={api
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:edits?productId=").concat(t,"&userId=").concat(e,"&productName="
+./pinkboxagent/extension/webview-ui/build/static/js/main.js:2:alCost:f.totalCost,onClose:oe,userCredits:$,onAddCredits:()=>{J(
+./pinkboxagent/extension/node_modules/@vscode/codicons/dist/codicon.css:20:	user-select: none;
+./pinkboxagent/extension/node_modules/@vscode/codicons/dist/codicon.css:21:	-webkit-user-select: none;
+./pinkboxagent/extension/node_modules/@vscode/codicons/dist/codicon.css:22:	-ms-user-select: none;
