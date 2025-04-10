@@ -1,5 +1,7 @@
 # **🚨 Critical Alert: [BLACKBOX.AI](https://blackbox.ai) SECURITY ANALYSIS - Credential Harvesting & Non-Consensual Data Practices 🚨**  
 
+** Some of this may have been changed since I first started these documents. **
+
 # BLACKBOX.AI SECURITY ANALYSIS
 
 Blackbox AI Security Analysis  This repository exposes security risks in the Blackbox AI development environment. Key findings include credential harvesting via regex patterns, unpatched vulnerabilities like CVE-2024-48139, and privacy concerns from hidden pixel tracking. The analysis highlights potential threats to user data and system integrity.
