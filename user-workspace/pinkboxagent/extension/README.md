@@ -1,4 +1,4 @@
-# BLACKBOX AI — #1 Coding Agent. +10 Million Devs. Free and No Signup Required
+# BLACKBOX AI — #1 Coding Agent. +10 Million Devs. Free and No Signup Required (But yes you have to register with your google account via oauth2 -hannahbelle)
 
 >  **+10 Million Developers** rely on BLACKBOX.AI for code. **+3 Million VSCode Installs.** Chat with your entire codebase and ask any coding question
 
