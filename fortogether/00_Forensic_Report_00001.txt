@@ -1,0 +1,22 @@
+BLACKBOXAI EXTENSION FORENSIC REPORT
+====================================
+Generated: 06/30/2025 19:18:31
+Source File: D:\_Downloads\_2025\_browser.firefox.private\blackboxai-devbox_research\.devcontainer\b
+lackboxagent.vsix.unzipped\extension\dist\extension.js
+File Size: 15.3515920639038 MB
+
+FINDINGS SUMMARY:
+- Credential Patterns: 11
+- Network Endpoints: 15
+- Base64 Payloads: 16817
+- Browser Automation: Yes (14 indicators)
+- Environment Access: Yes (60 indicators)
+- Suspicious Strings: Yes (880 indicators)
+
+NEXT STEPS:
+1. Review all files in: D:\_Downloads\_2025\_browser.firefox.private\blackboxai-devbox_research\.dev
+container\blackboxagent.vsix.unzipped\extension\dist\bbai-forensics-20250630_191744
+2. Check network captures for endpoint connections
+3. Audit any credentials found in your systems
+
+

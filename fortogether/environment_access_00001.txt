@@ -1,0 +1,1172 @@
+MATCH: process.env.DEBUG
+CONTEXT: return!a&&typeof process<"u"&&"env"in process&&(a=process.env.DEBUG),a}function FSt(){try{r
+eturn localStorage}catch{}}gS.exports=Ise()(Qu);var{formatters:QSt}=gS.exports;QSt.j=function(a){try
+{return J
+-----
+MATCH: process.env.DEBUG
+CONTEXT: tions(Ps.inspectOpts,...a)+` `)}function JSt(a){a?process.env.DEBUG=a:delete process.env.DE
+BUG}function LSt(){return process.env.DEBUG}function DSt(a){a.inspectOpts={};let t=Object.keys(Ps.in
+spectOpts
+-----
+MATCH: process.env.DEBUG
+CONTEXT: ` `)}function JSt(a){a?process.env.DEBUG=a:delete process.env.DEBUG}function LSt(){return p
+rocess.env.DEBUG}function DSt(a){a.inspectOpts={};let t=Object.keys(Ps.inspectOpts);for(let r=0;r<t.
+length;r+
+-----
+MATCH: process.env.DEBUG
+CONTEXT: =a:delete process.env.DEBUG}function LSt(){return process.env.DEBUG}function DSt(a){a.inspe
+ctOpts={};let t=Object.keys(Ps.inspectOpts);for(let r=0;r<t.length;r++)a.inspectOpts[t[r]]=Ps.inspec
+tOpts[t[r
+-----
+MATCH: process.env.GRACEFUL_FS_PLATFORM
+CONTEXT: =require("constants"),mTt=process.cwd,C6=null,GTt=process.env.GRACEFUL_FS_PLATFORM||process
+.platform;process.cwd=function(){return C6||(C6=mTt.call(process)),C6};try{process.cwd()}catch{}type
+of proces
+-----
+MATCH: process.env.NODE_DEBUG
+CONTEXT: .debuglog?zW=F6.debuglog("gfs4"):/\bgfs4\b/i.test(process.env.NODE_DEBUG||"")&&(zW=function
+(){var a=F6.format.apply(F6,arguments);a="GFS4: "+a.split(/\n/).join(` GFS4: `),console.error(a)});p
+l[XI]||(L
+-----
+MATCH: process.env.NODE_DEBUG
+CONTEXT: t,y6,{value:a}),t}(pl.closeSync),/\bgfs4\b/i.test(process.env.NODE_DEBUG||"")&&process.on("
+exit",function(){zW(pl[XI]),require("assert").equal(pl[XI].length,0)}));var LDe;global[XI]||SDe(glob
+al,pl[XI]
+-----
+MATCH: process.env.TEST_GRACEFUL_FS_GLOBAL_PATCH
+CONTEXT: [XI]||SDe(global,pl[XI]);boe.exports=hoe(ETt(pl));process.env.TEST_GRACEFUL_FS_GLOBAL_PATCH
+&&!pl.__patched&&(boe.exports=hoe(pl),pl.__patched=!0);function hoe(a){WTt(a),a.gracefulify=hoe,a.cr
+eateReadS
+-----
+MATCH: process.env.IGNORE_TEST_WIN32
+CONTEXT: e.exports=ZM;if(typeof process<"u"&&(process.env&&process.env.IGNORE_TEST_WIN32||process.pl
+atform==="win32")){let a=r=>/^\\\\\?\\/.test(r)||/["<>|\u0000-\u001F]+/u.test(r)?r:r.replace(/\\/g,"
+/");_G.co
+-----
+MATCH: process.env.CHOKIDAR_PRINT_FSEVENTS_REQUIRE_ERROR
+CONTEXT: re("util"),LQ;try{LQ=require("fsevents")}catch(a){process.env.CHOKIDAR_PRINT_FSEVENTS_REQUI
+RE_ERROR&&console.error(a)}if(LQ){let a=process.version.match(/v(\d+)\.(\d+)/);if(a&&a[1]&&a[2]){let
+ t=Number
+-----
+MATCH: process.env.CHOKIDAR_USEPOLLING
+CONTEXT: &&(r.usePolling=xea),Hea&&(r.usePolling=!0);let s=process.env.CHOKIDAR_USEPOLLING;if(s!==vo
+id 0){let d=s.toLowerCase();d==="false"||d==="0"?r.usePolling=!1:d==="true"||d==="1"?r.usePolling=!0
+:r.usePol
+-----
+MATCH: process.env.CHOKIDAR_INTERVAL
+CONTEXT: "||d==="1"?r.usePolling=!0:r.usePolling=!!d}let I=process.env.CHOKIDAR_INTERVAL;I&&(r.inter
+val=Number.parseInt(I,10)),z0(r,"atomic")&&(r.atomic=!r.usePolling&&!r.useFsEvents),r.atomic&&(this.
+_pendingU
+-----
+MATCH: process.env.READABLE_STREAM
+CONTEXT: }});var vbe=We((JI,NT)=>{var Jb=require("stream");process.env.READABLE_STREAM==="disable"&&
+Jb?(NT.exports=Jb,JI=NT.exports=Jb.Readable,JI.Readable=Jb.Readable,JI.Writable=Jb.Writable,JI.Duple
+x=Jb.Dupl
+-----
+MATCH: process.env.NODE_V8_COVERAGE
+CONTEXT: CIt(){}var v2e,E2e;global.FinalizationRegistry&&!(process.env.NODE_V8_COVERAGE||process.env
+.UNDICI_NO_FG)?E2e=class{constructor(t){this._maxCachedSessions=t,this._sessionCache=new Map,this._s
+essionReg
+-----
+MATCH: process.env.UNDICI_NO_FG
+CONTEXT: lizationRegistry&&!(process.env.NODE_V8_COVERAGE||process.env.UNDICI_NO_FG)?E2e=class{const
+ructor(t){this._maxCachedSessions=t,this._sessionCache=new Map,this._sessionRegistry=new global.Fina
+lizationR
+-----
+MATCH: process.env.JEST_WORKER_ID
+CONTEXT: removeAllListeners,M2e;async function s2a(){let a=process.env.JEST_WORKER_ID?N2e():void 0,t
+;try{t=await WebAssembly.compile(xIt())}catch{t=await WebAssembly.compile(a||N2e())}return await Web
+Assembly.
+-----
+MATCH: process.env.http_proxy
+CONTEXT: :n,noProxy:s,...I}=t;this[ok]=new yZa(I);let e=r??process.env.http_proxy??process.env.HTTP_
+PROXY;e?this[Df]=new zot({...I,uri:e}):this[Df]=this[ok];let o=n??process.env.https_proxy??process.e
+nv.HTTPS_
+-----
+MATCH: process.env.HTTP_PROXY
+CONTEXT: s[ok]=new yZa(I);let e=r??process.env.http_proxy??process.env.HTTP_PROXY;e?this[Df]=new zot
+({...I,uri:e}):this[Df]=this[ok];let o=n??process.env.https_proxy??process.env.HTTPS_PROXY;o?this[RE
+]=new zot
+-----
+MATCH: process.env.https_proxy
+CONTEXT: =new zot({...I,uri:e}):this[Df]=this[ok];let o=n??process.env.https_proxy??process.env.HTTP
+S_PROXY;o?this[RE]=new zot({...I,uri:o}):this[RE]=this[Df],this.#i()}[QZa](t,r){let n=new URL(t.orig
+in);retur
+-----
+MATCH: process.env.HTTPS_PROXY
+CONTEXT: is[Df]=this[ok];let o=n??process.env.https_proxy??process.env.HTTPS_PROXY;o?this[RE]=new zo
+t({...I,uri:o}):this[RE]=this[Df],this.#i()}[QZa](t,r){let n=new URL(t.origin);return this.#r(n).dis
+patch(t,r
+-----
+MATCH: process.env.no_proxy
+CONTEXT: roxy!==void 0?!1:this.#e!==this.#I}get#I(){return process.env.no_proxy??process.env.NO_PROX
+Y??""}};Kot.exports=Cfe});var tj=We((ALr,eut)=>{"use strict";var iR=require("node:assert"),{kRetryHa
+ndlerDefa
+-----
+MATCH: process.env.NO_PROXY
+CONTEXT: #e!==this.#I}get#I(){return process.env.no_proxy??process.env.NO_PROXY??""}};Kot.exports=Cf
+e});var tj=We((ALr,eut)=>{"use strict";var iR=require("node:assert"),{kRetryHandlerDefaultRetry:Pot}
+=nl(),{Re
+-----
+MATCH: process.env.CI
+CONTEXT: stdout:this.transform,inspectOptions:{colors:!t&&!process.env.CI}})}format(t){let r=t.map((
+{method:n,path:s,data:{statusCode:I},persist:e,times:o,timesInvoked:d,origin:A})=>({Method:n,Origin:
+A,Path:s,
+-----
+MATCH: process.env.NODE_V8_COVERAGE
+CONTEXT: })}unregister(t){}};tht.exports=function(){return process.env.NODE_V8_COVERAGE&&process.ver
+sion.startsWith("v18")?(process._rawDebug("Using compatibility WeakRef and FinalizationRegistry"),{W
+eakRef:ZZ
+-----
+MATCH: process.env.WS_NO_BUFFER_UTIL
+CONTEXT: 1t,toArrayBuffer:MLa,toBuffer:GQe,unmask:T1t};if(!process.env.WS_NO_BUFFER_UTIL)try{let a=r
+equire("bufferutil");B$.exports.mask=function(t,r,n,s,I){I<48?O1t(t,r,n,s,I):a.mask(t,r,n,s,I)},B$.e
+xports.un
+-----
+MATCH: process.env.WS_NO_UTF_8_VALIDATE
+CONTEXT: ion(a){return a.length<24?ZQe(a):eWt(a)};else if(!process.env.WS_NO_UTF_8_VALIDATE)try{let 
+a=require("utf-8-validate");D$.exports.isValidUTF8=function(t){return t.length<32?ZQe(t):a(t)}}catch
+{}});var 
+-----
+MATCH: process.env.NODE_DEBUG
+CONTEXT: =>{var yDa=typeof process=="object"&&process.env&&process.env.NODE_DEBUG&&/\bsemver\b/i.tes
+t(process.env.NODE_DEBUG)?(...a)=>console.error("SEMVER",...a):()=>{};nvt.exports=yDa});var OY=We((d
+g,ivt)=>{
+-----
+MATCH: process.env.NODE_DEBUG
+CONTEXT: s.env&&process.env.NODE_DEBUG&&/\bsemver\b/i.test(process.env.NODE_DEBUG)?(...a)=>console.e
+rror("SEMVER",...a):()=>{};nvt.exports=yDa});var OY=We((dg,ivt)=>{var{MAX_SAFE_COMPONENT_LENGTH:UQe,
+MAX_SAFE_
+-----
+MATCH: process.env.QTS_DEBUG
+CONTEXT: =void 0;HN.QTS_DEBUG=!!(typeof process=="object"&&process.env.QTS_DEBUG);HN.debugLog=HN.QTS
+_DEBUG?console.log.bind(console):()=>{}});var qZ=We(Jc=>{"use strict";Object.defineProperty(Jc,"__es
+Module",{
+-----
+MATCH: process.env.PROGRAMFILES
+CONTEXT: h(t){case Fi.ChromeReleaseChannel.STABLE:return`${process.env.PROGRAMFILES}\\Google\\Chrome
+\\Application\\chrome.exe`;case Fi.ChromeReleaseChannel.BETA:return`${process.env.PROGRAMFILES}\\Goo
+gle\\Chro
+-----
+MATCH: process.env.PROGRAMFILES
+CONTEXT: e.exe`;case Fi.ChromeReleaseChannel.BETA:return`${process.env.PROGRAMFILES}\\Google\\Chrome
+ Beta\\Application\\chrome.exe`;case Fi.ChromeReleaseChannel.CANARY:return`${process.env.PROGRAMFILE
+S}\\Googl
+-----
+MATCH: process.env.PROGRAMFILES
+CONTEXT: exe`;case Fi.ChromeReleaseChannel.CANARY:return`${process.env.PROGRAMFILES}\\Google\\Chrome
+ SxS\\Application\\chrome.exe`;case Fi.ChromeReleaseChannel.DEV:return`${process.env.PROGRAMFILES}\\
+Google\\C
+-----
+MATCH: process.env.PROGRAMFILES
+CONTEXT: me.exe`;case Fi.ChromeReleaseChannel.DEV:return`${process.env.PROGRAMFILES}\\Google\\Chrome
+ Dev\\Application\\chrome.exe`}case Fi.BrowserPlatform.MAC_ARM:case Fi.BrowserPlatform.MAC:switch(t)
+{case Fi.
+-----
+MATCH: process.env.YARGS_MIN_NODE_VERSION
+CONTEXT: th-1):a}var fVe,ZVe,WVe,_Vt=process&&process.env&&process.env.YARGS_MIN_NODE_VERSION?Number
+(process.env.YARGS_MIN_NODE_VERSION):12,PVt=(ZVe=(fVe=process==null?void 0:process.versions)===null|
+|fVe===vo
+-----
+MATCH: process.env.YARGS_MIN_NODE_VERSION
+CONTEXT: ss.env&&process.env.YARGS_MIN_NODE_VERSION?Number(process.env.YARGS_MIN_NODE_VERSION):12,PV
+t=(ZVe=(fVe=process==null?void 0:process.versions)===null||fVe===void 0?void 0:fVe.node)!==null&&ZVe
+!==void 0
+-----
+MATCH: process.env.YARGS_MIN_NODE_VERSION
+CONTEXT: |PVe===void 0)&&PVe.YARGS_MIN_NODE_VERSION?Number(process.env.YARGS_MIN_NODE_VERSION):12;if
+(process&&process.version&&Number(process.version.match(/v([^.]+)/)[1])<v5t)throw Error(`yargs suppo
+rts a min
+-----
+MATCH: process.env.PUPPETEER_TEST_EXPERIMENTAL_CHROME_FEATURES
+CONTEXT: ceptCHFrame","MediaRouter","OptimizationHints",...process.env.PUPPETEER_TEST_EXPERIMENTAL_C
+HROME_FEATURES==="true"?[]:["ProcessPerSiteUpToMainFrameThreshold","IsolateSandboxedIframes"],...r].
+filter(c=
+-----
+MATCH: process.env.LC_ALL
+CONTEXT: .type()=="Windows_NT")return!1;var a=/UTF-?8$/i,t=process.env.LC_ALL||process.env.LC_CTYPE|
+|process.env.LANG;return a.test(t)}});var OHt=We((Ejr,MHt)=>{MHt.exports=UHt({alwaysReturn:!0},UHt);
+function 
+-----
+MATCH: process.env.LC_CTYPE
+CONTEXT: ")return!1;var a=/UTF-?8$/i,t=process.env.LC_ALL||process.env.LC_CTYPE||process.env.LANG;re
+turn a.test(t)}});var OHt=We((Ejr,MHt)=>{MHt.exports=UHt({alwaysReturn:!0},UHt);function Gx(a,t){ret
+urn a.lev
+-----
+MATCH: process.env.LANG
+CONTEXT: ?8$/i,t=process.env.LC_ALL||process.env.LC_CTYPE||process.env.LANG;return a.test(t)}});var 
+OHt=We((Ejr,MHt)=>{MHt.exports=UHt({alwaysReturn:!0},UHt);function Gx(a,t){return a.level=0,a.hasBas
+ic=!1,a.h
+-----
+MATCH: process.env.PATHEXT
+CONTEXT: ction jir(a,t){var r=t.pathExt!==void 0?t.pathExt:process.env.PATHEXT;if(!r||(r=r.split(";"
+),r.indexOf("")!==-1))return!0;for(var n=0;n<r.length;n++){var s=r[n].toLowerCase();if(s&&a.substr(-
+s.length)
+-----
+MATCH: process.env.OSTYPE
+CONTEXT: We((c_r,v3t)=>{var gx=process.platform==="win32"||process.env.OSTYPE==="cygwin"||process.en
+v.OSTYPE==="msys",p3t=require("path"),$ir=gx?";":":",g3t=G3t(),f3t=a=>Object.assign(new Error(`not f
+ound: ${a
+-----
+MATCH: process.env.OSTYPE
+CONTEXT: latform==="win32"||process.env.OSTYPE==="cygwin"||process.env.OSTYPE==="msys",p3t=require("
+path"),$ir=gx?";":":",g3t=G3t(),f3t=a=>Object.assign(new Error(`not found: ${a}`),{code:"ENOENT"}),Z
+3t=(a,t)=
+-----
+MATCH: process.env.PATH
+CONTEXT: (/\\/)?[""]:[...gx?[process.cwd()]:[],...(t.path||process.env.PATH||"").split(r)],s=gx?t.pa
+thExt||process.env.PATHEXT||".EXE;.CMD;.BAT;.COM":"",I=gx?s.split(r):[""];return gx&&a.indexOf(".")!
+==-1&&I[0
+-----
+MATCH: process.env.PATHEXT
+CONTEXT: ||process.env.PATH||"").split(r)],s=gx?t.pathExt||process.env.PATHEXT||".EXE;.CMD;.BAT;.COM
+":"",I=gx?s.split(r):[""];return gx&&a.indexOf(".")!==-1&&I[0]!==""&&I.unshift(""),{pathEnv:n,pathEx
+t:I,pathE
+-----
+MATCH: process.env.comspec
+CONTEXT: n(" ");a.args=["/d","/s","/c",`"${s}"`],a.command=process.env.comspec||"cmd.exe",a.options.
+windowsVerbatimArguments=!0}return a}function mlr(a,t,r){t&&!Array.isArray(t)&&(r=t,t=null),t=t?t.sl
+ice(0):[]
+-----
+MATCH: process.env.AZURE_OPENAI_ENDPOINT
+CONTEXT: d endpoint are mutually exclusive")}else{if(s||(s=process.env.AZURE_OPENAI_ENDPOINT),!s)thr
+ow new Ka("Must provide one of the `baseURL` or `endpoint` arguments, or the `AZURE_OPENAI_ENDPOINT`
+ environm
+-----
+MATCH: process.env.PATH
+CONTEXT: M({command:r.command,args:r.args,env:{...r.env,...process.env.PATH?{PATH:process.env.PATH}:
+{}},stderr:"pipe"});if(s.onerror=async o=>{console.error(`Transport error for "${t}":`,o);let d=this
+.connecti
+-----
+MATCH: process.env.PATH
+CONTEXT: gs:r.args,env:{...r.env,...process.env.PATH?{PATH:process.env.PATH}:{}},stderr:"pipe"});if(
+s.onerror=async o=>{console.error(`Transport error for "${t}":`,o);let d=this.connections.find(A=>A.
+server.na
+-----
+MATCH: process.env.OPENWEATHER_API_KEY
+CONTEXT: .js'; import axios from 'axios';  const API_KEY = process.env.OPENWEATHER_API_KEY; // provi
+ded by MCP config if (!API_KEY) {   throw new Error('OPENWEATHER_API_KEY environment variable is req
+uired'); 
+-----
+MATCH: process.env.OPENWEATHER_API_KEY
+CONTEXT: .js'; import axios from 'axios';  const API_KEY = process.env.OPENWEATHER_API_KEY; // provi
+ded by MCP config if (!API_KEY) {   throw new Error('OPENWEATHER_API_KEY environment variable is req
+uired'); 
+-----
+MATCH: process.env.OPENWEATHER_API_KEY
+CONTEXT: .js'; import axios from 'axios';  const API_KEY = process.env.OPENWEATHER_API_KEY; // provi
+ded by MCP config if (!API_KEY) {   throw new Error('OPENWEATHER_API_KEY environment variable is req
+uired'); 
+-----
+MATCH: process.env.PROGRAMFILES
+CONTEXT: 4:case ha.WIN32:switch(t){case dn.STABLE:return`${process.env.PROGRAMFILES}\\Google\\Chrome
+\\Application\\chrome.exe`;case dn.BETA:return`${process.env.PROGRAMFILES}\\Google\\Chrome Beta\\App
+lication\
+-----
+MATCH: process.env.PROGRAMFILES
+CONTEXT: e\\Application\\chrome.exe`;case dn.BETA:return`${process.env.PROGRAMFILES}\\Google\\Chrome
+ Beta\\Application\\chrome.exe`;case dn.CANARY:return`${process.env.PROGRAMFILES}\\Google\\Chrome Sx
+S\\Applic
+-----
+MATCH: process.env.PROGRAMFILES
+CONTEXT: \Application\\chrome.exe`;case dn.CANARY:return`${process.env.PROGRAMFILES}\\Google\\Chrome
+ SxS\\Application\\chrome.exe`;case dn.DEV:return`${process.env.PROGRAMFILES}\\Google\\Chrome Dev\\A
+pplicatio
+-----
+MATCH: process.env.PROGRAMFILES
+CONTEXT: xS\\Application\\chrome.exe`;case dn.DEV:return`${process.env.PROGRAMFILES}\\Google\\Chrome
+ Dev\\Application\\chrome.exe`}case ha.MAC_ARM:case ha.MAC:switch(t){case dn.STABLE:return"/Applicat
+ions/Goog
+-----
+MATCH: process.env.YARGS_MIN_NODE_VERSION
+CONTEXT: e("fs");var jXe,KXe,_Xe,OJt=process&&process.env&&process.env.YARGS_MIN_NODE_VERSION?Number
+(process.env.YARGS_MIN_NODE_VERSION):12,TJt=(KXe=(jXe=process==null?void 0:process.versions)===null|
+|jXe===vo
+-----
+MATCH: process.env.YARGS_MIN_NODE_VERSION
+CONTEXT: ss.env&&process.env.YARGS_MIN_NODE_VERSION?Number(process.env.YARGS_MIN_NODE_VERSION):12,TJ
+t=(KXe=(jXe=process==null?void 0:process.versions)===null||jXe===void 0?void 0:jXe.node)!==null&&KXe
+!==void 0
+-----
+MATCH: process.env.PUPPETEER_TEST_EXPERIMENTAL_CHROME_FEATURES
+CONTEXT: ceptCHFrame","MediaRouter","OptimizationHints",...process.env.PUPPETEER_TEST_EXPERIMENTAL_C
+HROME_FEATURES==="true"?[]:["ProcessPerSiteUpToMainFrameThreshold","IsolateSandboxedIframes"],...r].
+filter(c=
+-----
+MATCH: registry:q.get("Registry"),ordering:q.get("Ordering"),supplement:q.get("Supplement")});var te
+=O.get("CIDToGIDMap");(0,o.isStream)(te)&&(M.cidToGidMap=this.readCidToGidMap(te))}var ae=[],ee=null
+,ne;if(O.has("Encoding")){if(ne=O.get("Encoding"),(0,o.isDict)(ne)){if(ee=ne.get("BaseEncoding"),ee=
+(0,o.isName)(ee)?ee.name:null,ne.has("Differences"))for(var se=ne.get("Differences"),ie=0,ce=0,oe=se
+.length;ce<oe;ce++){var Ae=j.fetchIfRef(se[ce]);if((0,s.isNum)(Ae))ie=Ae;else if((0,o.isName)(Ae))ae
+[ie++]=Ae.name;else throw new s.FormatError("Invalid entry in 'Differences' array: "+Ae)}}else if((0
+,o.isName)(ne))ee=ne.name;else throw new s.FormatError("Encoding is not a Name nor a Dict");ee!=="Ma
+cRomanEncoding"&&ee!=="MacExpertEncoding"&&ee!=="WinAnsiEncoding"&&(ee=null)}if(ee)M.defaultEncoding
+=(0,A.getEncoding)(ee).slice();else{var Ge=!!(M.flags&d.FontFlags.Symbolic),be=!!(M.flags&d.FontFlag
+s.Nonsymbolic);ne=A.StandardEncoding,M.type==="TrueType"&&!be&&(ne=A.WinAnsiEncoding),Ge&&(ne=A.MacR
+omanEncoding,M.file||(/Symbol/i.test(M.name)?ne=A.SymbolSetEncoding:/Dingbats/i.test(M.name)&&(ne=A.
+ZapfDingbatsEncoding))),M.defaultEncoding=ne}return M.differences=ae,M.baseEncodingName=ee,M.hasEnco
+ding=!!ee||ae.length>0,M.dict=O,_.then(function(ve){return M.toUnicode=ve,T.buildToUnicode(M)}).then
+(function(ve){return M.toUnicode=ve,M})},buildToUnicode:function(O){if(O.hasIncludedToUnicodeMap=!!O
+.toUnicode&&O.toUnicode.length>0,O.hasIncludedToUnicodeMap)return Promise.resolve(O.toUnicode);var z
+,M,T;if(!O.composite){z=[];var j=O.defaultEncoding.slice(),K=O.baseEncodingName,_=O.differences;for(
+M in _)T=_[M],T!==".notdef"&&(j[M]=T);var q=(0,X.getGlyphsUnicode)();for(M in j)if(T=j[M],T!==""){if
+(q[T]===void 0){var te=0;switch(T[0]){case"G":T.length===3&&(te=parseInt(T.substr(1),16));break;case
+"g":T.length===5&&(te=parseInt(T.substr(1),16));break;case"C":case"c":T.length>=3&&(te=+T.substr(1))
+;break;default:var ae=(0,u.getUnicodeForGlyph)(T,q);ae!==-1&&(te=ae)}if(te){if(K&&te===+M){var ee=(0
+,A.getEncoding)(K);if(ee&&(T=ee[M])){z[M]=String.fromCharCode(q[T]);continue}}z[M]=String.fromCharCo
+de(te)}continue}z[M]=String.fromCharCode(q[T])}return Promise.resolve(new d.ToUnicodeMap(z))}if(O.co
+mposite&&(O.cMap.builtInCMap&&!(O.cMap instanceof I.IdentityCMap)||O.cidSystemInfo.registry==="Adobe
+"&&(O.cidSystemInfo.ordering==="GB1"||O.cidSystemInfo.ordering==="CNS1"||O.cidSystemInfo.ordering===
+"Japan1"||O.cidSystemInfo.ordering==="Korea1"))){var ne=O.cidSystemInfo.registry,se=O.cidSystemInfo.
+ordering,ie=o.Name.get(ne+"-"+se+"-UCS2");return I.CMapFactory.create({encoding:ie,fetchBuiltInCMap:
+this.fetchBuiltInCMap,useCMap:null}).then(function(ce){var oe=O.cMap;return z=[],oe.forEach(function
+(Ae,Ge){if(Ge>65535)throw new s.FormatError("Max size of CID is 65,535");var be=ce.lookup(Ge);be&&(z
+[Ae]=String.fromCharCode((be.charCodeAt(0)<<8)+be.charCodeAt(1)))}),new d.ToUnicodeMap(z)})}return P
+romise.resolve(new d.IdentityToUnicodeMap(O.firstChar,O.lastChar))},readToUnicode:function(O){var z=
+O;return(0,o.isName)(z)?I.CMapFactory.create({encoding:z,fetchBuiltInCMap:this.fetchBuiltInCMap,useC
+Map:null}).then(function(M){return M instanceof I.IdentityCMap?new d.IdentityToUnicodeMap(0,65535):n
+ew d.ToUnicodeMap(M.getMap())}):(0,o.isStream)(z)?I.CMapFactory.create({encoding:z,fetchBuiltInCMap:
+this.fetchBuiltInCMap,useCMap:null}).then(function(M){if(M instanceof I.IdentityCMap)return new d.Id
+entityToUnicodeMap(0,65535);var T=new Array(M.length);return M.forEach(function(j,K){for(var _=[],q=
+0;q<K.length;q+=2){var te=K.charCodeAt(q)<<8|K.charCodeAt(q+1);if((te&63488)!==55296){_.push(te);con
+tinue}q+=2;var ae=K.charCodeAt(q)<<8|K.charCodeAt(q+1);_.push(((te&1023)<<10)+(ae&1023)+65536)}T[j]=
+String.fromCharCode.apply(String,_)}),new d.ToUnicodeMap(T)}):Promise.resolve(null)},readCidToGidMap
+:function(O){for(var z=O.getBytes(),M=[],T=0,j=z.length;T<j;T++){var K=z[T++]<<8|z[T];if(K!==0){var 
+_=T>>1;M[_]=K}}return M},extractWidths:function(O,z,M){var T=this.xref,j=[],K=0,_=[],q,te,ae,ee,ne,s
+e,ie,ce;if(M.composite){if(K=O.get("DW")||1e3,ce=O.get("W"),ce)for(te=0,ae=ce.length;te<ae;te++)if(s
+e=T.fetchIfRef(ce[te++]),ie=T.fetchIfRef(ce[te]),(0,s.isArray)(ie))for(ee=0,ne=ie.length;ee<ne;ee++)
+j[se++]=T.fetchIfRef(ie[ee]);else{var oe=T.fetchIfRef(ce[++te]);for(ee=se;ee<=ie;ee++)j[ee]=oe}if(M.
+vertical){var Ae=O.getArray("DW2")||[880,-1e3];if(q=[Ae[1],K*.5,Ae[0]],Ae=O.get("W2"),Ae)for(te=0,ae
+=Ae.length;te<ae;te++)if(se=T.fetchIfRef(Ae[te++]),ie=T.fetchIfRef(Ae[te]),(0,s.isArray)(ie))for(ee=
+0,ne=ie.length;ee<ne;ee++)_[se++]=[T.fetchIfRef(ie[ee++]),T.fetchIfRef(ie[ee++]),T.fetchIfRef(ie[ee]
+)];else{var Ge=[T.fetchIfRef(Ae[++te]),T.fetchIfRef(Ae[++te]),T.fetchIfRef(Ae[++te])];for(ee=se;ee<=
+ie;ee++)_[ee]=Ge}}}else{var be=M.firstChar;if(ce=O.get("Widths"),ce){for(ee=be,te=0,ae=ce.length;te<
+ae;te++)j[ee++]=T.fetchIfRef(ce[te]);K=parseFloat(z.get("MissingWidth"))||0}else{var ve=O.get("BaseF
+ont");if((0,o.isName)(ve)){var Ce=this.getBaseFontMetrics(ve.name);j=this.buildCharCodeToWidth(Ce.wi
+dths,M),K=Ce.defaultWidth}}}var Qe=!0,Re=K;for(var Ve in j){var Ee=j[Ve];if(Ee){if(!Re){Re=Ee;contin
+ue}if(Re!==Ee){Qe=!1;break}}}Qe&&(M.flags|=d.FontFlags.FixedPitch),M.defaultWidth=K,M.widths=j,M.def
+aultVMetrics=q,M.vmetrics=_},isSerifFont:function(O){var z=O.split("-")[0];return z in(0,h.getSerifF
+onts)()||z.search(/serif/gi)!==-1},getBaseFontMetrics:function(O){var z=0,M=[],T=!1,j=(0,h.getStdFon
+tMap)(),K=j[O]||O,_=(0,B.getMetrics)();K in _||(this.isSerifFont(O)?K="Times-Roman":K="Helvetica");v
+ar q=_[K];return(0,s.isNum)(q)?(z=q,T=!0):M=q(),{defaultWidth:z,monospace:T,widths:M}},buildCharCode
+ToWidth:function(O,z){for(var M=Object.create(null),T=z.differences,j=z.defaultEncoding,K=0;K<256;K+
++){if(K in T&&O[T[K]]){M[K]=O[T[K]];continue}if(K in j&&O[j[K]]){M[K]=O[j[K]];continue}}return M},pr
+eEvaluateFont:function(O){var z=O,M=O.get("Subtype");if(!(0,o.isName)(M))throw new s.FormatError("in
+valid font Subtype");var T=!1,j;if(M.name==="Type0"){var K=O.get("DescendantFonts");if(!K)throw new 
+s.FormatError("Descendant fonts are not specified");if(O=(0,s.isArray)(K)?this.xref.fetchIfRef(K[0])
+:K,M=O.get("Subtype"),!(0,o.isName)(M))throw new s.FormatError("invalid font Subtype");T=!0}var _=O.
+get("FontDescriptor");if(_){var q=new R.MurmurHash3_64,te=z.getRaw("Encoding");if((0,o.isName)(te))q
+.update(te.name);else if((0,o.isRef)(te))q.update(te.toString());else if((0,o.isDict)(te))for(var ae
+=te.getKeys(),ee=0,ne=ae.length;ee<ne;ee++){var se=te.getRaw(ae[ee]);if((0,o.isName)(se))q.update(se
+.name);else if((0,o.isRef)(se))q.update(se.toString());else if((0,s.isArray)(se)){for(var ie=se.leng
+th,ce=new Array(ie),oe=0;oe<ie;oe++){var Ae=se[oe];(0,o.isName)(Ae)?ce[oe]=Ae.name:((0,s.isNum)(Ae)|
+|(0,o.isRef)(Ae))&&(ce[oe]=Ae.toString())}q.update(ce.join())}}var Ge=O.get("ToUnicode")||z.get("ToU
+nicode");if((0,o.isStream)(Ge)){var be=Ge.str||Ge;j=be.buffer?new Uint8Array(be.buffer.buffer,0,be.b
+ufferLength):new Uint8Array(be.bytes.buffer,be.start,be.end-be.start),q.update(j)}else(0,o.isName)(G
+e)&&q.update(Ge.name);var ve=O.get("Widths")||z.get("Widths");ve&&(j=new Uint8Array(new Uint32Array(
+ve).buffer),q.update(j))}return{descriptor:_,dict:O,baseDict:z,composite:T,type:M.name,hash:q?q.hexd
+igest():""}},translateFont:function(O){var z=this,M=O.baseDict,T=O.dict,j=O.composite,K=O.descriptor
+,_=O.type,q=j?65535:255,te;if(!K)if(_==="Type3")K=new o.Dict(null),K.set("FontName",o.Name.get(_)),K
+.set("FontBBox",T.getArray("FontBBox"));else{var ae=T.get("BaseFont");if(!(0,o.isName)(ae))throw new
+ s.FormatError("Base font is not specified");ae=ae.name.replace(/[,_]/g,"-");var ee=this.getBaseFont
+Metrics(ae),ne=ae.split("-")[0],se=(this.isSerifFont(ne)?d.FontFlags.Serif:0)|(ee.monospace?d.FontFl
+ags.FixedPitch:0)|((0,h.getSymbolsFonts)()[ne]?d.FontFlags.Symbolic:d.FontFlags.Nonsymbolic);return 
+te={type:_,name:ae,widths:ee.widths,defaultWidth:ee.defaultWidth,flags:se,firstChar:0,lastChar:q},th
+is.extractDataStructures(T,T,te).then(function(ye){return ye.widths=z.buildCharCodeToWidth(ee.widths
+,ye),new d.Font(ae,null,ye)})}var ie=T.get("FirstChar")||0,ce=T.get("LastChar")||q,oe=K.get("FontNam
+e"),Ae=T.get("BaseFont");if((0,s.isString)(oe)&&(oe=o.Name.get(oe)),(0,s.isString)(Ae)&&(Ae=o.Name.g
+et(Ae)),_!=="Type3"){var Ge=oe&&oe.name,be=Ae&&Ae.name;Ge!==be&&((0,s.info)(`The FontDescriptor's Fo
+ntName is "`+Ge+`" but should be the same as the Font's BaseFont "`+be+'"'),Ge&&be&&be.indexOf(Ge)==
+=0&&(oe=Ae))}if(oe=oe||Ae,!(0,o.isName)(oe))throw new s.FormatError("invalid font name");var ve=K.ge
+t("FontFile","FontFile2","FontFile3");if(ve&&ve.dict){var Ce=ve.dict.get("Subtype");Ce&&(Ce=Ce.name)
+;var Qe=ve.dict.get("Length1"),Re=ve.dict.get("Length2"),Ve=ve.dict.get("Length3")}te={type:_,name:o
+e.name,subtype:Ce,file:ve,length1:Qe,length2:Re,length3:Ve,loadedName:M.loadedName,composite:j,wideC
+hars:j,fixedPitch:!1,fontMatrix:T.getArray("FontMatrix")||s.FONT_IDENTITY_MATRIX,firstChar:ie||0,las
+tChar:ce||q,bbox:K.getArray("FontBBox"),ascent:K.get("Ascent"),descent:K.get("Descent"),xHeight:K.ge
+t("XHeight"),capHeight:K.get("CapHeight"),flags:K.get("Flags"),italicAngle:K.get("ItalicAngle"),isTy
+pe3Font:!1};var Ee;if(j){var Ze=M.get("Encoding");(0,o.isName)(Ze)&&(te.cidEncoding=Ze.name),Ee=I.CM
+apFactory.create({encoding:Ze,fetchBuiltInCMap:this.fetchBuiltInCMap,useCMap:null}).then(function(ye
+){te.cMap=ye,te.vertical=te.cMap.vertical})}else Ee=Promise.resolve(void 0);return Ee.then(function(
+){return z.extractDataStructures(T,M,te)}).then(function(ye){return z.extractWidths(T,K,ye),_==="Typ
+e3"&&(ye.isType3Font=!0),new d.Font(oe.name,ve,ye)})}},S}(),Z=function(){function D(L,S,U){this.load
+edName=L,this.font=S,this.dict=U,this.type3Loaded=null,this.sent=!1}return D.prototype={send:functio
+n(S){if(!this.sent){var U=this.font.exportData();S.send("commonobj",[this.loadedName,"Font",U]),this
+.sent=!0}},loadType3Data:function(S,U,J,H){if(!this.font.isType3Font)throw new Error("Must be a Type
+3 font.");if(this.type3Loaded)return this.type3Loaded;var Q=Object.create(S.options);Q.ignoreErrors=
+!1;for(var F=S.clone(Q),E=this.font,V=Promise.resolve(),k=this.dict.get("CharProcs"),O=this.dict.get
+("Resources")||U,z=k.getKeys(),M=Object.create(null),T=function(){var q=z[j];V=V.then(function(){var
+ te=k.get(q),ae=new f;return F.getOperatorList({stream:te,task:H,resources:O,operatorList:ae}).then(
+function(){M[q]=ae.getIR(),J.addDependencies(ae.dependencies)}).catch(function(ee){(0,s.warn)('Type3
+ font resource "'+q+'" is not available.');var ne=new f;M[q]=ne.getIR()})})},j=0,K=z.length;j<K;++j)
+T();return this.type3Loaded=V.then(function(){E.charProcOperatorList=M}),this.type3Loaded}},D}(),f=f
+unction(){var D=1e3,L=D-5;function S(J){for(var H=[],Q=J.fnArray,F=J.argsArray,E=0,V=J.length;E<V;E+
++)switch(Q[E]){case s.OPS.paintInlineImageXObject:case s.OPS.paintInlineImageXObjectGroup:case s.OPS
+.paintImageMaskXObject:var k=F[E][0];k.cached||H.push(k.data.buffer);break}return H}function U(J,H,Q
+){this.messageHandler=H,this.fnArray=[],this.argsArray=[],this.dependencies=Object.create(null),this
+._totalLength=0,this.pageIndex=Q,this.intent=J}return U.prototype={get length(){return this.argsArra
+y.length},get totalLength(){return this._totalLength+this.length},addOp:function(H,Q){this.fnArray.p
+ush(H),this.argsArray.push(Q),this.messageHandler&&(this.fnArray.length>=D?this.flush():this.fnArray
+.length>=L&&(H===s.OPS.restore||H===s.OPS.endText)&&this.flush())},addDependency:function(H){H in th
+is.dependencies||(this.dependencies[H]=!0,this.addOp(s.OPS.dependency,[H]))},addDependencies:functio
+n(H){for(var Q in H)this.addDependency(Q)},addOpList:function(H){s.Util.extendObj(this.dependencies,
+H.dependencies);for(var Q=0,F=H.length;Q<F;Q++)this.addOp(H.fnArray[Q],H.argsArray[Q])},getIR:functi
+on(){return{fnArray:this.fnArray,argsArray:this.argsArray,length:this.length}},flush:function(H){thi
+s.intent!=="oplist"&&new p().optimize(this);var Q=S(this),F=this.length;this._totalLength+=F,this.me
+ssageHandler.send("RenderPageChunk",{operatorList:{fnArray:this.fnArray,argsArray:this.argsArray,las
+tChunk:H,length:F},pageIndex:this.pageIndex,intent:this.intent},Q),this.dependencies=Object.create(n
+ull),this.fnArray.length=0,this.argsArray.length=0}},U}(),v=function(){function D(L){this.state=L,th
+is.stateStack=[]}return D.prototype={save:function(){var S=this.state;this.stateStack.push(this.stat
+e),this.state=S.clone()},restore:function(){var S=this.stateStack.pop();S&&(this.state=S)},transform
+:function(S){this.state.ctm=s.Util.transform(this.state.ctm,S)}},D}(),b=function(){function D(){this
+.ctm=new Float32Array(s.IDENTITY_MATRIX),this.fontName=null,this.fontSize=0,this.font=null,this.font
+Matrix=s.FONT_IDENTITY_MATRIX,this.textMatrix=s.IDENTITY_MATRIX.slice(),this.textLineMatrix=s.IDENTI
+TY_MATRIX.slice(),this.charSpacing=0,this.wordSpacing=0,this.leading=0,this.textHScale=1,this.textRi
+se=0}return D.prototype={setTextMatrix:function(S,U,J,H,Q,F){var E=this.textMatrix;E[0]=S,E[1]=U,E[2
+]=J,E[3]=H,E[4]=Q,E[5]=F},setTextLineMatrix:function(S,U,J,H,Q,F){var E=this.textLineMatrix;E[0]=S,E
+[1]=U,E[2]=J,E[3]=H,E[4]=Q,E[5]=F},translateTextMatrix:function(S,U){var J=this.textMatrix;J[4]=J[0]
+*S+J[2]*U+J[4],J[5]=J[1]*S+J[3]*U+J[5]},translateTextLineMatrix:function(S,U){var J=this.textLineMat
+rix;J[4]=J[0]*S+J[2]*U+J[4],J[5]=J[1]*S+J[3]*U+J[5]},calcTextLineMatrixAdvance:function(S,U,J,H,Q,F)
+{var E=this.font;if(!E)return null;var V=this.textLineMatrix;if(!(S===V[0]&&U===V[1]&&J===V[2]&&H===
+V[3]))return null;var k=Q-V[4],O=F-V[5];if(E.vertical&&k!==0||!E.vertical&&O!==0)return null;var z,M
+,T=S*H-U*J;return E.vertical?(z=-O*J/T,M=O*S/T):(z=k*H/T,M=-k*U/T),{width:z,height:M,value:E.vertica
+l?M:z}},calcRenderMatrix:function(S){var U=[this.fontSize*this.textHScale,0,0,this.fontSize,0,this.t
+extRise];return s.Util.transform(S,s.Util.transform(this.textMatrix,U))},carriageReturn:function(){t
+his.translateTextLineMatrix(0,-this.leading),this.textMatrix=this.textLineMatrix.slice()},clone:func
+tion(){var S=Object.create(this);return S.textMatrix=this.textMatrix.slice(),S.textLineMatrix=this.t
+extLineMatrix.slice(),S.fontMatrix=this.fontMatrix.slice(),S}},D}(),m=function(){function D(){this.c
+tm=new Float32Array(s.IDENTITY_MATRIX),this.font=null,this.textRenderingMode=s.TextRenderingMode.FIL
+L,this.fillColorSpace=x.ColorSpace.singletons.gray,this.strokeColorSpace=x.ColorSpace.singletons.gra
+y}return D.prototype={clone:function(){return Object.create(this)}},D}(),G=function(){var D=(0,s.get
+LookupTableFactory)(function(S){S.w={id:s.OPS.setLineWidth,numArgs:1,variableArgs:!1},S.J={id:s.OPS.
+setLineCap,numArgs:1,variableArgs:!1},S.j={id:s.OPS.setLineJoin,numArgs:1,variableArgs:!1},S.M={id:s
+.OPS.setMiterLimit,numArgs:1,variableArgs:!1},S.d={id:s.OPS.setDash,numArgs:2,variableArgs:!1},S.ri=
+{id:s.OPS.setRenderingIntent,numArgs:1,variableArgs:!1},S.i={id:s.OPS.setFlatness,numArgs:1,variable
+Args:!1},S.gs={id:s.OPS.setGState,numArgs:1,variableArgs:!1},S.q={id:s.OPS.save,numArgs:0,variableAr
+gs:!1},S.Q={id:s.OPS.restore,numArgs:0,variableArgs:!1},S.cm={id:s.OPS.transform,numArgs:6,variableA
+rgs:!1},S.m={id:s.OPS.moveTo,numArgs:2,variableArgs:!1},S.l={id:s.OPS.lineTo,numArgs:2,variableArgs:
+!1},S.c={id:s.OPS.curveTo,numArgs:6,variableArgs:!1},S.v={id:s.OPS.curveTo2,numArgs:4,variableArgs:!
+1},S.y={id:s.OPS.curveTo3,numArgs:4,variableArgs:!1},S.h={id:s.OPS.closePath,numArgs:0,variableArgs:
+!1},S.re={id:s.OPS.rectangle,numArgs:4,variableArgs:!1},S.S={id:s.OPS.stroke,numArgs:0,variableArgs:
+!1},S.s={id:s.OPS.closeStroke,numArgs:0,variableArgs:!1},S.f={id:s.OPS.fill,numArgs:0,variableArgs:!
+1},S.F={id:s.OPS.fill,numArgs:0,variableArgs:!1},S["f*"]={id:s.OPS.eoFill,numArgs:0,variableArgs:!1}
+,S.B={id:s.OPS.fillStroke,numArgs:0,variableArgs:!1},S["B*"]={id:s.OPS.eoFillStroke,numArgs:0,variab
+leArgs:!1},S.b={id:s.OPS.closeFillStroke,numArgs:0,variableArgs:!1},S["b*"]={id:s.OPS.closeEOFillStr
+oke,numArgs:0,variableArgs:!1},S.n={id:s.OPS.endPath,numArgs:0,variableArgs:!1},S.W={id:s.OPS.clip,n
+umArgs:0,variableArgs:!1},S["W*"]={id:s.OPS.eoClip,numArgs:0,variableArgs:!1},S.BT={id:s.OPS.beginTe
+xt,numArgs:0,variableArgs:!1},S.ET={id:s.OPS.endText,numArgs:0,variableArgs:!1},S.Tc={id:s.OPS.setCh
+arSpacing,numArgs:1,variableArgs:!1},S.Tw={id:s.OPS.setWordSpacing,numArgs:1,variableArgs:!1},S.Tz={
+id:s.OPS.setHScale,numArgs:1,variableArgs:!1},S.TL={id:s.OPS.setLeading,numArgs:1,variableArgs:!1},S
+.Tf={id:s.OPS.setFont,numArgs:2,variableArgs:!1},S.Tr={id:s.OPS.setTextRenderingMode,numArgs:1,varia
+bleArgs:!1},S.Ts={id:s.OPS.setTextRise,numArgs:1,variableArgs:!1},S.Td={id:s.OPS.moveText,numArgs:2,
+variableArgs:!1},S.TD={id:s.OPS.setLeadingMoveText,numArgs:2,variableArgs:!1},S.Tm={id:s.OPS.setText
+Matrix,numArgs:6,variableArgs:!1},S["T*"]={id:s.OPS.nextLine,numArgs:0,variableArgs:!1},S.Tj={id:s.O
+PS.showText,numArgs:1,variableArgs:!1},S.TJ={id:s.OPS.showSpacedText,numArgs:1,variableArgs:!1},S["'
+"]={id:s.OPS.nextLineShowText,numArgs:1,variableArgs:!1},S['"']={id:s.OPS.nextLineSetSpacingShowText
+,numArgs:3,variableArgs:!1},S.d0={id:s.OPS.setCharWidth,numArgs:2,variableArgs:!1},S.d1={id:s.OPS.se
+tCharWidthAndBounds,numArgs:6,variableArgs:!1},S.CS={id:s.OPS.setStrokeColorSpace,numArgs:1,variable
+Args:!1},S.cs={id:s.OPS.setFillColorSpace,numArgs:1,variableArgs:!1},S.SC={id:s.OPS.setStrokeColor,n
+umArgs:4,variableArgs:!0},S.SCN={id:s.OPS.setStrokeColorN,numArgs:33,variableArgs:!0},S.sc={id:s.OPS
+.setFillColor,numArgs:4,variableArgs:!0},S.scn={id:s.OPS.setFillColorN,numArgs:33,variableArgs:!0},S
+.G={id:s.OPS.setStrokeGray,numArgs:1,variableArgs:!1},S.g={id:s.OPS.setFillGray,numArgs:1,variableAr
+gs:!1},S.RG={id:s.OPS.setStrokeRGBColor,numArgs:3,variableArgs:!1},S.rg={id:s.OPS.setFillRGBColor,nu
+mArgs:3,variableArgs:!1},S.K={id:s.OPS.setStrokeCMYKColor,numArgs:4,variableArgs:!1},S.k={id:s.OPS.s
+etFillCMYKColor,numArgs:4,variableArgs:!1},S.sh={id:s.OPS.shadingFill,numArgs:1,variableArgs:!1},S.B
+I={id:s.OPS.beginInlineImage,numArgs:0,variableArgs:!1},S.ID={id:s.OPS.beginImageData,numArgs:0,vari
+ableArgs:!1},S.EI={id:s.OPS.endInlineImage,numArgs:1,variableArgs:!1},S.Do={id:s.OPS.paintXObject,nu
+mArgs:1,variableArgs:!1},S.MP={id:s.OPS.markPoint,numArgs:1,variableArgs:!1},S.DP={id:s.OPS.markPoin
+tProps,numArgs:2,variableArgs:!1},S.BMC={id:s.OPS.beginMarkedContent,numArgs:1,variableArgs:!1},S.BD
+C={id:s.OPS.beginMarkedContentProps,numArgs:2,variableArgs:!1},S.EMC={id:s.OPS.endMarkedContent,numA
+rgs:0,variableArgs:!1},S.BX={id:s.OPS.beginCompat,numArgs:0,variableArgs:!1},S.EX={id:s.OPS.endCompa
+t,numArgs:0,variableArgs:!1},S.BM=null,S.BD=null,S.true=null,S.fa=null,S.fal=null,S.fals=null,S.fals
+e=null,S.nu=null,S.nul=null,S.null=null});function L(S,U,J){this.opMap=D(),this.parser=new Y.Parser(
+new Y.Lexer(S,this.opMap),!1,U),this.stateManager=J,this.nonProcessedArgs=[]}return L.prototype={get
+ savedStatesDepth(){return this.stateManager.stateStack.length},read:function(U){for(var J=U.args;;)
+{var H=this.parser.getObj();if((0,o.isCmd)(H)){var Q=H.cmd,F=this.opMap[Q];if(!F){(0,s.warn)('Unknow
+n command "'+Q+'"');continue}var E=F.id,V=F.numArgs,k=J!==null?J.length:0;if(F.variableArgs)k>V&&(0,
+s.info)("Command "+E+": expected [0,"+V+"] args, but received "+k+" args.");else{if(k!==V){for(var O
+=this.nonProcessedArgs;k>V;)O.push(J.shift()),k--;for(;k<V&&O.length!==0;)J===null&&(J=[]),J.unshift
+(O.pop()),k++}if(k<V){(0,s.warn)("Skipping command "+E+": expected "+V+" args, but received "+k+" ar
+gs."),J!==null&&(J.length=0);continue}}return this.preprocessCommand(E,J),U.fn=E,U.args=J,!0}if((0,o
+.isEOF)(H))return!1;if(H!==null&&(J===null&&(J=[]),J.push(H),J.length>33))throw new s.FormatError("T
+oo many arguments")}},preprocessCommand:function(U,J){switch(U|0){case s.OPS.save:this.stateManager.
+save();break;case s.OPS.restore:this.stateManager.restore();break;case s.OPS.transform:this.stateMan
+ager.transform(J);break}}},L}(),p=function(){function D(J,H,Q){for(var F=J,E=0,V=H.length-1;E<V;E++)
+{var k=H[E];F=F[k]||(F[k]=[])}F[H[H.length-1]]=Q}function L(J,H,Q,F){for(var E=J+2,V=0;V<H;V++){var 
+k=F[E+4*V],O=k.length===1&&k[0];if(O&&O.width===1&&O.height===1&&(!O.data.length||O.data.length===1&
+&O.data[0]===0)){Q[E+4*V]=s.OPS.paintSolidColorImageMask;continue}break}return H-V}var S=[];D(S,[s.O
+PS.save,s.OPS.transform,s.OPS.paintInlineImageXObject,s.OPS.restore],function(H){for(var Q=10,F=200,
+E=1e3,V=1,k=H.fnArray,O=H.argsArray,z=H.iCurr,M=z-3,T=z-2,j=z-1,K=M+4,_=k.length;K+3<_&&!(k[K]!==s.O
+PS.save||k[K+1]!==s.OPS.transform||k[K+2]!==s.OPS.paintInlineImageXObject||k[K+3]!==s.OPS.restore);)
+K+=4;var q=Math.min((K-M)/4,F);if(q<Q)return K;var te=0,ae=[],ee=0,ne=V,se=V,ie;for(ie=0;ie<q;ie++){
+var ce=O[T+(ie<<2)],oe=O[j+(ie<<2)][0];ne+oe.width>E&&(te=Math.max(te,ne),se+=ee+2*V,ne=0,ee=0),ae.p
+ush({transform:ce,x:ne,y:se,w:oe.width,h:oe.height}),ne+=oe.width+2*V,ee=Math.max(ee,oe.height)}var 
+Ae=Math.max(te,ne)+V,Ge=se+ee+V,be=new Uint8Array(Ae*Ge*4),ve=Ae<<2;for(ie=0;ie<q;ie++){var Ce=O[j+(
+ie<<2)][0].data,Qe=ae[ie].w<<2,Re=0,Ve=ae[ie].x+ae[ie].y*Ae<<2;be.set(Ce.subarray(0,Qe),Ve-ve);for(v
+ar Ee=0,Ze=ae[ie].h;Ee<Ze;Ee++)be.set(Ce.subarray(Re,Re+Qe),Ve),Re+=Qe,Ve+=ve;for(be.set(Ce.subarray
+(Re-Qe,Re),Ve);Ve>=0;)Ce[Ve-4]=Ce[Ve],Ce[Ve-3]=Ce[Ve+1],Ce[Ve-2]=Ce[Ve+2],Ce[Ve-1]=Ce[Ve+3],Ce[Ve+Qe
+]=Ce[Ve+Qe-4],Ce[Ve+Qe+1]=Ce[Ve+Qe-3],Ce[Ve+Qe+2]=Ce[Ve+Qe-2],Ce[Ve+Qe+3]=Ce[Ve+Qe-1],Ve-=ve}return 
+k.splice(M,q*4,s.OPS.paintInlineImageXObjectGroup),O.splice(M,q*4,[{width:Ae,height:Ge,kind:s.ImageK
+ind.RGBA_32BPP,data:be},ae]),M+1}),D(S,[s.OPS.save,s.OPS.transform,s.OPS.paintImageMaskXObject,s.OPS
+.restore],function(H){for(var Q=10,F=100,E=1e3,V=H.fnArray,k=H.argsArray,O=H.iCurr,z=O-3,M=O-2,T=O-1
+,j=z+4,K=V.length;j+3<K&&!(V[j]!==s.OPS.save||V[j+1]!==s.OPS.transform||V[j+2]!==s.OPS.paintImageMas
+kXObject||V[j+3]!==s.OPS.restore);)j+=4;var _=(j-z)/4;if(_=L(z,_,V,k),_<Q)return j;var q,te=!1,ae,ee
+,ne=k[T][0];if(k[M][1]===0&&k[M][2]===0){te=!0;var se=k[M][0],ie=k[M][3];ae=M+4;var ce=T+4;for(q=1;q
+<_;q++,ae+=4,ce+=4)if(ee=k[ae],k[ce][0]!==ne||ee[0]!==se||ee[1]!==0||ee[2]!==0||ee[3]!==ie){q<Q?te=!
+1:_=q;break}}if(te){_=Math.min(_,E);var oe=new Float32Array(_*2);for(ae=M,q=0;q<_;q++,ae+=4)ee=k[ae]
+,oe[q<<1]=ee[4],oe[(q<<1)+1]=ee[5];V.splice(z,_*4,s.OPS.paintImageMaskXObjectRepeat),k.splice(z,_*4,
+[ne,se,ie,oe])}else{_=Math.min(_,F);var Ae=[];for(q=0;q<_;q++){ee=k[M+(q<<2)];var Ge=k[T+(q<<2)][0];
+Ae.push({data:Ge.data,width:Ge.width,height:Ge.height,transform:ee})}V.splice(z,_*4,s.OPS.paintImage
+MaskXObjectGroup),k.splice(z,_*4,[Ae])}return z+1}),D(S,[s.OPS.save,s.OPS.transform,s.OPS.paintImage
+XObject,s.OPS.restore],function(J){var H=3,Q=1e3,F=J.fnArray,E=J.argsArray,V=J.iCurr,k=V-3,O=V-2,z=V
+-1,M=V;if(E[O][1]!==0||E[O][2]!==0)return M+1;for(var T=E[z][0],j=E[O][0],K=E[O][3],_=k+4,q=F.length
+;_+3<q&&!(F[_]!==s.OPS.save||F[_+1]!==s.OPS.transform||F[_+2]!==s.OPS.paintImageXObject||F[_+3]!==s.
+OPS.restore||E[_+1][0]!==j||E[_+1][1]!==0||E[_+1][2]!==0||E[_+1][3]!==K||E[_+2][0]!==T);)_+=4;var te
+=Math.min((_-k)/4,Q);if(te<H)return _;for(var ae=new Float32Array(te*2),ee=O,ne=0;ne<te;ne++,ee+=4){
+var se=E[ee];ae[ne<<1]=se[4],ae[(ne<<1)+1]=se[5]}var ie=[T,j,K,ae];return F.splice(k,te*4,s.OPS.pain
+tImageXObjectRepeat),E.splice(k,te*4,ie),k+1}),D(S,[s.OPS.beginText,s.OPS.setFont,s.OPS.setTextMatri
+x,s.OPS.showText,s.OPS.endText],function(J){for(var H=3,Q=1e3,F=J.fnArray,E=J.argsArray,V=J.iCurr,k=
+V-4,O=V-3,z=V-2,M=V-1,T=V,j=E[O][0],K=E[O][1],_=k+5,q=F.length;_+4<q&&!(F[_]!==s.OPS.beginText||F[_+
+1]!==s.OPS.setFont||F[_+2]!==s.OPS.setTextMatrix||F[_+3]!==s.OPS.showText||F[_+4]!==s.OPS.endText||E
+[_+1][0]!==j||E[_+1][1]!==K);)_+=5;var te=Math.min((_-k)/5,Q);if(te<H)return _;var ae=k;k>=4&&F[k-4]
+===F[O]&&F[k-3]===F[z]&&F[k-2]===F[M]&&F[k-1]===F[T]&&E[k-4][0]===j&&E[k-4][1]===K&&(te++,ae-=5);for
+(var ee=ae+4,ne=1;ne<te;ne++)F.splice(ee,3),E.splice(ee,3),ee+=2;return ee+1});function U(){}return 
+U.prototype={optimize:function(H){for(var Q=H.fnArray,F=H.argsArray,E={iCurr:0,fnArray:Q,argsArray:F
+},V,k=0,O=Q.length;k<O;)V=(V||S)[Q[k]],typeof V=="function"?(E.iCurr=k,k=V(E),V=void 0,O=E.fnArray.l
+ength):k++}},U}();t.OperatorList=f,t.PartialEvaluator=g},function(a,t,r){"use strict";Object.defineP
+roperty(t,"__esModule",{value:!0}),t.JpxImage=void 0;var n=r(0),s=r(9),I=function(){function d(A){th
+is.message="JPX error: "+A}return d.prototype=new Error,d.prototype.name="JpxError",d.constructor=d,
+d}(),e=function(){var d={LL:0,LH:1,HL:1,HH:2};function A(){this.failOnCorruptedImage=!1}A.prototype=
+{parse:function(Q){var F=(0,n.readUint16)(Q,0);if(F===65359){this.parseCodestream(Q,0,Q.length);retu
+rn}for(var E=0,V=Q.length;E<V;){var k=8,O=(0,n.readUint32)(Q,E),z=(0,n.readUint32)(Q,E+4);if(E+=k,O=
+==1&&(O=(0,n.readUint32)(Q,E)*4294967296+(0,n.readUint32)(Q,E+4),E+=8,k+=8),O===0&&(O=V-E+k),O<k)thr
+ow new I("Invalid box field size");var M=O-k,T=!0;switch(z){case 1785737832:T=!1;break;case 16682466
+42:var j=Q[E];if(j===1){var K=(0,n.readUint32)(Q,E+3);switch(K){case 16:case 17:case 18:break;defaul
+t:(0,n.warn)("Unknown colorspace "+K);break}}else j===2&&(0,n.info)("ICC profile not supported");bre
+ak;case 1785737827:this.parseCodestream(Q,E,E+M);break;case 1783636e3:(0,n.readUint32)(Q,E)!==218793
+738&&(0,n.warn)("Invalid JP2 signature");break;case 1783634458:case 1718909296:case 1920099697:case 
+1919251232:case 1768449138:break;default:var _=String.fromCharCode(z>>24&255,z>>16&255,z>>8&255,z&25
+5);(0,n.warn)("Unsupported header type "+z+" ("+_+")");break}T&&(E+=M)}},parseImageProperties:functi
+on(Q){for(var F=Q.getByte();F>=0;){var E=F;F=Q.getByte();var V=E<<8|F;if(V===65361){Q.skip(4);var k=
+Q.getInt32()>>>0,O=Q.getInt32()>>>0,z=Q.getInt32()>>>0,M=Q.getInt32()>>>0;Q.skip(16);var T=Q.getUint
+16();this.width=k-z,this.height=O-M,this.componentsCount=T,this.bitsPerComponent=8;return}}throw new
+ I("No size marker found in JPX stream")},parseCodestream:function(Q,F,E){var V={},k=!1;try{for(var 
+O=F;O+1<E;){var z=(0,n.readUint16)(Q,O);O+=2;var M=0,T,j,K,_,q,te;switch(z){case 65359:V.mainHeader=
+!0;break;case 65497:break;case 65361:M=(0,n.readUint16)(Q,O);var ae={};ae.Xsiz=(0,n.readUint32)(Q,O+
+4),ae.Ysiz=(0,n.readUint32)(Q,O+8),ae.XOsiz=(0,n.readUint32)(Q,O+12),ae.YOsiz=(0,n.readUint32)(Q,O+1
+6),ae.XTsiz=(0,n.readUint32)(Q,O+20),ae.YTsiz=(0,n.readUint32)(Q,O+24),ae.XTOsiz=(0,n.readUint32)(Q,
+O+28),ae.YTOsiz=(0,n.readUint32)(Q,O+32);var ee=(0,n.readUint16)(Q,O+36);ae.Csiz=ee;var ne=[];T=O+38
+;for(var se=0;se<ee;se++){var ie={precision:(Q[T]&127)+1,isSigned:!!(Q[T]&128),XRsiz:Q[T+1],YRsiz:Q[
+T+1]};u(ie,ae),ne.push(ie)}V.SIZ=ae,V.components=ne,h(V,ne),V.QCC=[],V.COC=[];break;case 65372:M=(0,
+n.readUint16)(Q,O);var ce={};switch(T=O+2,j=Q[T++],j&31){case 0:_=8,q=!0;break;case 1:_=16,q=!1;brea
+k;case 2:_=16,q=!0;break;default:throw new Error("Invalid SQcd value "+j)}for(ce.noQuantization=_===
+8,ce.scalarExpounded=q,ce.guardBits=j>>5,K=[];T<M+O;){var oe={};_===8?(oe.epsilon=Q[T++]>>3,oe.mu=0)
+:(oe.epsilon=Q[T]>>3,oe.mu=(Q[T]&7)<<8|Q[T+1],T+=2),K.push(oe)}ce.SPqcds=K,V.mainHeader?V.QCD=ce:(V.
+currentTile.QCD=ce,V.currentTile.QCC=[]);break;case 65373:M=(0,n.readUint16)(Q,O);var Ae={};T=O+2;va
+r Ge;switch(V.SIZ.Csiz<257?Ge=Q[T++]:(Ge=(0,n.readUint16)(Q,T),T+=2),j=Q[T++],j&31){case 0:_=8,q=!0;
+break;case 1:_=16,q=!1;break;case 2:_=16,q=!0;break;default:throw new Error("Invalid SQcd value "+j)
+}for(Ae.noQuantization=_===8,Ae.scalarExpounded=q,Ae.guardBits=j>>5,K=[];T<M+O;)oe={},_===8?(oe.epsi
+lon=Q[T++]>>3,oe.mu=0):(oe.epsilon=Q[T]>>3,oe.mu=(Q[T]&7)<<8|Q[T+1],T+=2),K.push(oe);Ae.SPqcds=K,V.m
+ainHeader?V.QCC[Ge]=Ae:V.currentTile.QCC[Ge]=Ae;break;case 65362:M=(0,n.readUint16)(Q,O);var be={};T
+=O+2;var ve=Q[T++];be.entropyCoderWithCustomPrecincts=!!(ve&1),be.sopMarkerUsed=!!(ve&2),be.ephMarke
+rUsed=!!(ve&4),be.progressionOrder=Q[T++],be.layersCount=(0,n.readUint16)(Q,T),T+=2,be.multipleCompo
+nentTransform=Q[T++],be.decompositionLevelsCount=Q[T++],be.xcb=(Q[T++]&15)+2,be.ycb=(Q[T++]&15)+2;va
+r Ce=Q[T++];if(be.selectiveArithmeticCodingBypass=!!(Ce&1),be.resetContextProbabilities=!!(Ce&2),be.
+terminationOnEachCodingPass=!!(Ce&4),be.verticalyStripe=!!(Ce&8),be.predictableTermination=!!(Ce&16)
+,be.segmentationSymbolUsed=!!(Ce&32),be.reversibleTransformation=Q[T++],be.entropyCoderWithCustomPre
+cincts){for(var Qe=[];T<M+O;){var Re=Q[T++];Qe.push({PPx:Re&15,PPy:Re>>4})}be.precinctsSizes=Qe}var 
+Ve=[];if(be.selectiveArithmeticCodingBypass&&Ve.push("selectiveArithmeticCodingBypass"),be.resetCont
+extProbabilities&&Ve.push("resetContextProbabilities"),be.terminationOnEachCodingPass&&Ve.push("term
+inationOnEachCodingPass"),be.verticalyStripe&&Ve.push("verticalyStripe"),be.predictableTermination&&
+Ve.push("predictableTermination"),Ve.length>0)throw k=!0,new Error("Unsupported COD options ("+Ve.jo
+in(", ")+")");V.mainHeader?V.COD=be:(V.currentTile.COD=be,V.currentTile.COC=[]);break;case 65424:M=(
+0,n.readUint16)(Q,O),te={},te.index=(0,n.readUint16)(Q,O+2),te.length=(0,n.readUint32)(Q,O+4),te.dat
+aEnd=te.length+O-2,te.partIndex=Q[O+8],te.partsCount=Q[O+9],V.mainHeader=!1,te.partIndex===0&&(te.CO
+D=V.COD,te.COC=V.COC.slice(0),te.QCD=V.QCD,te.QCC=V.QCC.slice(0)),V.currentTile=te;break;case 65427:
+te=V.currentTile,te.partIndex===0&&(p(V,te.index),f(V)),M=te.dataEnd-O,v(V,Q,O,M);break;case 65365:c
+ase 65367:case 65368:case 65380:M=(0,n.readUint16)(Q,O);break;case 65363:throw new Error("Codestream
+ code 0xFF53 (COC) is not implemented");default:throw new Error("Unknown codestream code: "+z.toStri
+ng(16))}O+=M}}catch(Ee){if(k||this.failOnCorruptedImage)throw new I(Ee.message);(0,n.warn)("JPX: Try
+ing to recover from: "+Ee.message)}this.tiles=G(V),this.width=V.SIZ.Xsiz-V.SIZ.XOsiz,this.height=V.S
+IZ.Ysiz-V.SIZ.YOsiz,this.componentsCount=V.SIZ.Csiz}};function u(H,Q){H.x0=Math.ceil(Q.XOsiz/H.XRsiz
+),H.x1=Math.ceil(Q.Xsiz/H.XRsiz),H.y0=Math.ceil(Q.YOsiz/H.YRsiz),H.y1=Math.ceil(Q.Ysiz/H.YRsiz),H.wi
+dth=H.x1-H.x0,H.height=H.y1-H.y0}function h(H,Q){for(var F=H.SIZ,E,V=[],k=Math.ceil((F.Xsiz-F.XTOsiz
+)/F.XTsiz),O=Math.ceil((F.Ysiz-F.YTOsiz)/F.YTsiz),z=0;z<O;z++)for(var M=0;M<k;M++)E={},E.tx0=Math.ma
+x(F.XTOsiz+M*F.XTsiz,F.XOsiz),E.ty0=Math.max(F.YTOsiz+z*F.YTsiz,F.YOsiz),E.tx1=Math.min(F.XTOsiz+(M+
+1)*F.XTsiz,F.Xsiz),E.ty1=Math.min(F.YTOsiz+(z+1)*F.YTsiz,F.Ysiz),E.width=E.tx1-E.tx0,E.height=E.ty1-
+E.ty0,E.components=[],V.push(E);H.tiles=V;for(var T=F.Csiz,j=0,K=T;j<K;j++)for(var _=Q[j],q=0,te=V.l
+ength;q<te;q++){var ae={};E=V[q],ae.tcx0=Math.ceil(E.tx0/_.XRsiz),ae.tcy0=Math.ceil(E.ty0/_.YRsiz),a
+e.tcx1=Math.ceil(E.tx1/_.XRsiz),ae.tcy1=Math.ceil(E.ty1/_.YRsiz),ae.width=ae.tcx1-ae.tcx0,ae.height=
+ae.tcy1-ae.tcy0,E.components[j]=ae}}function c(H,Q,F){var E=Q.codingStyleParameters,V={};return E.en
+tropyCoderWithCustomPrecincts?(V.PPx=E.precinctsSizes[F].PPx,V.PPy=E.precinctsSizes[F].PPy):(V.PPx=1
+5,V.PPy=15),V.xcb_=F>0?Math.min(E.xcb,V.PPx-1):Math.min(E.xcb,V.PPx),V.ycb_=F>0?Math.min(E.ycb,V.PPy
+-1):Math.min(E.ycb,V.PPy),V}function W(H,Q,F){var E=1<<F.PPx,V=1<<F.PPy,k=Q.resLevel===0,O=1<<F.PPx+
+(k?0:-1),z=1<<F.PPy+(k?0:-1),M=Q.trx1>Q.trx0?Math.ceil(Q.trx1/E)-Math.floor(Q.trx0/E):0,T=Q.try1>Q.t
+ry0?Math.ceil(Q.try1/V)-Math.floor(Q.try0/V):0,j=M*T;Q.precinctParameters={precinctWidth:E,precinctH
+eight:V,numprecinctswide:M,numprecinctshigh:T,numprecincts:j,precinctWidthInSubband:O,precinctHeight
+InSubband:z}}function Y(H,Q,F){var E=F.xcb_,V=F.ycb_,k=1<<E,O=1<<V,z=Q.tbx0>>E,M=Q.tby0>>V,T=Q.tbx1+
+k-1>>E,j=Q.tby1+O-1>>V,K=Q.resolution.precinctParameters,_=[],q=[],te,ae,ee,ne;for(ae=M;ae<j;ae++)fo
+r(te=z;te<T;te++){ee={cbx:te,cby:ae,tbx0:k*te,tby0:O*ae,tbx1:k*(te+1),tby1:O*(ae+1)},ee.tbx0_=Math.m
+ax(Q.tbx0,ee.tbx0),ee.tby0_=Math.max(Q.tby0,ee.tby0),ee.tbx1_=Math.min(Q.tbx1,ee.tbx1),ee.tby1_=Math
+.min(Q.tby1,ee.tby1);var se=Math.floor((ee.tbx0_-Q.tbx0)/K.precinctWidthInSubband),ie=Math.floor((ee
+.tby0_-Q.tby0)/K.precinctHeightInSubband);if(ne=se+ie*K.numprecinctswide,ee.precinctNumber=ne,ee.sub
+bandType=Q.type,ee.Lblock=3,!(ee.tbx1_<=ee.tbx0_||ee.tby1_<=ee.tby0_)){_.push(ee);var ce=q[ne];ce!==
+void 0?(te<ce.cbxMin?ce.cbxMin=te:te>ce.cbxMax&&(ce.cbxMax=te),ae<ce.cbyMin?ce.cbxMin=ae:ae>ce.cbyMa
+x&&(ce.cbyMax=ae)):q[ne]=ce={cbxMin:te,cbyMin:ae,cbxMax:te,cbyMax:ae},ee.precinct=ce}}Q.codeblockPar
+ameters={codeblockWidth:E,codeblockHeight:V,numcodeblockwide:T-z+1,numcodeblockhigh:j-M+1},Q.codeblo
+cks=_,Q.precincts=q}function w(H,Q,F){for(var E=[],V=H.subbands,k=0,O=V.length;k<O;k++)for(var z=V[k
+],M=z.codeblocks,T=0,j=M.length;T<j;T++){var K=M[T];K.precinctNumber===Q&&E.push(K)}return{layerNumb
+er:F,codeblocks:E}}function x(H){for(var Q=H.SIZ,F=H.currentTile.index,E=H.tiles[F],V=E.codingStyleD
+efaultParameters.layersCount,k=Q.Csiz,O=0,z=0;z<k;z++)O=Math.max(O,E.components[z].codingStyleParame
+ters.decompositionLevelsCount);var M=0,T=0,j=0,K=0;this.nextPacket=function(){for(;M<V;M++){for(;T<=
+O;T++){for(;j<k;j++){var q=E.components[j];if(!(T>q.codingStyleParameters.decompositionLevelsCount))
+{for(var te=q.resolutions[T],ae=te.precinctParameters.numprecincts;K<ae;){var ee=w(te,K,M);return K+
++,ee}K=0}}j=0}T=0}throw new I("Out of packets")}}function X(H){for(var Q=H.SIZ,F=H.currentTile.index
+,E=H.tiles[F],V=E.codingStyleDefaultParameters.layersCount,k=Q.Csiz,O=0,z=0;z<k;z++)O=Math.max(O,E.c
+omponents[z].codingStyleParameters.decompositionLevelsCount);var M=0,T=0,j=0,K=0;this.nextPacket=fun
+ction(){for(;M<=O;M++){for(;T<V;T++){for(;j<k;j++){var q=E.components[j];if(!(M>q.codingStyleParamet
+ers.decompositionLevelsCount)){for(var te=q.resolutions[M],ae=te.precinctParameters.numprecincts;K<a
+e;){var ee=w(te,K,T);return K++,ee}K=0}}j=0}T=0}throw new I("Out of packets")}}function B(H){var Q=H
+.SIZ,F=H.currentTile.index,E=H.tiles[F],V=E.codingStyleDefaultParameters.layersCount,k=Q.Csiz,O,z,M,
+T,j=0;for(M=0;M<k;M++){var K=E.components[M];j=Math.max(j,K.codingStyleParameters.decompositionLevel
+sCount)}var _=new Int32Array(j+1);for(z=0;z<=j;++z){var q=0;for(M=0;M<k;++M){var te=E.components[M].
+resolutions;z<te.length&&(q=Math.max(q,te[z].precinctParameters.numprecincts))}_[z]=q}O=0,z=0,M=0,T=
+0,this.nextPacket=function(){for(;z<=j;z++){for(;T<_[z];T++){for(;M<k;M++){var ee=E.components[M];if
+(!(z>ee.codingStyleParameters.decompositionLevelsCount)){var ne=ee.resolutions[z],se=ne.precinctPara
+meters.numprecincts;if(!(T>=se)){for(;O<V;){var ie=w(ne,T,O);return O++,ie}O=0}}}M=0}T=0}throw new I
+("Out of packets")}}function R(H){var Q=H.SIZ,F=H.currentTile.index,E=H.tiles[F],V=E.codingStyleDefa
+ultParameters.layersCount,k=Q.Csiz,O=Z(E),z=O,M=0,T=0,j=0,K=0,_=0;this.nextPacket=function(){for(;_<
+z.maxNumHigh;_++){for(;K<z.maxNumWide;K++){for(;j<k;j++){for(var te=E.components[j],ae=te.codingStyl
+eParameters.decompositionLevelsCount;T<=ae;T++){var ee=te.resolutions[T],ne=O.components[j].resoluti
+ons[T],se=g(K,_,ne,z,ee);if(se!==null){for(;M<V;){var ie=w(ee,se,M);return M++,ie}M=0}}T=0}j=0}K=0}t
+hrow new I("Out of packets")}}function y(H){var Q=H.SIZ,F=H.currentTile.index,E=H.tiles[F],V=E.codin
+gStyleDefaultParameters.layersCount,k=Q.Csiz,O=Z(E),z=0,M=0,T=0,j=0,K=0;this.nextPacket=function(){f
+or(;T<k;++T){for(var q=E.components[T],te=O.components[T],ae=q.codingStyleParameters.decompositionLe
+velsCount;K<te.maxNumHigh;K++){for(;j<te.maxNumWide;j++){for(;M<=ae;M++){var ee=q.resolutions[M],ne=
+te.resolutions[M],se=g(j,K,ne,te,ee);if(se!==null){for(;z<V;){var ie=w(ee,se,z);return z++,ie}z=0}}M
+=0}j=0}K=0}throw new I("Out of packets")}}function g(H,Q,F,E,V){var k=H*E.minWidth,O=Q*E.minHeight;i
+f(k%F.width!==0||O%F.height!==0)return null;var z=O/F.width*V.precinctParameters.numprecinctswide;re
+turn k/F.height+z}function Z(H){for(var Q=H.components.length,F=Number.MAX_VALUE,E=Number.MAX_VALUE,
+V=0,k=0,O=new Array(Q),z=0;z<Q;z++){for(var M=H.components[z],T=M.codingStyleParameters.decompositio
+nLevelsCount,j=new Array(T+1),K=Number.MAX_VALUE,_=Number.MAX_VALUE,q=0,te=0,ae=1,ee=T;ee>=0;--ee){v
+ar ne=M.resolutions[ee],se=ae*ne.precinctParameters.precinctWidth,ie=ae*ne.precinctParameters.precin
+ctHeight;K=Math.min(K,se),_=Math.min(_,ie),q=Math.max(q,ne.precinctParameters.numprecinctswide),te=M
+ath.max(te,ne.precinctParameters.numprecinctshigh),j[ee]={width:se,height:ie},ae<<=1}F=Math.min(F,K)
+,E=Math.min(E,_),V=Math.max(V,q),k=Math.max(k,te),O[z]={resolutions:j,minWidth:K,minHeight:_,maxNumW
+ide:q,maxNumHigh:te}}return{components:O,minWidth:F,minHeight:E,maxNumWide:V,maxNumHigh:k}}function 
+f(H){for(var Q=H.SIZ,F=H.currentTile.index,E=H.tiles[F],V=Q.Csiz,k=0;k<V;k++){for(var O=E.components
+[k],z=O.codingStyleParameters.decompositionLevelsCount,M=[],T=[],j=0;j<=z;j++){var K=c(H,O,j),_={},q
+=1<<z-j;_.trx0=Math.ceil(O.tcx0/q),_.try0=Math.ceil(O.tcy0/q),_.trx1=Math.ceil(O.tcx1/q),_.try1=Math
+.ceil(O.tcy1/q),_.resLevel=j,W(H,_,K),M.push(_);var te;if(j===0)te={},te.type="LL",te.tbx0=Math.ceil
+(O.tcx0/q),te.tby0=Math.ceil(O.tcy0/q),te.tbx1=Math.ceil(O.tcx1/q),te.tby1=Math.ceil(O.tcy1/q),te.re
+solution=_,Y(H,te,K),T.push(te),_.subbands=[te];else{var ae=1<<z-j+1,ee=[];te={},te.type="HL",te.tbx
+0=Math.ceil(O.tcx0/ae-.5),te.tby0=Math.ceil(O.tcy0/ae),te.tbx1=Math.ceil(O.tcx1/ae-.5),te.tby1=Math.
+ceil(O.tcy1/ae),te.resolution=_,Y(H,te,K),T.push(te),ee.push(te),te={},te.type="LH",te.tbx0=Math.cei
+l(O.tcx0/ae),te.tby0=Math.ceil(O.tcy0/ae-.5),te.tbx1=Math.ceil(O.tcx1/ae),te.tby1=Math.ceil(O.tcy1/a
+e-.5),te.resolution=_,Y(H,te,K),T.push(te),ee.push(te),te={},te.type="HH",te.tbx0=Math.ceil(O.tcx0/a
+e-.5),te.tby0=Math.ceil(O.tcy0/ae-.5),te.tbx1=Math.ceil(O.tcx1/ae-.5),te.tby1=Math.ceil(O.tcy1/ae-.5
+),te.resolution=_,Y(H,te,K),T.push(te),ee.push(te),_.subbands=ee}}O.resolutions=M,O.subbands=T}var n
+e=E.codingStyleDefaultParameters.progressionOrder;switch(ne){case 0:E.packetsIterator=new x(H);break
+;case 1:E.packetsIterator=new X(H);break;case 2:E.packetsIterator=new B(H);break;case 3:E.packetsIte
+rator=new R(H);break;case 4:E.packetsIterator=new y(H);break;default:throw new I("Unsupported progre
+ssion order "+ne)}}function v(H,Q,F,E){var V=0,k,O=0,z=!1;function M(ze){for(;O<ze;){var Le=Q[F+V];V
+++,z?(k=k<<7|Le,O+=7,z=!1):(k=k<<8|Le,O+=8),Le===255&&(z=!0)}return O-=ze,k>>>O&(1<<ze)-1}function T
+(ze){return Q[F+V-1]===255&&Q[F+V]===ze?(j(1),!0):Q[F+V]===255&&Q[F+V+1]===ze?(j(2),!0):!1}function 
+j(ze){V+=ze}function K(){O=0,z&&(V++,z=!1)}function _(){if(M(1)===0)return 1;if(M(1)===0)return 2;va
+r ze=M(2);return ze<3?ze+3:(ze=M(5),ze<31?ze+6:(ze=M(7),ze+37))}for(var q=H.currentTile.index,te=H.t
+iles[q],ae=H.COD.sopMarkerUsed,ee=H.COD.ephMarkerUsed,ne=te.packetsIterator;V<E;){K(),ae&&T(145)&&j(
+4);var se=ne.nextPacket();if(M(1)){for(var ie=se.layerNumber,ce=[],oe,Ae=0,Ge=se.codeblocks.length;A
+e<Ge;Ae++){oe=se.codeblocks[Ae];var be=oe.precinct,ve=oe.cbx-be.cbxMin,Ce=oe.cby-be.cbyMin,Qe=!1,Re=
+!1,Ve;if(oe.included!==void 0)Qe=!!M(1);else{be=oe.precinct;var Ee,Ze;if(be.inclusionTree!==void 0)E
+e=be.inclusionTree;else{var ye=be.cbxMax-be.cbxMin+1,De=be.cbyMax-be.cbyMin+1;Ee=new D(ye,De,ie),Ze=
+new N(ye,De),be.inclusionTree=Ee,be.zeroBitPlanesTree=Ze}if(Ee.reset(ve,Ce,ie))for(;;)if(M(1)){if(Ve
+=!Ee.nextLevel(),Ve){oe.included=!0,Qe=Re=!0;break}}else{Ee.incrementValue(ie);break}}if(Qe){if(Re){
+for(Ze=be.zeroBitPlanesTree,Ze.reset(ve,Ce);;)if(M(1)){if(Ve=!Ze.nextLevel(),Ve)break}else Ze.increm
+entValue();oe.zeroBitPlanes=Ze.value}for(var Se=_();M(1);)oe.Lblock++;var Me=(0,n.log2)(Se),tt=(Se<1
+<<Me?Me-1:Me)+oe.Lblock,Je=M(tt);ce.push({codeblock:oe,codingpasses:Se,dataLength:Je})}}for(K(),ee&&
+T(146);ce.length>0;){var ke=ce.shift();oe=ke.codeblock,oe.data===void 0&&(oe.data=[]),oe.data.push({
+data:Q,start:F+V,end:F+V+ke.dataLength,codingpasses:ke.codingpasses}),V+=ke.dataLength}}}return V}fu
+nction b(H,Q,F,E,V,k,O,z){for(var M=E.tbx0,T=E.tby0,j=E.tbx1-E.tbx0,K=E.codeblocks,_=E.type.charAt(0
+)==="H"?1:0,q=E.type.charAt(1)==="H"?Q:0,te=0,ae=K.length;te<ae;++te){var ee=K[te],ne=ee.tbx1_-ee.tb
+x0_,se=ee.tby1_-ee.tby0_;if(!(ne===0||se===0)&&ee.data!==void 0){var ie,ce;ie=new L(ne,se,ee.subband
+Type,ee.zeroBitPlanes,k),ce=2;var oe=ee.data,Ae=0,Ge=0,be,ve,Ce;for(be=0,ve=oe.length;be<ve;be++)Ce=
+oe[be],Ae+=Ce.end-Ce.start,Ge+=Ce.codingpasses;var Qe=new Uint8Array(Ae),Re=0;for(be=0,ve=oe.length;
+be<ve;be++){Ce=oe[be];var Ve=Ce.data.subarray(Ce.start,Ce.end);Qe.set(Ve,Re),Re+=Ve.length}var Ee=ne
+w s.ArithmeticDecoder(Qe,0,Ae);for(ie.setDecoder(Ee),be=0;be<Ge;be++){switch(ce){case 0:ie.runSignif
+icancePropagationPass();break;case 1:ie.runMagnitudeRefinementPass();break;case 2:ie.runCleanupPass(
+),z&&ie.checkSegmentationSymbol();break}ce=(ce+1)%3}var Ze=ee.tbx0_-M+(ee.tby0_-T)*j,ye=ie.coefficen
+tsSign,De=ie.coefficentsMagnitude,Se=ie.bitsDecoded,Me=O?0:.5,tt,Je,ke;Re=0;var ze=E.type!=="LL";for
+(be=0;be<se;be++){var Le=Ze/j|0,Be=2*Le*(Q-j)+_+q;for(tt=0;tt<ne;tt++){if(Je=De[Re],Je!==0){Je=(Je+M
+e)*V,ye[Re]!==0&&(Je=-Je),ke=Se[Re];var xe=ze?Be+(Ze<<1):Ze;O&&ke>=k?H[xe]=Je:H[xe]=Je*(1<<k-ke)}Ze+
++,Re++}Ze+=j-ne}}}}function m(H,Q,F){for(var E=Q.components[F],V=E.codingStyleParameters,k=E.quantiz
+ationParameters,O=V.decompositionLevelsCount,z=k.SPqcds,M=k.scalarExpounded,T=k.guardBits,j=V.segmen
+tationSymbolUsed,K=H.components[F].precision,_=V.reversibleTransformation,q=_?new J:new U,te=[],ae=0
+,ee=0;ee<=O;ee++){for(var ne=E.resolutions[ee],se=ne.trx1-ne.trx0,ie=ne.try1-ne.try0,ce=new Float32A
+rray(se*ie),oe=0,Ae=ne.subbands.length;oe<Ae;oe++){var Ge,be;M?(Ge=z[ae].mu,be=z[ae].epsilon,ae++):(
+Ge=z[0].mu,be=z[0].epsilon+(ee>0?1-ee:0));var ve=ne.subbands[oe],Ce=d[ve.type],Qe=_?1:Math.pow(2,K+C
+e-be)*(1+Ge/2048),Re=T+be-1;b(ce,se,ie,ve,Qe,Re,_,j)}te.push({width:se,height:ie,items:ce})}var Ve=q
+.calculate(te,E.tcx0,E.tcy0);return{left:E.tcx0,top:E.tcy0,width:Ve.width,height:Ve.height,items:Ve.
+items}}function G(H){for(var Q=H.SIZ,F=H.components,E=Q.Csiz,V=[],k=0,O=H.tiles.length;k<O;k++){var 
+z=H.tiles[k],M=[],T;for(T=0;T<E;T++)M[T]=m(H,z,T);var j=M[0],K=new Uint8Array(j.items.length*E),_={l
+eft:j.left,top:j.top,width:j.width,height:j.height,items:K},q,te,ae,ee,ne,se=0,ie,ce,oe,Ae,Ge,be,ve,
+Ce,Qe,Re;if(z.codingStyleDefaultParameters.multipleComponentTransform){var Ve=E===4,Ee=M[0].items,Ze
+=M[1].items,ye=M[2].items,De=Ve?M[3].items:null;q=F[0].precision-8,te=(128<<q)+.5,ae=255*(1<<q),ne=a
+e*.5,ee=-ne;var Se=z.components[0],Me=E-3;if(ce=Ee.length,Se.codingStyleParameters.reversibleTransfo
+rmation)for(ie=0;ie<ce;ie++,se+=Me)oe=Ee[ie]+te,Ae=Ze[ie],Ge=ye[ie],ve=oe-(Ge+Ae>>2),be=ve+Ge,Ce=ve+
+Ae,K[se++]=be<=0?0:be>=ae?255:be>>q,K[se++]=ve<=0?0:ve>=ae?255:ve>>q,K[se++]=Ce<=0?0:Ce>=ae?255:Ce>>
+q;else for(ie=0;ie<ce;ie++,se+=Me)oe=Ee[ie]+te,Ae=Ze[ie],Ge=ye[ie],be=oe+1.402*Ge,ve=oe-.34413*Ae-.7
+1414*Ge,Ce=oe+1.772*Ae,K[se++]=be<=0?0:be>=ae?255:be>>q,K[se++]=ve<=0?0:ve>=ae?255:ve>>q,K[se++]=Ce<
+=0?0:Ce>=ae?255:Ce>>q;if(Ve)for(ie=0,se=3;ie<ce;ie++,se+=4)Qe=De[ie],K[se]=Qe<=ee?0:Qe>=ne?255:Qe+te
+>>q}else for(T=0;T<E;T++){var tt=M[T].items;for(q=F[T].precision-8,te=(128<<q)+.5,ae=127.5*(1<<q),ee
+=-ae,se=T,ie=0,ce=tt.length;ie<ce;ie++)Re=tt[ie],K[se]=Re<=ee?0:Re>=ae?255:Re+te>>q,se+=E}V.push(_)}
+return V}function p(H,Q){for(var F=H.SIZ,E=F.Csiz,V=H.tiles[Q],k=0;k<E;k++){var O=V.components[k],z=
+H.currentTile.QCC[k]!==void 0?H.currentTile.QCC[k]:H.currentTile.QCD;O.quantizationParameters=z;var 
+M=H.currentTile.COC[k]!==void 0?H.currentTile.COC[k]:H.currentTile.COD;O.codingStyleParameters=M}V.c
+odingStyleDefaultParameters=H.currentTile.COD}var N=function(){function Q(F,E){var V=(0,n.log2)(Math
+.max(F,E))+1;this.levels=[];for(var k=0;k<V;k++){var O={width:F,height:E,items:[]};this.levels.push(
+O),F=Math.ceil(F/2),E=Math.ceil(E/2)}}return Q.prototype={reset:function(E,V){for(var k=0,O=0,z;k<th
+is.levels.length;){z=this.levels[k];var M=E+V*z.width;if(z.items[M]!==void 0){O=z.items[M];break}z.i
+ndex=M,E>>=1,V>>=1,k++}k--,z=this.levels[k],z.items[z.index]=O,this.currentLevel=k,delete this.value
+},incrementValue:function(){var E=this.levels[this.currentLevel];E.items[E.index]++},nextLevel:funct
+ion(){var E=this.currentLevel,V=this.levels[E],k=V.items[V.index];return E--,E<0?(this.value=k,!1):(
+this.currentLevel=E,V=this.levels[E],V.items[V.index]=k,!0)}},Q}(),D=function(){function Q(F,E,V){va
+r k=(0,n.log2)(Math.max(F,E))+1;this.levels=[];for(var O=0;O<k;O++){for(var z=new Uint8Array(F*E),M=
+0,T=z.length;M<T;M++)z[M]=V;var j={width:F,height:E,items:z};this.levels.push(j),F=Math.ceil(F/2),E=
+Math.ceil(E/2)}}return Q.prototype={reset:function(E,V,k){for(var O=0;O<this.levels.length;){var z=t
+his.levels[O],M=E+V*z.width;z.index=M;var T=z.items[M];if(T===255)break;if(T>k)return this.currentLe
+vel=O,this.propagateValues(),!1;E>>=1,V>>=1,O++}return this.currentLevel=O-1,!0},incrementValue:func
+tion(E){var V=this.levels[this.currentLevel];V.items[V.index]=E+1,this.propagateValues()},propagateV
+alues:function(){for(var E=this.currentLevel,V=this.levels[E],k=V.items[V.index];--E>=0;)V=this.leve
+ls[E],V.items[V.index]=k},nextLevel:function(){var E=this.currentLevel,V=this.levels[E],k=V.items[V.
+index];return V.items[V.index]=255,E--,E<0?!1:(this.currentLevel=E,V=this.levels[E],V.items[V.index]
+=k,!0)}},Q}(),L=function(){var Q=17,F=18,E=new Uint8Array([0,5,8,0,3,7,8,0,4,7,8,0,0,0,0,0,1,6,8,0,3
+,7,8,0,4,7,8,0,0,0,0,0,2,6,8,0,3,7,8,0,4,7,8,0,0,0,0,0,2,6,8,0,3,7,8,0,4,7,8,0,0,0,0,0,2,6,8,0,3,7,8
+,0,4,7,8]),V=new Uint8Array([0,3,4,0,5,7,7,0,8,8,8,0,0,0,0,0,1,3,4,0,6,7,7,0,8,8,8,0,0,0,0,0,2,3,4,0
+,6,7,7,0,8,8,8,0,0,0,0,0,2,3,4,0,6,7,7,0,8,8,8,0,0,0,0,0,2,3,4,0,6,7,7,0,8,8,8]),k=new Uint8Array([0
+,1,2,0,1,2,2,0,2,2,2,0,0,0,0,0,3,4,5,0,4,5,5,0,5,5,5,0,0,0,0,0,6,7,7,0,7,7,7,0,7,7,7,0,0,0,0,0,8,8,8
+,0,8,8,8,0,8,8,8,0,0,0,0,0,8,8,8,0,8,8,8,0,8,8,8]);function O(z,M,T,j,K){this.width=z,this.height=M,
+this.contextLabelTable=T==="HH"?k:T==="HL"?V:E;var _=z*M;this.neighborsSignificance=new Uint8Array(_
+),this.coefficentsSign=new Uint8Array(_),this.coefficentsMagnitude=K>14?new Uint32Array(_):K>6?new U
+int16Array(_):new Uint8Array(_),this.processingFlags=new Uint8Array(_);var q=new Uint8Array(_);if(j!
+==0)for(var te=0;te<_;te++)q[te]=j;this.bitsDecoded=q,this.reset()}return O.prototype={setDecoder:fu
+nction(M){this.decoder=M},reset:function(){this.contexts=new Int8Array(19),this.contexts[0]=8,this.c
+ontexts[Q]=92,this.contexts[F]=6},setNeighborsSignificance:function(M,T,j){var K=this.neighborsSigni
+ficance,_=this.width,q=this.height,te=T>0,ae=T+1<_,ee;M>0&&(ee=j-_,te&&(K[ee-1]+=16),ae&&(K[ee+1]+=1
+6),K[ee]+=4),M+1<q&&(ee=j+_,te&&(K[ee-1]+=16),ae&&(K[ee+1]+=16),K[ee]+=4),te&&(K[j-1]+=1),ae&&(K[j+1
+]+=1),K[j]|=128},runSignificancePropagationPass:function(){for(var M=this.decoder,T=this.width,j=thi
+s.height,K=this.coefficentsMagnitude,_=this.coefficentsSign,q=this.neighborsSignificance,te=this.pro
+cessingFlags,ae=this.contexts,ee=this.contextLabelTable,ne=this.bitsDecoded,se=-2,ie=1,ce=2,oe=0;oe<
+j;oe+=4)for(var Ae=0;Ae<T;Ae++)for(var Ge=oe*T+Ae,be=0;be<4;be++,Ge+=T){var ve=oe+be;if(ve>=j)break;
+if(te[Ge]&=se,!(K[Ge]||!q[Ge])){var Ce=ee[q[Ge]],Qe=M.readBit(ae,Ce);if(Qe){var Re=this.decodeSignBi
+t(ve,Ae,Ge);_[Ge]=Re,K[Ge]=1,this.setNeighborsSignificance(ve,Ae,Ge),te[Ge]|=ce}ne[Ge]++,te[Ge]|=ie}
+}},decodeSignBit:function(M,T,j){var K=this.width,_=this.height,q=this.coefficentsMagnitude,te=this.
+coefficentsSign,ae,ee,ne,se,ie,ce;se=T>0&&q[j-1]!==0,T+1<K&&q[j+1]!==0?(ne=te[j+1],se?(ee=te[j-1],ae
+=1-ne-ee):ae=1-ne-ne):se?(ee=te[j-1],ae=1-ee-ee):ae=0;var oe=3*ae;return se=M>0&&q[j-K]!==0,M+1<_&&q
+[j+K]!==0?(ne=te[j+K],se?(ee=te[j-K],ae=1-ne-ee+oe):ae=1-ne-ne+oe):se?(ee=te[j-K],ae=1-ee-ee+oe):ae=
+oe,ae>=0?(ie=9+ae,ce=this.decoder.readBit(this.contexts,ie)):(ie=9-ae,ce=this.decoder.readBit(this.c
+ontexts,ie)^1),ce},runMagnitudeRefinementPass:function(){for(var M=this.decoder,T=this.width,j=this.
+height,K=this.coefficentsMagnitude,_=this.neighborsSignificance,q=this.contexts,te=this.bitsDecoded,
+ae=this.processingFlags,ee=1,ne=2,se=T*j,ie=T*4,ce=0,oe;ce<se;ce=oe){oe=Math.min(se,ce+ie);for(var A
+e=0;Ae<T;Ae++)for(var Ge=ce+Ae;Ge<oe;Ge+=T)if(!(!K[Ge]||ae[Ge]&ee)){var be=16;if(ae[Ge]&ne){ae[Ge]^=
+ne;var ve=_[Ge]&127;be=ve===0?15:14}var Ce=M.readBit(q,be);K[Ge]=K[Ge]<<1|Ce,te[Ge]++,ae[Ge]|=ee}}},
+runCleanupPass:function(){for(var M=this.decoder,T=this.width,j=this.height,K=this.neighborsSignific
+ance,_=this.coefficentsMagnitude,q=this.coefficentsSign,te=this.contexts,ae=this.contextLabelTable,e
+e=this.bitsDecoded,ne=this.processingFlags,se=1,ie=2,ce=T,oe=T*2,Ae=T*3,Ge,be=0;be<j;be=Ge){Ge=Math.
+min(be+4,j);for(var ve=be*T,Ce=be+3<j,Qe=0;Qe<T;Qe++){var Re=ve+Qe,Ve=Ce&&ne[Re]===0&&ne[Re+ce]===0&
+&ne[Re+oe]===0&&ne[Re+Ae]===0&&K[Re]===0&&K[Re+ce]===0&&K[Re+oe]===0&&K[Re+Ae]===0,Ee=0,Ze=Re,ye=be,
+De;if(Ve){var Se=M.readBit(te,F);if(!Se){ee[Re]++,ee[Re+ce]++,ee[Re+oe]++,ee[Re+Ae]++;continue}Ee=M.
+readBit(te,Q)<<1|M.readBit(te,Q),Ee!==0&&(ye=be+Ee,Ze+=Ee*T),De=this.decodeSignBit(ye,Qe,Ze),q[Ze]=D
+e,_[Ze]=1,this.setNeighborsSignificance(ye,Qe,Ze),ne[Ze]|=ie,Ze=Re;for(var Me=be;Me<=ye;Me++,Ze+=T)e
+e[Ze]++;Ee++}for(ye=be+Ee;ye<Ge;ye++,Ze+=T)if(!(_[Ze]||ne[Ze]&se)){var tt=ae[K[Ze]],Je=M.readBit(te,
+tt);Je===1&&(De=this.decodeSignBit(ye,Qe,Ze),q[Ze]=De,_[Ze]=1,this.setNeighborsSignificance(ye,Qe,Ze
+),ne[Ze]|=ie),ee[Ze]++}}}},checkSegmentationSymbol:function(){var M=this.decoder,T=this.contexts,j=M
+.readBit(T,Q)<<3|M.readBit(T,Q)<<2|M.readBit(T,Q)<<1|M.readBit(T,Q);if(j!==10)throw new I("Invalid s
+egmentation symbol")}},O}(),S=function(){function Q(){}return Q.prototype.calculate=function(E,V,k){
+for(var O=E[0],z=1,M=E.length;z<M;z++)O=this.iterate(O,E[z],V,k);return O},Q.prototype.extend=functi
+on(E,V,k){var O=V-1,z=V+1,M=V+k-2,T=V+k;E[O--]=E[z++],E[T++]=E[M--],E[O--]=E[z++],E[T++]=E[M--],E[O-
+-]=E[z++],E[T++]=E[M--],E[O]=E[z],E[T]=E[M]},Q.prototype.iterate=function(E,V,k,O){var z=E.width,M=E
+.height,T=E.items,j=V.width,K=V.height,_=V.items,q,te,ae,ee,ne,se;for(ae=0,q=0;q<M;q++)for(ee=q*2*j,
+te=0;te<z;te++,ae++,ee+=2)_[ee]=T[ae];T=E.items=null;var ie=4,ce=new Float32Array(j+2*ie);if(j===1){
+if(k&1)for(se=0,ae=0;se<K;se++,ae+=j)_[ae]*=.5}else for(se=0,ae=0;se<K;se++,ae+=j)ce.set(_.subarray(
+ae,ae+j),ie),this.extend(ce,ie,j),this.filter(ce,ie,j),_.set(ce.subarray(ie,ie+j),ae);var oe=16,Ae=[
+];for(q=0;q<oe;q++)Ae.push(new Float32Array(K+2*ie));var Ge,be=0;if(E=ie+K,K===1){if(O&1)for(ne=0;ne
+<j;ne++)_[ne]*=.5}else for(ne=0;ne<j;ne++){if(be===0){for(oe=Math.min(j-ne,oe),ae=ne,ee=ie;ee<E;ae+=
+j,ee++)for(Ge=0;Ge<oe;Ge++)Ae[Ge][ee]=_[ae+Ge];be=oe}be--;var ve=Ae[be];if(this.extend(ve,ie,K),this
+.filter(ve,ie,K),be===0)for(ae=ne-oe+1,ee=ie;ee<E;ae+=j,ee++)for(Ge=0;Ge<oe;Ge++)_[ae+Ge]=Ae[Ge][ee]
+}return{width:j,height:K,items:_}},Q}(),U=function(){function Q(){S.call(this)}return Q.prototype=Ob
+ject.create(S.prototype),Q.prototype.filter=function(E,V,k){var O=k>>1;V=V|0;var z,M,T,j,K=-1.586134
+342059924,_=-.052980118572961,q=.882911075530934,te=.443506852043971,ae=1.230174104914001,ee=1/ae;fo
+r(z=V-3,M=O+4;M--;z+=2)E[z]*=ee;for(z=V-2,T=te*E[z-1],M=O+3;M--&&(j=te*E[z+1],E[z]=ae*E[z]-T-j,M--);
+z+=2)z+=2,T=te*E[z+1],E[z]=ae*E[z]-T-j;for(z=V-1,T=q*E[z-1],M=O+2;M--&&(j=q*E[z+1],E[z]-=T+j,M--);z+
+=2)z+=2,T=q*E[z+1],E[z]-=T+j;for(z=V,T=_*E[z-1],M=O+1;M--&&(j=_*E[z+1],E[z]-=T+j,M--);z+=2)z+=2,T=_*
+E[z+1],E[z]-=T+j;if(O!==0)for(z=V+1,T=K*E[z-1],M=O;M--&&(j=K*E[z+1],E[z]-=T+j,M--);z+=2)z+=2,T=K*E[z
++1],E[z]-=T+j},Q}(),J=function(){function Q(){S.call(this)}return Q.prototype=Object.create(S.protot
+ype),Q.prototype.filter=function(E,V,k){var O=k>>1;V=V|0;var z,M;for(z=V,M=O+1;M--;z+=2)E[z]-=E[z-1]
++E[z+1]+2>>2;for(z=V+1,M=O;M--;z+=2)E[z]+=E[z-1]+E[z+1]>>1},Q}();return A}();t.JpxImage=e},function(
+a,t,r){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.FileSpec=t.XRef=t.ObjectLoade
+r=t.Catalog=void 0;var n=typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?function(B){ret
+urn typeof B}:function(B){return B&&typeof Symbol=="function"&&B.constructor===Symbol&&B!==Symbol.pr
+ototype?"symbol":typeof B},s=function(){function B(R,y){var g=[],Z=!0,f=!1,v=void 0;try{for(var b=R[
+Symbol.iterator](),m;!(Z=(m=b.next()).done)&&(g.push(m.value),!(y&&g.length===y));Z=!0);}catch(G){f=
+!0,v=G}finally{try{!Z&&b.return&&b.return()}finally{if(f)throw v}}return g}return function(R,y){if(A
+rray.isArray(R))return R;if(Symbol.iterator in Object(R))return B(R,y);throw new TypeError("Invalid 
+attempt to destructure non-iterable instance")}}(),I=r(0),e=r(1),o=r(5),d=r(11),A=r(12),u=r(3),h=fun
+ction(){function R(y,g,Z){if(this.pdfManager=y,this.xref=g,this.catDict=g.getCatalogObj(),!(0,e.isDi
+ct)(this.catDict))throw new I.FormatError("catalog object is not a dictionary");this.fontCache=new e
+.RefSetCache,this.builtInCMapCache=Object.create(null),this.pageKidsCountCache=new e.RefSetCache,thi
+s.pageFactory=Z,this.pagePromises=[]}return R.prototype={get metadata(){var y=this.catDict.getRaw("M
+etadata");if(!(0,e.isRef)(y))return(0,I.shadow)(this,"metadata",null);var g=this.xref.encrypt?this.x
+ref.encrypt.encryptMetadata:!1,Z=this.xref.fetch(y,!g),f;if(Z&&(0,e.isDict)(Z.dict)){var v=Z.dict.ge
+t("Type"),b=Z.dict.get("Subtype");if((0,e.isName)(v,"Metadata")&&(0,e.isName)(b,"XML"))try{f=(0,I.st
+ringToUTF8String)((0,I.bytesToString)(Z.getBytes()))}catch(m){if(m instanceof I.MissingDataException
+)throw m;(0,I.info)("Skipping invalid metadata.")}}return(0,I.shadow)(this,"metadata",f)},get toplev
+elPagesDict(){var y=this.catDict.get("Pages");if(!(0,e.isDict)(y))throw new I.FormatError("invalid t
+op-level pages dictionary");return(0,I.shadow)(this,"toplevelPagesDict",y)},get documentOutline(){va
+r y=null;try{y=this.readDocumentOutline()}catch(g){if(g instanceof I.MissingDataException)throw g;(0
+,I.warn)("Unable to read document outline")}return(0,I.shadow)(this,"documentOutline",y)},readDocume
+ntOutline:function(){var g=this.catDict.get("Outlines");if(!(0,e.isDict)(g)||(g=g.getRaw("First"),!(
+0,e.isRef)(g)))return null;var Z={items:[]},f=[{obj:g,parent:Z}],v=new e.RefSet;v.put(g);for(var b=t
+his.xref,m=new Uint8Array(3);f.length>0;){var G=f.shift(),p=b.fetchIfRef(G.obj);if(p!==null){if(!p.h
+as("Title"))throw new I.FormatError("Invalid outline item");var N={url:null,dest:null};R.parseDestDi
+ctionary({destDict:p,resultObj:N,docBaseUrl:this.pdfManager.docBaseUrl});var D=p.get("Title"),L=p.ge
+t("F")||0,S=p.getArray("C"),U=m;(0,I.isArray)(S)&&S.length===3&&(S[0]!==0||S[1]!==0||S[2]!==0)&&(U=u
+.ColorSpace.singletons.rgb.getRgb(S,0));var J={dest:N.dest,url:N.url,unsafeUrl:N.unsafeUrl,newWindow
+:N.newWindow,title:(0,I.stringToPDFString)(D),color:U,count:p.get("Count"),bold:!!(L&2),italic:!!(L&
+1),items:[]};G.parent.items.push(J),g=p.getRaw("First"),(0,e.isRef)(g)&&!v.has(g)&&(f.push({obj:g,pa
+rent:J}),v.put(g)),g=p.getRaw("Next"),(0,e.isRef)(g)&&!v.has(g)&&(f.push({obj:g,parent:G.parent}),v.
+put(g))}}return Z.items.length>0?Z.items:null},get numPages(){var y=this.toplevelPagesDict.get("Coun
+t");if(!(0,I.isInt)(y))throw new I.FormatError("page count in top level pages object is not an integ
+er");return(0,I.shadow)(this,"numPages",y)},get destinations(){function y(N){return(0,e.isDict)(N)?N
+.get("D"):N}var g=this.xref,Z={},f,v,b=this.catDict.get("Names");if(b&&b.has("Dests")?f=b.getRaw("De
+sts"):this.catDict.has("Dests")&&(v=this.catDict.get("Dests")),v&&(b=v,b.forEach(function(D,L){L&&(Z
+[D]=y(L))})),f){var m=new Y(f,g),G=m.getAll();for(var p in G)Z[p]=y(G[p])}return(0,I.shadow)(this,"d
+estinations",Z)},getDestination:function(g){function Z(D){return(0,e.isDict)(D)?D.get("D"):D}var f=t
+his.xref,v=null,b,m,G=this.catDict.get("Names");if(G&&G.has("Dests")?b=G.getRaw("Dests"):this.catDic
+t.has("Dests")&&(m=this.catDict.get("Dests")),m){var p=m.get(g);p&&(v=Z(p))}if(b){var N=new Y(b,f);v
+=Z(N.get(g))}return v},get pageLabels(){var y=null;try{y=this.readPageLabels()}catch(g){if(g instanc
+eof I.MissingDataException)throw g;(0,I.warn)("Unable to read page labels.")}return(0,I.shadow)(this
+,"pageLabels",y)},readPageLabels:function(){var g=this.catDict.getRaw("PageLabels");if(!g)return nul
+l;for(var Z=new Array(this.numPages),f=null,v="",b=new w(g,this.xref),m=b.getAll(),G="",p=1,N=0,D=th
+is.numPages;N<D;N++){if(N in m){var L=m[N];if(!(0,e.isDict)(L))throw new I.FormatError("The PageLabe
+l is not a dictionary.");var S=L.get("Type");if(S&&!(0,e.isName)(S,"PageLabel"))throw new I.FormatEr
+ror("Invalid type in PageLabel dictionary.");var U=L.get("S");if(U&&!(0,e.isName)(U))throw new I.For
+matError("Invalid style in PageLabel dictionary.");f=U?U.name:null;var J=L.get("P");if(J&&!(0,I.isSt
+ring)(J))throw new I.FormatError("Invalid prefix in PageLabel dictionary.");v=J?(0,I.stringToPDFStri
+ng)(J):"";var H=L.get("St");if(H&&!((0,I.isInt)(H)&&H>=1))throw new I.FormatError("Invalid start in 
+PageLabel dictionary.");p=H||1}switch(f){case"D":G=p;break;case"R":case"r":G=I.Util.toRoman(p,f==="r
+");break;case"A":case"a":for(var Q=26,F=65,E=97,V=f==="a"?E:F,k=p-1,O=String.fromCharCode(V+k%Q),z=[
+],M=0,T=k/Q|0;M<=T;M++)z.push(O);G=z.join("");break;default:if(f)throw new I.FormatError('Invalid st
+yle "'+f+'" in PageLabel dictionary.')}Z[N]=v+G,G="",p++}return Z},get pageMode(){var y=this.catDict
+.get("PageMode"),g="UseNone";if((0,e.isName)(y))switch(y.name){case"UseNone":case"UseOutlines":case"
+UseThumbs":case"FullScreen":case"UseOC":case"UseAttachments":g=y.name}return(0,I.shadow)(this,"pageM
+ode",g)},get attachments(){var y=this.xref,g=null,Z,f=this.catDict.get("Names");if(f&&(Z=f.getRaw("E
+mbeddedFiles")),Z){var v=new Y(Z,y),b=v.getAll();for(var m in b){var G=new x(b[m],y);g||(g=Object.cr
+eate(null)),g[(0,I.stringToPDFString)(m)]=G.serializable}}return(0,I.shadow)(this,"attachments",g)},
+get javaScript(){var y=this.xref,g=this.catDict.get("Names"),Z=[];function f(L){var S=L.get("S");if(
+(0,e.isName)(S,"JavaScript")){var U=L.get("JS");if((0,e.isStream)(U))U=(0,I.bytesToString)(U.getByte
+s());else if(!(0,I.isString)(U))return;Z.push((0,I.stringToPDFString)(U))}}if(g&&g.has("JavaScript")
+){var v=new Y(g.getRaw("JavaScript"),y),b=v.getAll();for(var m in b){var G=b[m];(0,e.isDict)(G)&&f(G
+)}}var p=this.catDict.get("OpenAction");if((0,e.isDict)(p,"Action")){var N=p.get("S");if((0,e.isName
+)(N,"Named")){var D=p.get("N");(0,e.isName)(D,"Print")&&Z.push("print({});")}else f(p)}return(0,I.sh
+adow)(this,"javaScript",Z)},cleanup:function(){var g=this;this.pageKidsCountCache.clear();var Z=[];r
+eturn this.fontCache.forEach(function(f){Z.push(f)}),Promise.all(Z).then(function(f){for(var v=0,b=f
+.length;v<b;v++){var m=f[v].dict;delete m.translated}g.fontCache.clear(),g.builtInCMapCache=Object.c
+reate(null)})},getPage:function(g){var Z=this;return g in this.pagePromises||(this.pagePromises[g]=t
+his.getPageDict(g).then(function(f){var v=s(f,2),b=v[0],m=v[1];return Z.pageFactory.createPage(g,b,m
+,Z.fontCache,Z.builtInCMapCache)})),this.pagePromises[g]},getPageDict:function(g){var Z=(0,I.createP
+romiseCapability)(),f=[this.catDict.getRaw("Pages")],v,b=0,m=this.xref,G=this.pageKidsCountCache;fun
+ction p(){for(;f.length;){var N=f.pop();if((0,e.isRef)(N)){if(v=G.get(N),v>0&&b+v<g){b+=v;continue}m
+.fetchAsync(N).then(function(U){if((0,e.isDict)(U,"Page")||(0,e.isDict)(U)&&!U.has("Kids")){g===b?(N
+&&!G.has(N)&&G.put(N,1),Z.resolve([U,N])):(b++,p());return}f.push(U),p()},Z.reject);return}if(!(0,e.
+isDict)(N)){Z.reject(new I.FormatError("page dictionary kid reference points to wrong type of object
+"));return}v=N.get("Count");var D=N.objId;if(D&&!G.has(D)&&G.put(D,v),b+v<=g){b+=v;continue}var L=N.
+get("Kids");if(!(0,I.isArray)(L)){Z.reject(new I.FormatError("page dictionary kids object is not an 
+array"));return}for(var S=L.length-1;S>=0;S--)f.push(L[S])}Z.reject(new Error("Page index "+g+" not 
+found."))}return p(),Z.promise},getPageIndex:function(g){var Z=this.xref;function f(m){var G=0,p;ret
+urn Z.fetchAsync(m).then(function(N){if((0,e.isRefsEqual)(m,g)&&!(0,e.isDict)(N,"Page")&&!((0,e.isDi
+ct)(N)&&!N.has("Type")&&N.has("Contents")))throw new I.FormatError("The reference does not point to 
+a /Page Dict.");if(!N)return null;if(!(0,e.isDict)(N))throw new I.FormatError("node must be a Dict."
+);return p=N.getRaw("Parent"),N.getAsync("Parent")}).then(function(N){if(!N)return null;if(!(0,e.isD
+ict)(N))throw new I.FormatError("parent must be a Dict.");return N.getAsync("Kids")}).then(function(
+N){if(!N)return null;for(var D=[],L=!1,S=0;S<N.length;S++){var U=N[S];if(!(0,e.isRef)(U))throw new I
+.FormatError("kid must be a Ref.");if(U.num===m.num){L=!0;break}D.push(Z.fetchAsync(U).then(function
+(J){if(J.has("Count")){var H=J.get("Count");G+=H}else G++}))}if(!L)throw new I.FormatError("kid ref 
+not found in parents kids");return Promise.all(D).then(function(){return[G,p]})})}var v=0;function b
+(m){return f(m).then(function(G){if(!G)return v;var p=G[0],N=G[1];return v+=p,b(N)})}return b(g)}},R
+.parseDestDictionary=function(g){function Z(z){return z.indexOf("www.")===0?"http://"+z:z}function f
+(z){try{return(0,I.stringToUTF8String)(z)}catch{return z}}var v=g.destDict;if(!(0,e.isDict)(v)){(0,I
+.warn)('Catalog_parseDestDictionary: "destDict" must be a dictionary.');return}var b=g.resultObj;if(
+(typeof b>"u"?"undefined":n(b))!=="object"){(0,I.warn)('Catalog_parseDestDictionary: "resultObj" mus
+t be an object.');return}var m=g.docBaseUrl||null,G=v.get("A"),p,N;if((0,e.isDict)(G)){var D=G.get("
+S").name;switch(D){case"URI":p=G.get("URI"),(0,e.isName)(p)?p="/"+p.name:(0,I.isString)(p)&&(p=Z(p))
+;break;case"GoTo":N=G.get("D");break;case"Launch":case"GoToR":var L=G.get("F");(0,e.isDict)(L)?p=L.g
+et("F")||null:(0,I.isString)(L)&&(p=L);var S=G.get("D");if(S&&((0,e.isName)(S)&&(S=S.name),(0,I.isSt
+ring)(p))){var U=p.split("#")[0];(0,I.isString)(S)?p=U+"#"+S:(0,I.isArray)(S)&&(p=U+"#"+JSON.stringi
+fy(S))}var J=G.get("NewWindow");(0,I.isBool)(J)&&(b.newWindow=J);break;case"Named":var H=G.get("N");
+(0,e.isName)(H)&&(b.action=H.name);break;case"JavaScript":var Q=G.get("JS"),F;if((0,e.isStream)(Q)?F
+=(0,I.bytesToString)(Q.getBytes()):(0,I.isString)(Q)&&(F=Q),F){var E=["app.launchURL","window.open"]
+,V=new RegExp("^\\s*("+E.join("|").split(".").join("\\.")+`)\\((?:'|")([^'"]*)(?:'|")(?:,\\s*(\\w+)\
+\)|\\))`,"i"),k=V.exec((0,I.stringToPDFString)(F));if(k&&k[2]){p=k[2],k[3]==="true"&&k[1]==="app.lau
+nchURL"&&(b.newWindow=!0);break}}default:(0,I.warn)('Catalog_parseDestDictionary: Unrecognized link 
+type "'+D+'".');break}}else v.has("Dest")&&(N=v.get("Dest"));if((0,I.isString)(p)){p=f(p);var O=(0,I
+.createValidAbsoluteUrl)(p,m);O&&(b.url=O.href),b.unsafeUrl=p}N&&((0,e.isName)(N)&&(N=N.name),((0,I.
+isString)(N)||(0,I.isArray)(N))&&(b.dest=N))},R}(),c=function(){function R(y,g){this.stream=y,this.p
+dfManager=g,this.entries=[],this.xrefstms=Object.create(null),this.cache=[],this.stats={streamTypes:
+[],fontTypes:[]}}return R.prototype={setStartXRef:function(g){this.startXRefQueue=[g]},parse:functio
+n(g){var Z;g?((0,I.warn)("Indexing all PDF objects"),Z=this.indexObjects()):Z=this.readXRef(),Z.assi
+gnXref(this),this.trailer=Z;var f=Z.get("Encrypt");if((0,e.isDict)(f)){var v=Z.get("ID"),b=v&&v.leng
+th?v[0]:"";f.suppressEncryption=!0,this.encrypt=new A.CipherTransformFactory(f,b,this.pdfManager.pas
+sword)}if(!(this.root=Z.get("Root")))throw new I.FormatError("Invalid root reference")},processXRefT
+able:function(g){"tableState"in this||(this.tableState={entryNum:0,streamPos:g.lexer.stream.pos,pars
+erBuf1:g.buf1,parserBuf2:g.buf2});var Z=this.readXRefTable(g);if(!(0,e.isCmd)(Z,"trailer"))throw new
+ I.FormatError("Invalid XRef table: could not find trailer dictionary");var f=g.getObj();if(!(0,e.is
+Dict)(f)&&f.dict&&(f=f.dict),!(0,e.isDict)(f))throw new I.FormatError("Invalid XRef table: could not
+ parse trailer dictionary");return delete this.tableState,f},readXRefTable:function(g){var Z=g.lexer
+.stream,f=this.tableState;Z.pos=f.streamPos,g.buf1=f.parserBuf1,g.buf2=f.parserBuf2;for(var v;;){if(
+!("firstEntryNum"in f)||!("entryCount"in f)){if((0,e.isCmd)(v=g.getObj(),"trailer"))break;f.firstEnt
+ryNum=v,f.entryCount=g.getObj()}var b=f.firstEntryNum,m=f.entryCount;if(!(0,I.isInt)(b)||!(0,I.isInt
+)(m))throw new I.FormatError("Invalid XRef table: wrong types in subsection header");for(var G=f.ent
+ryNum;G<m;G++){f.streamPos=Z.pos,f.entryNum=G,f.parserBuf1=g.buf1,f.parserBuf2=g.buf2;var p={};p.off
+set=g.getObj(),p.gen=g.getObj();var N=g.getObj();if((0,e.isCmd)(N,"f")?p.free=!0:(0,e.isCmd)(N,"n")&
+&(p.uncompressed=!0),!(0,I.isInt)(p.offset)||!(0,I.isInt)(p.gen)||!(p.free||p.uncompressed))throw ne
+w I.FormatError("Invalid entry in XRef subsection: "+b+", "+m);G===0&&p.free&&b===1&&(b=0),this.entr
+ies[G+b]||(this.entries[G+b]=p)}f.entryNum=0,f.streamPos=Z.pos,f.parserBuf1=g.buf1,f.parserBuf2=g.bu
+f2,delete f.firstEntryNum,delete f.entryCount}if(this.entries[0]&&!this.entries[0].free)throw new I.
+FormatError("Invalid XRef table: unexpected first object");return v},processXRefStream:function(g){i
+f(!("streamState"in this)){var Z=g.dict,f=Z.get("W"),v=Z.get("Index");v||(v=[0,Z.get("Size")]),this.
+streamState={entryRanges:v,byteWidths:f,entryNum:0,streamPos:g.pos}}return this.readXRefStream(g),de
+lete this.streamState,g.dict},readXRefStream:function(g){var Z,f,v=this.streamState;g.pos=v.streamPo
+s;for(var b=v.byteWidths,m=b[0],G=b[1],p=b[2],N=v.entryRanges;N.length>0;){var D=N[0],L=N[1];if(!(0,
+I.isInt)(D)||!(0,I.isInt)(L))throw new I.FormatError("Invalid XRef range fields: "+D+", "+L);if(!(0,
+I.isInt)(m)||!(0,I.isInt)(G)||!(0,I.isInt)(p))throw new I.FormatError("Invalid XRef entry fields len
+gth: "+D+", "+L);for(Z=v.entryNum;Z<L;++Z){v.entryNum=Z,v.streamPos=g.pos;var S=0,U=0,J=0;for(f=0;f<
+m;++f)S=S<<8|g.getByte();for(m===0&&(S=1),f=0;f<G;++f)U=U<<8|g.getByte();for(f=0;f<p;++f)J=J<<8|g.ge
+tByte();var H={};switch(H.offset=U,H.gen=J,S){case 0:H.free=!0;break;case 1:H.uncompressed=!0;break;
+case 2:break;default:throw new I.FormatError("Invalid XRef entry type: "+S)}this.entries[D+Z]||(this
+.entries[D+Z]=H)}v.entryNum=0,v.streamPos=g.pos,N.splice(0,2)}},indexObjects:function(){var g=9,Z=10
+,f=13,v=32,b=37,m=60;function G(ee,ne){for(var se="",ie=ee[ne];ie!==Z&&ie!==f&&ie!==m&&!(++ne>=ee.le
+ngth);)se+=String.fromCharCode(ie),ie=ee[ne];return se}function p(ee,ne,se){for(var ie=se.length,ce=
+ee.length,oe=0;ne<ce;){for(var Ae=0;Ae<ie&&ee[ne+Ae]===se[Ae];)++Ae;if(Ae>=ie)break;ne++,oe++}return
+ oe}var N=/^(\d+)\s+(\d+)\s+obj\b/,D=new Uint8Array([116,114,97,105,108,101,114]),L=new Uint8Array([
+115,116,97,114,116,120,114,101,102]),S=new Uint8Array([101,110,100,111,98,106]),U=new Uint8Array([47
+,88,82,101,102]);this.entries.length=0;var J=this.stream;J.pos=0;for(var H=J.getBytes(),Q=J.start,F=
+H.length,E=[],V=[];Q<F;){var k=H[Q];if(k===g||k===Z||k===f||k===v){++Q;continue}if(k===b){do{if(++Q,
+Q>=F)break;k=H[Q]}while(k!==Z&&k!==f);continue}var O=G(H,Q),z;if(O.indexOf("xref")===0&&(O.length===
+4||/\s/.test(O[4])))Q+=p(H,Q,D),E.push(Q),Q+=p(H,Q,L);else if(z=N.exec(O)){typeof this.entries[z[1]]
+>"u"&&(this.entries[z[1]]={offset:Q-J.start,gen:z[2]|0,uncompressed:!0});var M=p(H,Q,S)+7,T=H.subarr
+ay(Q,Q+M),j=p(T,0,U);j<M&&T[j+5]<64&&(V.push(Q-J.start),this.xrefstms[Q-J.start]=1),Q+=M}else O.inde
+xOf("trailer")===0&&(O.length===7||/\s/.test(O[7]))?(E.push(Q),Q+=p(H,Q,L)):Q+=O.length+1}var K,_;fo
+r(K=0,_=V.length;K<_;++K)this.startXRefQueue.push(V[K]),this.readXRef(!0);var q;for(K=0,_=E.length;K
+<_;++K){J.pos=E[K];var te=new o.Parser(new o.Lexer(J),!0,this,!0),ae=te.getObj();if((0,e.isCmd)(ae,"
+trailer")&&(q=te.getObj(),!!(0,e.isDict)(q)&&q.has("ID")))return q}if(q)return q;throw new I.Invalid
+PDFException("Invalid PDF structure")},readXRef:function(g){var Z=this.stream;try{for(;this.startXRe
+fQueue.length;){var f=this.startXRefQueue[0];Z.pos=f+Z.start;var v=new o.Parser(new o.Lexer(Z),!0,th
+is),b=v.getObj(),m;if((0,e.isCmd)(b,"xref")){if(m=this.processXRefTable(v),this.topDict||(this.topDi
+ct=m),b=m.get("XRefStm"),(0,I.isInt)(b)){var G=b;G in this.xrefstms||(this.xrefstms[G]=1,this.startX
+RefQueue.push(G))}}else if((0,I.isInt)(b)){if(!(0,I.isInt)(v.getObj())||!(0,e.isCmd)(v.getObj(),"obj
+")||!(0,e.isStream)(b=v.getObj()))throw new I.FormatError("Invalid XRef stream");if(m=this.processXR
+efStream(b),this.topDict||(this.topDict=m),!m)throw new I.FormatError("Failed to read XRef stream")}
+else throw new I.FormatError("Invalid XRef stream header");b=m.get("Prev"),(0,I.isInt)(b)?this.start
+XRefQueue.push(b):(0,e.isRef)(b)&&this.startXRefQueue.push(b.num),this.startXRefQueue.shift()}return
+ this.topDict}catch(p){if(p instanceof I.MissingDataException)throw p;(0,I.info)("(while reading XRe
+f): "+p)}if(!g)throw new I.XRefParseException},getEntry:function(g){var Z=this.entries[g];return Z&&
+!Z.free&&Z.offset?Z:null},fetchIfRef:function(g,Z){return(0,e.isRef)(g)?this.fetch(g,Z):g},fetch:fun
+ction(g,Z){if(!(0,e.isRef)(g))throw new Error("ref object is not a reference");var f=g.num;if(f in t
+his.cache){var v=this.cache[f];return v instanceof e.Dict&&!v.objId&&(v.objId=g.toString()),v}var b=
+this.getEntry(f);return b===null?this.cache[f]=null:(b.uncompressed?b=this.fetchUncompressed(g,b,Z):
+b=this.fetchCompressed(b,Z),(0,e.isDict)(b)?b.objId=g.toString():(0,e.isStream)(b)&&(b.dict.objId=g.
+toString()),b)},fetchUncompressed:function(g,Z,f){var v=g.gen,b=g.num;if(Z.gen!==v)throw new I.Forma
+tError("inconsistent generation in XRef");var m=this.stream.makeSubStream(Z.offset+this.stream.start
+),G=new o.Parser(new o.Lexer(m),!0,this),p=G.getObj(),N=G.getObj(),D=G.getObj();if(!(0,I.isInt)(p)||
+parseInt(p,10)!==b||!(0,I.isInt)(N)||parseInt(N,10)!==v||!(0,e.isCmd)(D))throw new I.FormatError("ba
+d XRef entry");if(!(0,e.isCmd)(D,"obj")){if(D.cmd.indexOf("obj")===0&&(b=parseInt(D.cmd.substring(3)
+,10),!isNaN(b)))return b;throw new I.FormatError("bad XRef entry")}return this.encrypt&&!f?Z=G.getOb
+j(this.encrypt.createCipherTransform(b,v)):Z=G.getObj(),(0,e.isStream)(Z)||(this.cache[b]=Z),Z},fetc
+hCompressed:function(g,Z){var f=g.offset,v=this.fetch(new e.Ref(f,0));if(!(0,e.isStream)(v))throw ne
+w I.FormatError("bad ObjStm stream");var b=v.dict.get("First"),m=v.dict.get("N");if(!(0,I.isInt)(b)|
+|!(0,I.isInt)(m))throw new I.FormatError("invalid first and n parameters for ObjStm stream");var G=n
+ew o.Parser(new o.Lexer(v),!1,this);G.allowStreams=!0;var p,N=[],D,L=[];for(p=0;p<m;++p){if(D=G.getO
+bj(),!(0,I.isInt)(D))throw new I.FormatError("invalid object number in the ObjStm stream: "+D);L.pus
+h(D);var S=G.getObj();if(!(0,I.isInt)(S))throw new I.FormatError("invalid object offset in the ObjSt
+m stream: "+S)}for(p=0;p<m;++p){N.push(G.getObj()),(0,e.isCmd)(G.buf1,"endobj")&&G.shift(),D=L[p];va
+r U=this.entries[D];U&&U.offset===f&&U.gen===p&&(this.cache[D]=N[p])}if(g=N[g.gen],g===void 0)throw 
+new I.FormatError("bad XRef entry for compressed object");return g},fetchIfRefAsync:function(g,Z){re
+turn(0,e.isRef)(g)?this.fetchAsync(g,Z):Promise.resolve(g)},fetchAsync:function(g,Z){var f=this.stre
+am.manager,v=this;return new Promise(function b(m,G){try{m(v.fetch(g,Z))}catch(p){if(p instanceof I.
+MissingDataException){f.requestRange(p.begin,p.end).then(function(){b(m,G)},G);return}G(p)}})},getCa
+talogObj:function(){return this.root}},R}(),W=function(){function R(y,g){throw new Error("Cannot ini
+tialize NameOrNumberTree.")}return R.prototype={getAll:function(){var g=Object.create(null);if(!this
+.root)return g;var Z=this.xref,f=new e.RefSet;f.put(this.root);for(var v=[this.root];v.length>0;){va
+r b,m,G=Z.fetchIfRef(v.shift());if((0,e.isDict)(G)){if(G.has("Kids")){var p=G.get("Kids");for(b=0,m=
+p.length;b<m;b++){var N=p[b];if(f.has(N))throw new I.FormatError('Duplicate entry in "'+this._type+'
+" tree.');v.push(N),f.put(N)}continue}var D=G.get(this._type);if((0,I.isArray)(D))for(b=0,m=D.length
+;b<m;b+=2)g[Z.fetchIfRef(D[b])]=Z.fetchIfRef(D[b+1])}}return g},get:function(g){if(!this.root)return
+ null;for(var Z=this.xref,f=Z.fetchIfRef(this.root),v=0,b=10,m,G,p;f.has("Kids");){if(++v>b)return(0
+,I.warn)('Search depth limit reached for "'+this._type+'" tree.'),null;var N=f.get("Kids");if(!(0,I.
+isArray)(N))return null;for(m=0,G=N.length-1;m<=G;){p=m+G>>1;var D=Z.fetchIfRef(N[p]),L=D.get("Limit
+s");if(g<Z.fetchIfRef(L[0]))G=p-1;else if(g>Z.fetchIfRef(L[1]))m=p+1;else{f=Z.fetchIfRef(N[p]);break
+}}if(m>G)return null}var S=f.get(this._type);if((0,I.isArray)(S))for(m=0,G=S.length-2;m<=G;){p=m+G&-
+2;var U=Z.fetchIfRef(S[p]);if(g<U)G=p-2;else if(g>U)m=p+2;else return Z.fetchIfRef(S[p+1])}return nu
+ll}},R}(),Y=function(){function R(y,g){this.root=y,this.xref=g,this._type="Names"}return I.Util.inhe
+rit(R,W,{}),R}(),w=function(){function R(y,g){this.root=y,this.xref=g,this._type="Nums"}return I.Uti
+l.inherit(R,W,{}),R}(),x=function(){function R(g,Z){!g||!(0,e.isDict)(g)||(this.xref=Z,this.root=g,g
+.has("FS")&&(this.fs=g.get("FS")),this.description=g.has("Desc")?(0,I.stringToPDFString)(g.get("Desc
+")):"",g.has("RF")&&(0,I.warn)("Related file specifications are not supported"),this.contentAvailabl
+e=!0,g.has("EF")||(this.contentAvailable=!1,(0,I.warn)("Non-embedded file specifications are not sup
+ported")))}function y(g){return g.has("UF")?g.get("UF"):g.has("F")?g.get("F"):g.has("Unix")?g.get("U
+nix"):g.has("Mac")?g.get("Mac"):g.has("DOS")?g.get("DOS"):null}return R.prototype={get filename(){if
+(!this._filename&&this.root){var g=y(this.root)||"unnamed";this._filename=(0,I.stringToPDFString)(g)
+.replace(/\\\\/g,"\\").replace(/\\\//g,"/").replace(/\\/g,"/")}return this._filename},get content(){
+if(!this.contentAvailable)return null;!this.contentRef&&this.root&&(this.contentRef=y(this.root.get(
+"EF")));var g=null;if(this.contentRef){var Z=this.xref,f=Z.fetchIfRef(this.contentRef);f&&(0,e.isStr
+eam)(f)?g=f.getBytes():(0,I.warn)("Embedded file specification points to non-existing/invalid conten
+t")}else(0,I.warn)("Embedded file specification does not have a content");return g},get serializable
+(){return{filename:this.filename,content:this.content}}},R}(),X=function(){function B(g){return(0,e.
+isRef)(g)||(0,e.isDict)(g)||(0,I.isArray)(g)||(0,e.isStream)(g)}function R(g,Z){if((0,e.isDict)(g)||
+(0,e.isStream)(g))for(var f=(0,e.isDict)(g)?g:g.dict,v=f.getKeys(),b=0,m=v.length;b<m;b++){var G=f.g
+etRaw(v[b]);B(G)&&Z.push(G)}else if((0,I.isArray)(g))for(var p=0,N=g.length;p<N;p++){var D=g[p];B(D)
+&&Z.push(D)}}function y(g,Z,f){this.dict=g,this.keys=Z,this.xref=f,this.refSet=null,this.capability=
+null}return y.prototype={load:function(){if(this.capability=(0,I.createPromiseCapability)(),!(this.x
+ref.stream instanceof d.ChunkedStream)||this.xref.stream.getMissingChunks().length===0)return this.c
+apability.resolve(),this.capability.promise;var Z=this.keys,f=this.dict;this.refSet=new e.RefSet;for
+(var v=[],b=0,m=Z.length;b<m;b++){var G=f.getRaw(Z[b]);G!==void 0&&v.push(G)}return this._walk(v),th
+is.capability.promise},_walk:function(Z){for(var f=this,v=[],b=[];Z.length;){var m=Z.pop();if((0,e.i
+sRef)(m)){if(this.refSet.has(m))continue;try{this.refSet.put(m),m=this.xref.fetch(m)}catch(S){if(!(S
+ instanceof I.MissingDataException))throw S;v.push(m),b.push({begin:S.begin,end:S.end})}}if(m&&m.get
+BaseStreams){for(var G=m.getBaseStreams(),p=!1,N=0,D=G.length;N<D;N++){var L=G[N];L.getMissingChunks
+&&L.getMissingChunks().length&&(p=!0,b.push({begin:L.start,end:L.end}))}p&&v.push(m)}R(m,Z)}if(b.len
+gth){this.xref.stream.manager.requestRanges(b).then(function(){for(var S=0,U=v.length;S<U;S++){var J
+=v[S];(0,e.isRef)(J)&&f.refSet.remove(J)}f._walk(v)},this.capability.reject);return}this.refSet=null
+,this.capability.resolve()}},y}();t.Catalog=h,t.ObjectLoader=X,t.XRef=c,t.FileSpec=x},function(a,t,r
+){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.getSupplementalGlyphMapForArialBla
+ck=t.getGlyphMapForStandardFonts=t.getSymbolsFonts=t.getSerifFonts=t.getNonStdFontMap=t.getStdFontMa
+p=void 0;var n=r(0),s=(0,n.getLookupTableFactory)(function(u){u.ArialNarrow="Helvetica",u["ArialNarr
+ow-Bold"]="Helvetica-Bold",u["ArialNarrow-BoldItalic"]="Helvetica-BoldOblique",u["ArialNarrow-Italic
+"]="Helvetica-Oblique",u.ArialBlack="Helvetica",u["ArialBlack-Bold"]="Helvetica-Bold",u["ArialBlack-
+BoldItalic"]="Helvetica-BoldOblique",u["ArialBlack-Italic"]="Helvetica-Oblique",u["Arial-Black"]="He
+lvetica",u["Arial-Black-Bold"]="Helvetica-Bold",u["Arial-Black-BoldItalic"]="Helvetica-BoldOblique",
+u["Arial-Black-Italic"]="Helvetica-Oblique",u.Arial="Helvetica",u["Arial-Bold"]="Helvetica-Bold",u["
+Arial-BoldItalic"]="Helvetica-BoldOblique",u["Arial-Italic"]="Helvetica-Oblique",u["Arial-BoldItalic
+MT"]="Helvetica-BoldOblique",u["Arial-BoldMT"]="Helvetica-Bold",u["Arial-ItalicMT"]="Helvetica-Obliq
+ue",u.ArialMT="Helvetica",u["Courier-Bold"]="Courier-Bold",u["Courier-BoldItalic"]="Courier-BoldObli
+que",u["Courier-Italic"]="Courier-Oblique",u.CourierNew="Courier",u["CourierNew-Bold"]="Courier-Bold
+",u["CourierNew-BoldItalic"]="Courier-BoldOblique",u["CourierNew-Italic"]="Courier-Oblique",u["Couri
+erNewPS-BoldItalicMT"]="Courier-BoldOblique",u["CourierNewPS-BoldMT"]="Courier-Bold",u["CourierNewPS
+-ItalicMT"]="Courier-Oblique",u.CourierNewPSMT="Courier",u.Helvetica="Helvetica",u["Helvetica-Bold"]
+="Helvetica-Bold",u["Helvetica-BoldItalic"]="Helvetica-BoldOblique",u["Helvetica-BoldOblique"]="Helv
+etica-BoldOblique",u["Helvetica-Italic"]="Helvetica-Oblique",u["Helvetica-Oblique"]="Helvetica-Obliq
+ue",u.SegoeUISymbol="Helvetica",u["Symbol-Bold"]="Symbol",u["Symbol-BoldItalic"]="Symbol",u["Symbol-
+Italic"]="Symbol",u.TimesNewRoman="Times-Roman",u["TimesNewRoman-Bold"]="Times-Bold",u["TimesNewRoma
+n-BoldItalic"]="Times-BoldItalic",u["TimesNewRoman-Italic"]="Times-Italic",u.TimesNewRomanPS="Times-
+Roman",u["TimesNewRomanPS-Bold"]="Times-Bold",u["TimesNewRomanPS-BoldItalic"]="Times-BoldItalic",u["
+TimesNewRomanPS-BoldItalicMT"]="Times-BoldItalic",u["TimesNewRomanPS-BoldMT"]="Times-Bold",u["TimesN
+ewRomanPS-Italic"]="Times-Italic",u["TimesNewRomanPS-ItalicMT"]="Times-Italic",u.TimesNewRomanPSMT="
+Times-Roman",u["TimesNewRomanPSMT-Bold"]="Times-Bold",u["TimesNewRomanPSMT-BoldItalic"]="Times-BoldI
+talic",u["TimesNewRomanPSMT-Italic"]="Times-Italic"}),I=(0,n.getLookupTableFactory)(function(u){u.Ce
+nturyGothic="Helvetica",u["CenturyGothic-Bold"]="Helvetica-Bold",u["CenturyGothic-BoldItalic"]="Helv
+etica-BoldOblique",u["CenturyGothic-Italic"]="Helvetica-Oblique",u.ComicSansMS="Comic Sans MS",u["Co
+micSansMS-Bold"]="Comic Sans MS-Bold",u["ComicSansMS-BoldItalic"]="Comic Sans MS-BoldItalic",u["Comi
+cSansMS-Italic"]="Comic Sans MS-Italic",u.LucidaConsole="Courier",u["LucidaConsole-Bold"]="Courier-B
+old",u["LucidaConsole-BoldItalic"]="Courier-BoldOblique",u["LucidaConsole-Italic"]="Courier-Oblique"
+,u["MS-Gothic"]="MS Gothic",u["MS-Gothic-Bold"]="MS Gothic-Bold",u["MS-Gothic-BoldItalic"]="MS Gothi
+c-BoldItalic",u["MS-Gothic-Italic"]="MS Gothic-Italic",u["MS-Mincho"]="MS Mincho",u["MS-Mincho-Bold"
+]="MS Mincho-Bold",u["MS-Mincho-BoldItalic"]="MS Mincho-BoldItalic",u["MS-Mincho-Italic"]="MS Mincho
+-Italic",u["MS-PGothic"]="MS PGothic",u["MS-PGothic-Bold"]="MS PGothic-Bold",u["MS-PGothic-BoldItali
+c"]="MS PGothic-BoldItalic",u["MS-PGothic-Italic"]="MS PGothic-Italic",u["MS-PMincho"]="MS PMincho",
+u["MS-PMincho-Bold"]="MS PMincho-Bold",u["MS-PMincho-BoldItalic"]="MS PMincho-BoldItalic",u["MS-PMin
+cho-Italic"]="MS PMincho-Italic",u.NuptialScript="Times-Italic",u.Wingdings="ZapfDingbats"}),e=(0,n.
+getLookupTableFactory)(function(u){u["Adobe Jenson"]=!0,u["Adobe Text"]=!0,u.Albertus=!0,u.Aldus=!0,
+u.Alexandria=!0,u.Algerian=!0,u["American Typewriter"]=!0,u.Antiqua=!0,u.Apex=!0,u.Arno=!0,u.Aster=!
+0,u.Aurora=!0,u.Baskerville=!0,u.Bell=!0,u.Bembo=!0,u["Bembo Schoolbook"]=!0,u.Benguiat=!0,u["Berkel
+ey Old Style"]=!0,u["Bernhard Modern"]=!0,u["Berthold City"]=!0,u.Bodoni=!0,u["Bauer Bodoni"]=!0,u["
+Book Antiqua"]=!0,u.Bookman=!0,u["Bordeaux Roman"]=!0,u["Californian FB"]=!0,u.Calisto=!0,u.Calvert=
+!0,u.Capitals=!0,u.Cambria=!0,u.Cartier=!0,u.Caslon=!0,u.Catull=!0,u.Centaur=!0,u["Century Old Style
+"]=!0,u["Century Schoolbook"]=!0,u.Chaparral=!0,u["Charis SIL"]=!0,u.Cheltenham=!0,u["Cholla Slab"]=
+!0,u.Clarendon=!0,u.Clearface=!0,u.Cochin=!0,u.Colonna=!0,u["Computer Modern"]=!0,u["Concrete Roman"
+]=!0,u.Constantia=!0,u["Cooper Black"]=!0,u.Corona=!0,u.Ecotype=!0,u.Egyptienne=!0,u.Elephant=!0,u.E
+xcelsior=!0,u.Fairfield=!0,u["FF Scala"]=!0,u.Folkard=!0,u.Footlight=!0,u.FreeSerif=!0,u["Friz Quadr
+ata"]=!0,u.Garamond=!0,u.Gentium=!0,u.Georgia=!0,u.Gloucester=!0,u["Goudy Old Style"]=!0,u["Goudy Sc
+hoolbook"]=!0,u["Goudy Pro Font"]=!0,u.Granjon=!0,u["Guardian Egyptian"]=!0,u.Heather=!0,u.Hercules=
+!0,u["High Tower Text"]=!0,u.Hiroshige=!0,u["Hoefler Text"]=!0,u["Humana Serif"]=!0,u.Imprint=!0,u["
+Ionic No. 5"]=!0,u.Janson=!0,u.Joanna=!0,u.Korinna=!0,u.Lexicon=!0,u["Liberation Serif"]=!0,u["Linux
+ Libertine"]=!0,u.Literaturnaya=!0,u.Lucida=!0,u["Lucida Bright"]=!0,u.Melior=!0,u.Memphis=!0,u.Mill
+er=!0,u.Minion=!0,u.Modern=!0,u["Mona Lisa"]=!0,u["Mrs Eaves"]=!0,u["MS Serif"]=!0,u["Museo Slab"]=!
+0,u["New York"]=!0,u["Nimbus Roman"]=!0,u["NPS Rawlinson Roadway"]=!0,u.NuptialScript=!0,u.Palatino=
+!0,u.Perpetua=!0,u.Plantin=!0,u["Plantin Schoolbook"]=!0,u.Playbill=!0,u["Poor Richard"]=!0,u["Rawli
+nson Roadway"]=!0,u.Renault=!0,u.Requiem=!0,u.Rockwell=!0,u.Roman=!0,u["Rotis Serif"]=!0,u.Sabon=!0,
+u.Scala=!0,u.Seagull=!0,u.Sistina=!0,u.Souvenir=!0,u.STIX=!0,u["Stone Informal"]=!0,u["Stone Serif"]
+=!0,u.Sylfaen=!0,u.Times=!0,u.Trajan=!0,u.Trinit\u00E9=!0,u["Trump Mediaeval"]=!0,u.Utopia=!0,u["Val
+e Type"]=!0,u["Bitstream Vera"]=!0,u["Vera Serif"]=!0,u.Versailles=!0,u.Wanted=!0,u.Weiss=!0,u["Wide
+ Latin"]=!0,u.Windsor=!0,u.XITS=!0}),o=(0,n.getLookupTableFactory)(function(u){u.Dingbats=!0,u.Symbo
+l=!0,u.ZapfDingbats=!0}),d=(0,n.getLookupTableFactory)(function(u){u[2]=10,u[3]=32,u[4]=33,u[5]=34,u
+[6]=35,u[7]=36,u[8]=37,u[9]=38,u[10]=39,u[11]=40,u[12]=41,u[13]=42,u[14]=43,u[15]=44,u[16]=45,u[17]=
+46,u[18]=47,u[19]=48,u[20]=49,u[21]=50,u[22]=51,u[23]=52,u[24]=53,u[25]=54,u[26]=55,u[27]=56,u[28]=5
+7,u[29]=58,u[30]=894,u[31]=60,u[32]=61,u[33]=62,u[34]=63,u[35]=64,u[36]=65,u[37]=66,u[38]=67,u[39]=6
+8,u[40]=69,u[41]=70,u[42]=71,u[43]=72,u[44]=73,u[45]=74,u[46]=75,u[47]=76,u[48]=77,u[49]=78,u[50]=79
+,u[51]=80,u[52]=81,u[53]=82,u[54]=83,u[55]=84,u[56]=85,u[57]=86,u[58]=87,u[59]=88,u[60]=89,u[61]=90,
+u[62]=91,u[63]=92,u[64]=93,u[65]=94,u[66]=95,u[67]=96,u[68]=97,u[69]=98,u[70]=99,u[71]=100,u[72]=101
+,u[73]=102,u[74]=103,u[75]=104,u[76]=105,u[77]=106,u[78]=107,u[79]=108,u[80]=109,u[81]=110,u[82]=111
+,u[83]=112,u[84]=113,u[85]=114,u[86]=115,u[87]=116,u[88]=117,u[89]=118,u[90]=119,u[91]=120,u[92]=121
+,u[93]=122,u[94]=123,u[95]=124,u[96]=125,u[97]=126,u[98]=196,u[99]=197,u[100]=199,u[101]=201,u[102]=
+209,u[103]=214,u[104]=220,u[105]=225,u[106]=224,u[107]=226,u[108]=228,u[109]=227,u[110]=229,u[111]=2
+31,u[112]=233,u[113]=232,u[114]=234,u[115]=235,u[116]=237,u[117]=236,u[118]=238,u[119]=239,u[120]=24
+1,u[121]=243,u[122]=242,u[123]=244,u[124]=246,u[125]=245,u[126]=250,u[127]=249,u[128]=251,u[129]=252
+,u[130]=8224,u[131]=176,u[132]=162,u[133]=163,u[134]=167,u[135]=8226,u[136]=182,u[137]=223,u[138]=17
+4,u[139]=169,u[140]=8482,u[141]=180,u[142]=168,u[143]=8800,u[144]=198,u[145]=216,u[146]=8734,u[147]=
+177,u[148]=8804,u[149]=8805,u[150]=165,u[151]=181,u[152]=8706,u[153]=8721,u[154]=8719,u[156]=8747,u[
+157]=170,u[158]=186,u[159]=8486,u[160]=230,u[161]=248,u[162]=191,u[163]=161,u[164]=172,u[165]=8730,u
+[166]=402,u[167]=8776,u[168]=8710,u[169]=171,u[170]=187,u[171]=8230,u[210]=218,u[223]=711,u[224]=321
+,u[225]=322,u[227]=353,u[229]=382,u[234]=253,u[252]=263,u[253]=268,u[254]=269,u[258]=258,u[260]=260,
+u[261]=261,u[265]=280,u[266]=281,u[268]=283,u[269]=313,u[275]=323,u[276]=324,u[278]=328,u[284]=345,u
+[285]=346,u[286]=347,u[292]=367,u[295]=377,u[296]=378,u[298]=380,u[305]=963,u[306]=964,u[307]=966,u[
+308]=8215,u[309]=8252,u[310]=8319,u[311]=8359,u[312]=8592,u[313]=8593,u[337]=9552,u[493]=1039,u[494]
+=1040,u[705]=1524,u[706]=8362,u[710]=64288,u[711]=64298,u[759]=1617,u[761]=1776,u[763]=1778,u[775]=1
+652,u[777]=1764,u[778]=1780,u[779]=1781,u[780]=1782,u[782]=771,u[783]=64726,u[786]=8363,u[788]=8532,
+u[790]=768,u[791]=769,u[792]=768,u[795]=803,u[797]=64336,u[798]=64337,u[799]=64342,u[800]=64343,u[80
+1]=64344,u[802]=64345,u[803]=64362,u[804]=64363,u[805]=64364,u[2424]=7821,u[2425]=7822,u[2426]=7823,
+u[2427]=7824,u[2428]=7825,u[2429]=7826,u[2430]=7827,u[2433]=7682,u[2678]=8045,u[2679]=8046,u[2830]=1
+552,u[2838]=686,u[2840]=751,u[2842]=753,u[2843]=754,u[2844]=755,u[2846]=757,u[2856]=767,u[2857]=848,
+u[2858]=849,u[2862]=853,u[2863]=854,u[2864]=855,u[2865]=861,u[2866]=862,u[2906]=7460,u[2908]=7462,u[
+2909]=7463,u[2910]=7464,u[2912]=7466,u[2913]=7467,u[2914]=7468,u[2916]=7470,u[2917]=7471,u[2918]=747
+2,u[2920]=7474,u[2921]=7475,u[2922]=7476,u[2924]=7478,u[2925]=7479,u[2926]=7480,u[2928]=7482,u[2929]
+=7483,u[2930]=7484,u[2932]=7486,u[2933]=7487,u[2934]=7488,u[2936]=7490,u[2937]=7491,u[2938]=7492,u[2
+940]=7494,u[2941]=7495,u[2942]=7496,u[2944]=7498,u[2946]=7500,u[2948]=7502,u[2950]=7504,u[2951]=7505
+,u[2952]=7506,u[2954]=7508,u[2955]=7509,u[2956]=7510,u[2958]=7512,u[2959]=7513,u[2960]=7514,u[2962]=
+7516,u[2963]=7517,u[2964]=7518,u[2966]=7520,u[2967]=7521,u[2968]=7522,u[2970]=7524,u[2971]=7525,u[29
+72]=7526,u[2974]=7528,u[2975]=7529,u[2976]=7530,u[2978]=1537,u[2979]=1538,u[2980]=1539,u[2982]=1549,
+u[2983]=1551,u[2984]=1552,u[2986]=1554,u[2987]=1555,u[2988]=1556,u[2990]=1623,u[2991]=1624,u[2995]=1
+775,u[2999]=1791,u[3002]=64290,u[3003]=64291,u[3004]=64292,u[3006]=64294,u[3007]=64295,u[3008]=64296
+,u[3011]=1900,u[3014]=8223,u[3015]=8244,u[3017]=7532,u[3018]=7533,u[3019]=7534,u[3075]=7590,u[3076]=
+7591,u[3079]=7594,u[3080]=7595,u[3083]=7598,u[3084]=7599,u[3087]=7602,u[3088]=7603,u[3091]=7606,u[30
+92]=7607,u[3095]=7610,u[3096]=7611,u[3099]=7614,u[3100]=7615,u[3103]=7618,u[3104]=7619,u[3107]=8337,
+u[3108]=8338,u[3116]=1884,u[3119]=1885,u[3120]=1885,u[3123]=1886,u[3124]=1886,u[3127]=1887,u[3128]=1
+887,u[3131]=1888,u[3132]=1888,u[3135]=1889,u[3136]=1889,u[3139]=1890,u[3140]=1890,u[3143]=1891,u[314
+4]=1891,u[3147]=1892,u[3148]=1892,u[3153]=580,u[3154]=581,u[3157]=584,u[3158]=585,u[3161]=588,u[3162
+]=589,u[3165]=891,u[3166]=892,u[3169]=1274,u[3170]=1275,u[3173]=1278,u[3174]=1279,u[3181]=7622,u[318
+2]=7623,u[3282]=11799,u[3316]=578,u[3379]=42785,u[3393]=1159,u[3416]=8377}),A=(0,n.getLookupTableFac
+tory)(function(u){u[227]=322,u[264]=261,u[291]=346});t.getStdFontMap=s,t.getNonStdFontMap=I,t.getSer
+ifFonts=e,t.getSymbolsFonts=o,t.getGlyphMapForStandardFonts=d,t.getSupplementalGlyphMapForArialBlack
+=A},function(a,t,r){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.WorkerMessageHan
+dler=t.WorkerTask=void 0;var n=typeof Symbol=="function"&&typeof Symbol.iterator=="symbol"?function(
+h){return typeof h}:function(h){return h&&typeof Symbol=="function"&&h.constructor===Symbol&&h!==Sym
+bol.prototype?"symbol":typeof h},s=r(0),I=r(32),e=r(1),o=function(){function c(W){this.name=W,this.t
+erminated=!1,this._capability=(0,s.createPromiseCapability)()}return c.prototype={get finished(){ret
+urn this._capability.promise},finish:function(){this._capability.resolve()},terminate:function(){thi
+s.terminated=!0},ensureNotTerminated:function(){if(this.terminated)throw new Error("Worker task was 
+terminated")}},c}(),d=function(){function c(w){this._msgHandler=w,this._contentLength=null,this._ful
+lRequestReader=null,this._rangeRequestReaders=[]}c.prototype={getFullReader:function(){return(0,s.as
+sert)(!this._fullRequestReader),this._fullRequestReader=new W(this._msgHandler),this._fullRequestRea
+der},getRangeReader:function(x,X){var B=new Y(x,X,this._msgHandler);return this._rangeRequestReaders
+.push(B),B},cancelAllRequests:function(x){this._fullRequestReader&&this._fullRequestReader.cancel(x)
+;var X=this._rangeRequestReaders.slice(0);X.forEach(function(B){B.cancel(x)})}};function W(w){var x=
+this;this._msgHandler=w,this._contentLength=null,this._isRangeSupported=!1,this._isStreamingSupporte
+d=!1;var X=this._msgHandler.sendWithStream("GetReader");this._reader=X.getReader(),this._headersRead
+y=this._msgHandler.sendWithPromise("ReaderHeadersReady").then(function(B){x._isStreamingSupported=B.
+isStreamingSupported,x._isRangeSupported=B.isRangeSupported,x._contentLength=B.contentLength})}W.pro
+totype={get headersReady(){return this._headersReady},get contentLength(){return this._contentLength
+},get isStreamingSupported(){return this._isStreamingSupported},get isRangeSupported(){return this._
+isRangeSupported},read:function(){return this._reader.read()
+CONTEXT: IDSystemInfo");(0,o.isDict)(q)&&(M.cidSystemInfo={registry:q.get("Registry"),ordering:q.get
+("Ordering"),supplement:q.get("Supplement")});var te=O.get("CIDToGIDMap");(0,o.isStream)(te)&&(M.cid
+ToGidMap=
+-----
+

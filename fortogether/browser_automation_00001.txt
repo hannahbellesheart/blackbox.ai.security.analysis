@@ -1,0 +1,433 @@
+MATCH: puppeteer/browsers",this.#r=t.allowCachePathOverride??!0,this.#n=t.pinnedBrowsers,this.#i=t.p
+refixCommand}#l(t){t.positional("browser",{description:"Which browser to install <browser>[@<buildId
+|latest>]. `latest` will try to find the latest available build. `buildId` is a browser-specific ide
+ntifier such as a version or a revision.",type:"string",coerce:r=>({name:this.#c(r),buildId:this.#u(
+r)})})}#I(t){t.option("platform",{type:"string",desc:"Platform that the binary needs to be compatibl
+e with.",choices:Object.values(V5t.BrowserPlatform),defaultDescription:"Auto-detected"})}#s(t,r=!1){
+this.#r&&(t.option("path",{type:"string",desc:"Path to the root folder for the browser downloads and
+ installation. The installation folder structure is compatible with the cache structure used by Pupp
+eteer.",defaultDescription:"Current working directory",...r?{}:{default:process.cwd()}}),r&&t.demand
+Option("path"))}async run(t){let r=(0,crr.default)((0,orr.hideBin)(t)),n=r.scriptName(this.#a);this.
+#i?n=n.command(this.#i.cmd,this.#i.description,s=>this.#o(s)):n=this.#o(n),await n.demandCommand(1).
+help().wrap(Math.min(120,r.terminalWidth())).parse()}#o(t){let r=this.#n?"pinned":"latest",n=this.#n
+?"[browser]":"<browser>";return t.command(`install ${n}`,"Download and install the specified browser
+. If successful, the command outputs the actual browser buildId that was installed and the absolute 
+path to the browser executable (format: <browser>@<buildID> <path>).",s=>{this.#l(s),this.#I(s),this
+.#s(s),s.option("base-url",{type:"string",desc:"Base URL to download from"}),this.#n&&s.example("$0 
+install","Install all pinned browsers"),s.option("install-deps",{type:"boolean",desc:"Whether to att
+empt installing system dependencies (only supported on Linux, requires root privileges).",default:!1
+}),s.example("$0 install chrome",`Install the ${r} available build of the Chrome browser.`),s.exampl
+e("$0 install chrome@latest","Install the latest available build for the Chrome browser."),s.example
+("$0 install chrome@stable","Install the latest available build for the Chrome browser from the stab
+le channel."),s.example("$0 install chrome@beta","Install the latest available build for the Chrome 
+browser from the beta channel."),s.example("$0 install chrome@dev","Install the latest available bui
+ld for the Chrome browser from the dev channel."),s.example("$0 install chrome@canary","Install the 
+latest available build for the Chrome Canary browser."),s.example("$0 install chrome@115","Install t
+he latest available build for Chrome 115."),s.example("$0 install chromedriver@canary","Install the 
+latest available build for ChromeDriver Canary."),s.example("$0 install chromedriver@115","Install t
+he latest available build for ChromeDriver 115."),s.example("$0 install chromedriver@115.0.5790","In
+stall the latest available patch (115.0.5790.X) build for ChromeDriver."),s.example("$0 install chro
+me-headless-shell","Install the latest available chrome-headless-shell build."),s.example("$0 instal
+l chrome-headless-shell@beta","Install the latest available chrome-headless-shell build correspondin
+g to the Beta channel."),s.example("$0 install chrome-headless-shell@118","Install the latest availa
+ble chrome-headless-shell 118 build."),s.example("$0 install chromium@1083080","Install the revision
+ 1083080 of the Chromium browser."),s.example("$0 install firefox","Install the latest nightly avail
+able build of the Firefox browser."),s.example("$0 install firefox@stable","Install the latest stabl
+e build of the Firefox browser."),s.example("$0 install firefox@beta","Install the latest beta build
+ of the Firefox browser."),s.example("$0 install firefox@devedition","Install the latest devedition 
+build of the Firefox browser."),s.example("$0 install firefox@esr","Install the latest ESR build of 
+the Firefox browser."),s.example("$0 install firefox@nightly","Install the latest nightly build of t
+he Firefox browser."),s.example("$0 install firefox@stable_111.0.1","Install a specific version of t
+he Firefox browser."),s.example("$0 install firefox --platform mac","Install the latest Mac (Intel) 
+build of the Firefox browser."),this.#r&&s.example("$0 install firefox --path /tmp/my-browser-cache"
+,"Install to the specified cache directory.")},async s=>{let I=s;if(this.#n&&!I.browser){let e=await
+ Promise.allSettled(Object.entries(this.#n).map(async([o,d])=>{d.skipDownload||await this.#d({...s,b
+rowser:{name:o,buildId:d.buildId}})}));for(let o of e)if(o.status==="rejected")throw o.reason}else a
+wait this.#d(I)}).command("launch <browser>","Launch the specified browser",s=>{this.#l(s),this.#I(s
+),this.#s(s),s.option("detached",{type:"boolean",desc:"Detach the child process.",default:!1}),s.opt
+ion("system",{type:"boolean",desc:"Search for a browser installed on the system instead of the cache
+ folder.",default:!1}),s.example("$0 launch chrome@115.0.5790.170","Launch Chrome 115.0.5790.170"),s
+.example("$0 launch firefox@112.0a1","Launch the Firefox browser identified by the milestone 112.0a1
+."),s.example("$0 launch chrome@115.0.5790.170 --detached","Launch the browser but detach the sub-pr
+ocesses."),s.example("$0 launch chrome@canary --system","Try to locate the Canary build of Chrome in
+stalled on the system and launch it.")},async s=>{let I=s,e=I.system?(0,ere.computeSystemExecutableP
+ath)({browser:I.browser.name,channel:I.browser.buildId,platform:I.platform}):(0,ere.computeExecutabl
+ePath)({browser:I.browser.name,buildId:I.browser.buildId,cacheDir:I.path??this.#e,platform:I.platfor
+m});(0,ere.launch)({executablePath:e,detached:I.detached})}).command("clear",this.#r?"Removes all in
+stalled browsers from the specified cache directory":`Removes all installed browsers from ${this.#e}
+`,s=>{this.#s(s,!0)},async s=>{let e=s.path??this.#e,o=this.#t??srr.createInterface({input:Y5t.stdin
+,output:Y5t.stdout});o.question(`Do you want to permanently and recursively delete the content of ${
+e} (yes/No)? `,d=>{if(o.close(),!["y","yes"].includes(d.toLowerCase().trim())){console.log("Cancelle
+d.");return}new urr.Cache(e).clear(),console.log(`${e} cleared.`)})}).demandCommand(1).help()}#c(t){
+return t.split("@").shift()}#u(t){let r=t.split("@");return r.length===2?r[1]:this.#n?"pinned":"late
+st"}async#d(t){if(t.platform??=(0,drr.detectBrowserPlatform)(),!t.browser)throw new Error("No browse
+r arg proveded");if(!t.platform)throw new Error("Could not resolve the current platform");if(t.brows
+er.buildId==="pinned"){let n=this.#n?.[t.browser.name];if(!n||!n.buildId)throw new Error(`No pinned 
+version found for ${t.browser.name}`);t.browser.buildId=n.buildId}let r=t.browser.buildId;t.browser.
+buildId=await(0,V5t.resolveBuildId)(t.browser.name,t.platform,t.browser.buildId),await(0,hrr.install
+)({browser:t.browser.name,buildId:t.browser.buildId,platform:t.platform,cacheDir:t.path??this.#e,dow
+nloadProgressCallback:H5t(t.browser.name,t.browser.buildId),baseUrl:t.baseUrl,buildIdAlias:r!==t.bro
+wser.buildId?r:void 0,installDeps:t.installDeps}),console.log(`${t.browser.name}@${t.browser.buildId
+} ${(0,ere.computeExecutablePath)({browser:t.browser.name,buildId:t.browser.buildId,cacheDir:t.path?
+?this.#e,platform:t.platform})}`)}};vd.CLI=sxe;function H5t(a,t){let r,n=0;return(s,I)=>{r||(r=new I
+rr.default(`Downloading ${a} ${t} - ${Arr(I)} [:bar] :percent :etas `,{complete:"=",incomplete:" ",w
+idth:20,total:I}));let e=s-n;n=s,r.tick(e)}}function Arr(a){let t=a/1e3/1e3;return`${Math.round(t*10
+)/10} MB`}});var Ix=We(pr=>{"use strict";Object.defineProperty(pr,"__esModule",{value:!0});pr.Instal
+ledBrowser=pr.Cache=pr.makeProgressCallback=pr.CLI=pr.getVersionComparator=pr.createProfile=pr.Chrom
+eReleaseChannel=pr.BrowserPlatform=pr.Browser=pr.resolveBuildId=pr.detectBrowserPlatform=pr.uninstal
+l=pr.canDownload=pr.getInstalledBrowsers=pr.install=pr.Process=pr.WEBDRIVER_BIDI_WEBSOCKET_ENDPOINT_
+REGEX=pr.CDP_WEBSOCKET_ENDPOINT_REGEX=pr.TimeoutError=pr.computeSystemExecutablePath=pr.computeExecu
+tablePath=pr.launch=void 0;var rC=mYe();Object.defineProperty(pr,"launch",{enumerable:!0,get:functio
+n(){return rC.launch}});Object.defineProperty(pr,"computeExecutablePath",{enumerable:!0,get:function
+(){return rC.computeExecutablePath}});Object.defineProperty(pr,"computeSystemExecutablePath",{enumer
+able:!0,get:function(){return rC.computeSystemExecutablePath}});Object.defineProperty(pr,"TimeoutErr
+or",{enumerable:!0,get:function(){return rC.TimeoutError}});Object.defineProperty(pr,"CDP_WEBSOCKET_
+ENDPOINT_REGEX",{enumerable:!0,get:function(){return rC.CDP_WEBSOCKET_ENDPOINT_REGEX}});Object.defin
+eProperty(pr,"WEBDRIVER_BIDI_WEBSOCKET_ENDPOINT_REGEX",{enumerable:!0,get:function(){return rC.WEBDR
+IVER_BIDI_WEBSOCKET_ENDPOINT_REGEX}});Object.defineProperty(pr,"Process",{enumerable:!0,get:function
+(){return rC.Process}});var tre=bVe();Object.defineProperty(pr,"install",{enumerable:!0,get:function
+(){return tre.install}});Object.defineProperty(pr,"getInstalledBrowsers",{enumerable:!0,get:function
+(){return tre.getInstalledBrowsers}});Object.defineProperty(pr,"canDownload",{enumerable:!0,get:func
+tion(){return tre.canDownload}});Object.defineProperty(pr,"uninstall",{enumerable:!0,get:function(){
+return tre.uninstall}});var brr=HV();Object.defineProperty(pr,"detectBrowserPlatform",{enumerable:!0
+,get:function(){return brr.detectBrowserPlatform}});var sx=XN();Object.defineProperty(pr,"resolveBui
+ldId",{enumerable:!0,get:function(){return sx.resolveBuildId}});Object.defineProperty(pr,"Browser",{
+enumerable:!0,get:function(){return sx.Browser}});Object.defineProperty(pr,"BrowserPlatform",{enumer
+able:!0,get:function(){return sx.BrowserPlatform}});Object.defineProperty(pr,"ChromeReleaseChannel",
+{enumerable:!0,get:function(){return sx.ChromeReleaseChannel}});Object.defineProperty(pr,"createProf
+ile",{enumerable:!0,get:function(){return sx.createProfile}});Object.defineProperty(pr,"getVersionCo
+mparator",{enumerable:!0,get:function(){return sx.getVersionComparator}});var B5t=X5t();Object.defin
+eProperty(pr,"CLI",{enumerable:!0,get:function(){return B5t.CLI}});Object.defineProperty(pr,"makePro
+gressCallback",{enumerable:!0,get:function(){return B5t.makeProgressCallback}});var k5t=g9();Object.
+defineProperty(pr,"Cache",{enumerable:!0,get:function(){return k5t.Cache}});Object.defineProperty(pr
+,"InstalledBrowser",{enumerable:!0,get:function(){return k5t.InstalledBrowser}})});var cxe=We(are=>{
+"use strict";Object.defineProperty(are,"__esModule",{value:!0});are.PipeTransport=void 0;var J5t=En(
+),L5t=Gr(),D5t=Nn(),mrr=Sn(),Ixe=class{#e;#t=new mrr.DisposableStack;#a=!1;#r="";onclose;onmessage;c
+onstructor(t,r){this.#e=t;let n=this.#t.use(new J5t.EventEmitter(r));n.on("data",I=>this.#n(I)),n.on
+("close",()=>{this.onclose&&this.onclose.call(null)}),n.on("error",L5t.debugError),this.#t.use(new J
+5t.EventEmitter(r)).on("error",L5t.debugError)}send(t){(0,D5t.assert)(!this.#a,"`PipeTransport` is c
+losed."),this.#e.write(t),this.#e.write("\0")}#n(t){(0,D5t.assert)(!this.#a,"`PipeTransport` is clos
+ed.");let r=t.indexOf("\0");if(r===-1){this.#r+=t.toString();return}let n=this.#r+t.toString(void 0,
+0,r);this.onmessage&&this.onmessage.call(null,n);let s=r+1;for(r=t.indexOf("\0",s);r!==-1;)this.onme
+ssage&&this.onmessage.call(null,t.toString(void 0,s,r)),s=r+1,r=t.indexOf("\0",s);this.#r=t.toString
+(void 0,s)}close(){this.#a=!0,this.#t.dispose()}};are.PipeTransport=Ixe});var rre=We(aG=>{"use stric
+t";var Grr=aG&&aG.__createBinding||(Object.create?function(a,t,r,n){n===void 0&&(n=r);var s=Object.g
+etOwnPropertyDescriptor(t,r);(!s||("get"in s?!t.__esModule:s.writable||s.configurable))&&(s={enumera
+ble:!0,get:function(){return t[r]}}),Object.defineProperty(a,n,s)}:function(a,t,r,n){n===void 0&&(n=
+r),a[n]=t[r]}),prr=aG&&aG.__setModuleDefault||(Object.create?function(a,t){Object.defineProperty(a,"
+default",{enumerable:!0,value:t})}:function(a,t){a.default=t}),S5t=aG&&aG.__importStar||function(a){
+if(a&&a.__esModule)return a;var t={};if(a!=null)for(var r in a)r!=="default"&&Object.prototype.hasOw
+nProperty.call(a,r)&&Grr(t,a,r);return prr(t,a),t};Object.defineProperty(aG,"__esModule",{value:!0})
+;aG.BrowserLauncher=void 0;var oxe=require("fs"),grr=require("os"),frr=require("path"),yg=Ix(),cx=kh
+(),Zrr=UP(),U5t=IN(),Wrr=li(),M5t=Gr(),O5t=kQe(),vrr=cxe(),uxe=class{#e;puppeteer;constructor(t,r){t
+his.puppeteer=t,this.#e=r}get browser(){return this.#e}async launch(t={})
+CONTEXT: ??process.cwd(),this.#t=r,this.#a=t.scriptName??"@puppeteer/browsers",this.#r=t.allowCacheP
+athOverride??!0,this.#n=t.pinnedBrowsers,this.#i=t.prefixCommand}#l(t){t.positional("browser",{descr
+iption:"W
+-----
+MATCH: puppeteer at https://pptr.dev/guides/configuration.`)}}return r}};aG.BrowserLauncher=uxe});va
+r dxe=We(ox=>{"use strict";var Err=ox&&ox.__importDefault||function(a){return a&&a.__esModule?a:{def
+ault:a}};Object.defineProperty(ox,"__esModule",{value:!0});ox.rm=Nrr;ox.rmSync=Crr;var T5t=Err(requi
+re("fs")),z5t={force:!0,recursive:!0,maxRetries:5};async function Nrr(a){await T5t.default.promises.
+rm(a,z5t)}function Crr(a){T5t.default.rmSync(a,z5t)}});var Gxe=We(p1=>{"use strict";var j5t=p1&&p1._
+_importDefault||function(a){return a&&a.__esModule?a:{default:a}};Object.defineProperty(p1,"__esModu
+le",{value:!0});p1.ChromeLauncher=void 0;p1.getFeatures=bxe;p1.removeMatchingFlags=mxe;var Frr=requi
+re("fs/promises"),Qrr=j5t(require("os")),yrr=j5t(require("path")),ux=Ix(),wrr=Gr(),hxe=Nn(),Rrr=rre(
+),Yrr=dxe(),Axe=class extends Rrr.BrowserLauncher{constructor(t){super(t,"chrome")}launch(t={})
+CONTEXT: ry}). For (2), check out our guide on configuring puppeteer at https://pptr.dev/guides/conf
+iguration.`)}}return r}};aG.BrowserLauncher=uxe});var dxe=We(ox=>{"use strict";var Err=ox&&ox.__impo
+rtDefault
+-----
+MATCH: puppeteer._isPuppeteerCore,"An `executablePath` or `channel` must be specified for `puppeteer
+-core`"),c=this.executablePath(e,t.headless??!0)),{executablePath:c,args:d,isTempUserDataDir:A,userD
+ataDir:h}}async cleanUserDataDir(t,r){if(r.isTemp)try{await(0,Yrr.rm)(t)}catch(n){throw(0,wrr.debugE
+rror)(n),n}}defaultArgs(t={}){let r=bxe("--disable-features",t.args);t.args&&r.length>0&&mxe(t.args,
+"--disable-features");let s=["Translate","AcceptCHFrame","MediaRouter","OptimizationHints",...proces
+s.env.PUPPETEER_TEST_EXPERIMENTAL_CHROME_FEATURES==="true"?[]:["ProcessPerSiteUpToMainFrameThreshold
+","IsolateSandboxedIframes"],...r].filter(c=>c!==""),I=bxe("--enable-features",t.args);t.args&&I.len
+gth>0&&mxe(t.args,"--enable-features");let e=["PdfOopif",...I].filter(c=>c!==""),o=["--allow-pre-com
+mit-input","--disable-background-networking","--disable-background-timer-throttling","--disable-back
+grounding-occluded-windows","--disable-breakpad","--disable-client-side-phishing-detection","--disab
+le-component-extensions-with-background-pages","--disable-default-apps","--disable-dev-shm-usage","-
+-disable-extensions","--disable-hang-monitor","--disable-infobars","--disable-ipc-flooding-protectio
+n","--disable-popup-blocking","--disable-prompt-on-repost","--disable-renderer-backgrounding","--dis
+able-search-engine-choice-screen","--disable-sync","--enable-automation","--export-tagged-pdf","--ge
+nerate-pdf-document-outline","--force-color-profile=srgb","--metrics-recording-only","--no-first-run
+","--password-store=basic","--use-mock-keychain",`--disable-features=${s.join(",")}`,`--enable-featu
+res=${e.join(",")}`].filter(c=>c!==""),{devtools:d=!1,headless:A=!d,args:u=[],userDataDir:h}=t;retur
+n h&&o.push(`--user-data-dir=${yrr.default.resolve(h)}`),d&&o.push("--auto-open-devtools-for-tabs"),
+A&&o.push(A==="shell"?"--headless":"--headless=new","--hide-scrollbars","--mute-audio"),u.every(c=>c
+.startsWith("-"))&&o.push("about:blank"),o.push(...u),o}executablePath(t,r){return t?(0,ux.computeSy
+stemExecutablePath)({browser:ux.Browser.CHROME,channel:Vrr(t)}):this.resolveExecutablePath(r)}};p1.C
+hromeLauncher=Axe;function Vrr(a){switch(a){case"chrome":return ux.ChromeReleaseChannel.STABLE;case"
+chrome-dev":return ux.ChromeReleaseChannel.DEV;case"chrome-beta":return ux.ChromeReleaseChannel.BETA
+;case"chrome-canary":return ux.ChromeReleaseChannel.CANARY}}function bxe(a,t=[]){return t.filter(r=>
+r.startsWith(a.endsWith("=")?a:`${a}=`)).map(r=>r.split(new RegExp(`${a}=\\s*`))[1]?.trim()).filter(
+r=>r)}function mxe(a,t){let r=new RegExp(`^${t}=.*`),n=0;for(;n<a.length;)r.test(a[n])?a.splice(n,1)
+:n++;return a}});var Zxe=We(dx=>{"use strict";var fxe=dx&&dx.__importDefault||function(a){return a&&
+a.__esModule?a:{default:a}};Object.defineProperty(dx,"__esModule",{value:!0});dx.FirefoxLauncher=voi
+d 0;var xrr=fxe(require("fs")),pxe=require("fs/promises"),Hrr=fxe(require("os")),K5t=fxe(require("pa
+th")),_5t=Ix(),P5t=Gr(),q5t=Nn(),Xrr=rre(),Brr=dxe(),gxe=class a extends Xrr.BrowserLauncher{constru
+ctor(t){super(t,"firefox")}static getPreferences(t,r){return{...t,...r==="webDriverBiDi"?{"remote.ac
+tive-protocols":1}:{"browser.tabs.closeWindowWithLastTab":!1,"network.cookie.cookieBehavior":0,"fiss
+ion.bfcacheInParent":!1,"remote.active-protocols":2},"fission.webContentIsolationStrategy":0}}async 
+computeLaunchArguments(t={}){let{ignoreDefaultArgs:r=!1,args:n=[],executablePath:s,pipe:I=!1,extraPr
+efsFirefox:e={},debuggingPort:o=null}=t,d=[];r?Array.isArray(r)?d.push(...this.defaultArgs(t).filter
+(W=>!r.includes(W))):d.push(...n):d.push(...this.defaultArgs(t)),d.some(W=>W.startsWith("--remote-de
+bugging-"))||(I&&(0,q5t.assert)(o===null,"Browser should be launched with either pipe or debugging p
+ort - not both."),d.push(`--remote-debugging-port=${o||0}`));let A,u=!0,h=d.findIndex(W=>["-profile"
+,"--profile"].includes(W));if(h!==-1){if(A=d[h+1],!A)throw new Error("Missing value for profile comm
+and line argument");u=!1}else A=await(0,pxe.mkdtemp)(this.getProfilePath()),d.push("--profile"),d.pu
+sh(A);await(0,_5t.createProfile)(_5t.Browser.FIREFOX,{path:A,preferences:a.getPreferences(e,t.protoc
+ol)});let c;return this.puppeteer._isPuppeteerCore||s?((0,q5t.assert)(s,"An `executablePath` must be
+ specified for `puppeteer-core`"),c=s):c=this.executablePath(),{isTempUserDataDir:u,userDataDir:A,ar
+gs:d,executablePath:c}}async cleanUserDataDir(t,r){if(r.isTemp)try{await(0,Brr.rm)(t)}catch(n){throw
+(0,P5t.debugError)(n),n}else try{let n=".puppeteer",s=["prefs.js","user.js"],I=await Promise.allSett
+led(s.map(async e=>{let o=K5t.default.join(t,e+n);if(xrr.default.existsSync(o)){let d=K5t.default.jo
+in(t,e);await(0,pxe.unlink)(d),await(0,pxe.rename)(o,d)}}));for(let e of I)if(e.status==="rejected")
+throw e.reason}catch(n){(0,P5t.debugError)(n)}}executablePath(){return this.resolveExecutablePath()}
+defaultArgs(t={}){let{devtools:r=!1,headless:n=!r,args:s=[],userDataDir:I=null}=t,e=[];switch(Hrr.de
+fault.platform()){case"darwin":e.push("--foreground");break;case"win32":e.push("--wait-for-browser")
+;break}return I&&(e.push("--profile"),e.push(I)),n&&e.push("--headless"),r&&e.push("--devtools"),s.e
+very(o=>o.startsWith("-"))&&e.push("about:blank"),e.push(...s),e}};dx.FirefoxLauncher=gxe});var $5t=
+We(nre=>{"use strict";Object.defineProperty(nre,"__esModule",{value:!0});nre.PuppeteerNode=void 0;va
+r hx=Ix(),krr=LQe(),P9=SQe(),Jrr=Gxe(),Lrr=Zxe(),Wxe=class extends krr.Puppeteer{#e;#t;defaultBrowse
+rRevision;configuration={};constructor(t){let{configuration:r,...n}=t;switch(super(n),r&&(this.confi
+guration=r),this.configuration.defaultBrowser){case"firefox":this.defaultBrowserRevision=P9.PUPPETEE
+R_REVISIONS.firefox;break;default:this.configuration.defaultBrowser="chrome",this.defaultBrowserRevi
+sion=P9.PUPPETEER_REVISIONS.chrome;break}this.connect=this.connect.bind(this),this.launch=this.launc
+h.bind(this),this.executablePath=this.executablePath.bind(this),this.defaultArgs=this.defaultArgs.bi
+nd(this),this.trimCache=this.trimCache.bind(this)}connect(t){return super.connect(t)}launch(t={})
+CONTEXT: rmed");let c=o;return c||((0,hxe.assert)(e||!this.puppeteer._isPuppeteerCore,"An `executabl
+ePath` or `channel` must be specified for `puppeteer-core`"),c=this.executablePath(e,t.headless??!0)
+),{execut
+-----
+MATCH: puppeteer-core",version:"23.9.0",description:"A high-level API to control headless Chrome ove
+r the DevTools Protocol",keywords:["puppeteer","chrome","headless","automation"],type:"commonjs",mai
+n:"./lib/cjs/puppeteer/puppeteer-core.js",types:"./lib/types.d.ts",browser:"./lib/esm/puppeteer/pupp
+eteer-core-browser.js",exports:{".":{types:"./lib/types.d.ts",import:"./lib/esm/puppeteer/puppeteer-
+core.js",require:"./lib/cjs/puppeteer/puppeteer-core.js"},"./internal/*":{import:"./lib/esm/puppetee
+r/*",require:"./lib/cjs/puppeteer/*"},"./*":{import:"./*",require:"./*"}},repository:{type:"git",url
+:"https://github.com/puppeteer/puppeteer/tree/main/packages/puppeteer-core"},engines:{node:">=18"},s
+cripts:{"build:docs":"wireit",build:"wireit",check:"tsx tools/ensure-correct-devtools-protocol-packa
+ge",clean:"../../tools/clean.mjs",prepack:"wireit",unit:"wireit"},wireit:{prepack:{command:"tsx ../.
+./tools/cp.ts ../../README.md README.md",files:["../../README.md"],output:["README.md"]},build:{depe
+ndencies:["build:tsc","build:types","build:es5"]},"build:docs":{command:'api-extractor run --local -
+-config "./api-extractor.docs.json"',files:["api-extractor.docs.json","lib/esm/puppeteer/puppeteer-c
+ore.d.ts","tsconfig.json"],dependencies:["build:tsc"]},"build:tsc":{command:"hereby build",clean:"if
+-file-deleted",dependencies:["../browsers:build"],files:["{src,third_party}/**","../../versions.js",
+"!src/generated","Herebyfile.mjs"],output:["lib/{cjs,esm}/**"]},"build:es5":{command:"rollup -c roll
+up.config.mjs && node ../../tools/patch.mjs lib/es5-iife/puppeteer-core-browser.js lib/es5-iife/pupp
+eteer-core-browser.d.ts lib/types.d.ts",files:["rollup.config.mjs"],output:["lib/es5-iife/puppeteer-
+core-browser.js"],dependencies:["build:tsc","build:types"]},"build:types":{command:"api-extractor ru
+n --local && eslint --cache-location .eslintcache --cache --no-ignore --no-config-lookup -c=../../es
+lint.types.config.mjs --fix lib/types.d.ts",files:["../../eslint.types.config.mjs","api-extractor.js
+on","lib/esm/puppeteer/types.d.ts","tsconfig.json"],output:["lib/types.d.ts"],dependencies:["build:t
+sc"]},unit:{command:"node --test --test-reporter spec lib/cjs",dependencies:["build"]}},files:["lib"
+,"src","!*.test.ts","!*.test.js","!*.test.d.ts","!*.test.js.map","!*.test.d.ts.map","!*.tsbuildinfo"
+],author:"The Chromium Authors",license:"Apache-2.0",dependencies:{"@puppeteer/browsers":"2.4.1","ch
+romium-bidi":"0.8.0",debug:"^4.3.7","devtools-protocol":"0.0.1367902","typed-query-selector":"^2.12.
+0",ws:"^8.18.0"},devDependencies:{"@types/chrome":"0.0.283","@types/debug":"4.1.12","@types/node":"^
+18.17.15","@types/ws":"8.5.13",mitt:"3.0.1","parsel-js":"1.1.2",rxjs:"7.8.1"}}});var gre=We((kjr,AXt
+)=>{var tir=require("http"),air=require("https"),rir=require("url"),nir=nJ(),sC=Ix(),iir=dXt(),Cd={d
+etectBrowserPlatform:()=>sC.detectBrowserPlatform(),resolveBuildId:async(a,t="latest")=>await sC.res
+olveBuildId(sC.Browser.CHROMIUM,a,t).catch(n=>{})||"1337728",install:a=>sC.install({browser:sC.Brows
+er.CHROMIUM,...a}),computeExecutablePath:a=>sC.computeExecutablePath({browser:sC.Browser.CHROMIUM,..
+.a}),getPuppeteerVersion:()=>{let a;try{a=hXt()}catch{return}if(a)return a.version},headRequest:a=>n
+ew Promise(t=>{let r=rir.parse(a),n=!1;r.protocol==="https:"&&(n=!0);let s={...r,method:"HEAD"},I=n?
+air.request(s):tir.request(s);I.setTimeout(3e3),I.end();let e=o=>{I.destroy(),t(o)};I.on("error",o=>
+{e(!1)}),I.on("timeout",o=>{e(!1)}),I.on("close",o=>{e(!1)}),I.on("response",o=>{let{statusCode:d,he
+aders:A}=o;if(d&&d>=300&&d<400&&A.location){e(Cd.headRequest(A.location));return}e(d===200)})}),sile
+nt:!1,output:(a,t)=>{Cd.silent||console.log(t?nir.red(`[PCR] ${a}`):`[PCR] ${a}`)},delay:function(a)
+{return new Promise(t=>{a?setTimeout(t,a):setImmediate(t)})},createGauge:()=>{Cd.closeGauge(),Cd.gau
+ge=new iir},closeGauge:()=>{Cd.gauge&&(Cd.gauge.disable(),Cd.gauge.hide(),Cd.gauge=null)},showProgre
+ss:(a,t)=>{let r=0;t&&(r=a/t),Cd.gauge&&Cd.gauge.show(`Downloading Chromium - ${Cd.toMegabytes(a)} /
+ ${Cd.toMegabytes(t)}`,r)},toMegabytes:a=>{let t=a/1024/1024;return`${Math.round(t*10)/10} Mb`},form
+atPath:a=>(a&&(a=a.replace(/\\/g,"/")),a),isList:a=>!!(a&&a instanceof Array&&a.length>0)};AXt.expor
+ts=Cd});var mXt=We((Jjr,bXt)=>{bXt.exports={revision:"",detectionPath:"",downloadPath:"",folderName:
+".chromium-browser-snapshots",statsName:".pcr-stats.json",hosts:[],cacheRevisions:2,retry:3,silent:!
+1}});var gXt=We((Ljr,pXt)=>{var lir=require("fs"),Oxe=require("path"),GXt=nJ(),Txe=gre(),sir=a=>{let
+ t=a.detectionPath;return Array.isArray(t)?t:(t=`${t}`,t?t.split(","):[])},Iir=a=>{let t=sir(a);t.pu
+sh(a.snapshotsDir);let r=5,n=0,s=process.cwd();for(;s&&n<r;){let I=Oxe.resolve(s,a.folderName);t.pus
+h(I);let e=Oxe.resolve(s,"../");e===s?s="":s=e,n+=1}return t},cir=(a,t)=>{t=Oxe.resolve(t);let r=a.r
+evision,n=Txe.computeExecutablePath({buildId:r,cacheDir:t});if(!(!n||!lir.existsSync(n)))return n},o
+ir=a=>{let t=Iir(a);for(let r of t){let n=cir(a,r);if(n)return n}return null};pXt.exports=a=>{let t=
+oir(a);return t?(a.executablePath=t,Txe.output(`Found local chromium: ${GXt.green(a.revision)}`),!0)
+:(Txe.output(GXt.yellow("Not found local chromium")),!1)}});var EXt=We((Djr,vXt)=>{var fXt=nJ(),Fd=g
+re(),lG={LINUX:"linux",MAC:"mac",MAC_ARM:"mac_arm",WIN32:"win32",WIN64:"win64"};function uir(a){swit
+ch(a){case lG.LINUX:return"Linux_x64";case lG.MAC_ARM:return"Mac_Arm";case lG.MAC:return"Mac";case l
+G.WIN32:return"Win";case lG.WIN64:return"Win_x64";default:return""}}function dir(a,t){switch(a){case
+ lG.LINUX:return"chrome-linux";case lG.MAC_ARM:case lG.MAC:return"chrome-mac";case lG.WIN32:case lG.
+WIN64:return parseInt(t,10)>591479?"chrome-win":"chrome-win32";default:return""}}var hir=(a,t)=>[uir
+(a),t,`${dir(a,t)}.zip`],Air=(a,t,r)=>`${r}/${hir(a,t).join("/")}`,ZXt=a=>`${a}/chromium-browser-sna
+pshots`,bir=async(a,t)=>{Fd.output(`Downloading from: ${t} ...`),Fd.createGauge();let r=!1,n=await F
+d.install({baseUrl:ZXt(t),buildId:a.revision,cacheDir:a.snapshotsDir,downloadProgressCallback:(s,I)=
+>{Fd.showProgress(s,I)}}).catch(s=>{r=!0,Fd.output(s,!0)});if(await Fd.delay(500),Fd.closeGauge(),!(
+r||!n))return Fd.output(`Chromium downloaded: ${n.buildId}`),n},WXt=async(a,t)=>{for(let r of t){let
+ n=await bir(a,r.host);if(n)return n}if(a.retryNum<a.retry)return a.retryNum+=1,Fd.output("Retry Chr
+omium downloading ... "),WXt(a,t)},mir=async(a,t)=>{let r=Date.now(),{platform:n,revision:s}=a,I=ZXt
+(t),e=Air(n,s,I),o=await Fd.headRequest(e),d=Date.now()-r,A=o?fXt.green(o):fXt.red(o);return Fd.outp
+ut(`Head request: ${e} - ${A} (${d}ms)`),{host:t,time:d,ok:o,downloadUrl:e}},Gir=async a=>{let t=awa
+it Promise.all(a.hosts.map(r=>mir(a,r)));return t.sort((r,n)=>r.ok&&!n.ok?-1:!r.ok&&n.ok?1:r.time-n.
+time),t};vXt.exports=async a=>{let t=await Gir(a);a.retryNum=0;let r=await WXt(a,t);r?(a.installedBr
+owser=r,a.executablePath=Fd.computeExecutablePath({platform:r.platform,buildId:r.buildId,cacheDir:a.
+snapshotsDir})):Fd.output(`ERROR: Failed to download Chromium after retry ${a.retryNum} times.`,!0)}
+});var _xe=We((Sjr,QXt)=>{var fre=require("path"),v1=require("fs"),NXt=require("os"),W1=nJ(),zxe=cHt
+(),yi=gre(),pir=mXt(),gir=gXt(),fir=EXt(),Zir=a=>{let t=a.hosts;return yi.isList(t)||(t=["https://st
+orage.googleapis.com"]),t},Wir=a=>{let t=a.downloadPath;if(!t)return NXt.homedir();let r=fre.resolve
+(t);if(v1.existsSync(r))return r;try{v1.mkdirSync(r,{recursive:!0})}catch{yi.output(`Failed to creat
+e download dir: ${yi.formatPath(r)}`,!0)}return r},vir=a=>{let t=a.folderName||".chromium-browser-sn
+apshots",r=fre.resolve(a.cacheDir,t);if(v1.existsSync(r))return r;try{v1.mkdirSync(r,{recursive:!0})
+}catch{yi.output(`Failed to create download dir: ${yi.formatPath(r)}`,!0)}return r},Eir=()=>{let a;t
+ry{a=require(fre.resolve("package.json"))}catch{}if(!(!a||!a.pcr))return a.pcr},jxe=(a={})=>{let t=E
+ir();return a=Object.assign(pir,t,a),a.hosts=Zir(a),a.cacheDir=Wir(a),a.snapshotsDir=vir(a),a},Nir=a
+sync a=>{if(a.launchable=!1,!a.executablePath)return;let t=await zxe.launch({headless:"new",args:["-
+-no-sandbox"],executablePath:a.executablePath})
+CONTEXT: )))}}});var hXt=We((Bjr,eir)=>{eir.exports={name:"puppeteer-core",version:"23.9.0",descript
+ion:"A high-level API to control headless Chrome over the DevTools Protocol",keywords:["puppeteer","
+chrome","
+-----
+MATCH: puppeteer");return await es(r)||await yXt.mkdir(r,{recursive:!0}),await(0,YXt.default)({downl
+oadPath:r})}async launchBrowser(){if(this.browser)return;let t=await this.ensureChromiumExists();thi
+s.browser=await t.puppeteer.launch({args:["--no-sandbox","--disable-setuid-sandbox","--user-agent=Mo
+zilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)
+CONTEXT: Global storage uri is invalid");let r=wXt.join(t,"puppeteer");return await es(r)||await yXt
+.mkdir(r,{recursive:!0}),await(0,YXt.default)({downloadPath:r})}async launchBrowser(){if(this.browse
+r)return;
+-----
+MATCH: puppeteer;constructor(t,r){this.puppeteer=t,this.#e=r}get browser(){return this.#e}async laun
+ch(t={})
+CONTEXT: (){this.#a=!0,this.#t.dispose()}};var R5=class{#e;puppeteer;constructor(t,r){this.puppeteer
+=t,this.#e=r}get browser(){return this.#e}async launch(t={}){let{dumpio:r=!1,env:n=process.env,handl
+eSIGINT:s
+-----
+MATCH: puppeteer at https://pptr.dev/guides/configuration.`)}}return r}};var ULt=Bt(require("fs"),1)
+;var $ur={force:!0,recursive:!0,maxRetries:5};async function Gle(a){await ULt.default.promises.rm(a,
+$ur)}var ple=class extends R5{constructor(t){super(t,"chrome")}launch(t={})
+CONTEXT: ry}). For (2), check out our guide on configuring puppeteer at https://pptr.dev/guides/conf
+iguration.`)}}return r}};var ULt=Bt(require("fs"),1);var $ur={force:!0,recursive:!0,maxRetries:5};as
+ync funct
+-----
+MATCH: puppeteer._isPuppeteerCore,"An `executablePath` or `channel` must be specified for `puppeteer
+-core`"),c=this.executablePath(e,t.headless??!0)),{executablePath:c,args:d,isTempUserDataDir:A,userD
+ataDir:h}}async cleanUserDataDir(t,r){if(r.isTemp)try{await Gle(t)}catch(n){throw ea(n),n}}defaultAr
+gs(t={}){let r=MLt("--disable-features",t.args);t.args&&r.length>0&&OLt(t.args,"--disable-features")
+;let s=["Translate","AcceptCHFrame","MediaRouter","OptimizationHints",...process.env.PUPPETEER_TEST_
+EXPERIMENTAL_CHROME_FEATURES==="true"?[]:["ProcessPerSiteUpToMainFrameThreshold","IsolateSandboxedIf
+rames"],...r].filter(c=>c!==""),I=MLt("--enable-features",t.args);t.args&&I.length>0&&OLt(t.args,"--
+enable-features");let e=["PdfOopif",...I].filter(c=>c!==""),o=["--allow-pre-commit-input","--disable
+-background-networking","--disable-background-timer-throttling","--disable-backgrounding-occluded-wi
+ndows","--disable-breakpad","--disable-client-side-phishing-detection","--disable-component-extensio
+ns-with-background-pages","--disable-default-apps","--disable-dev-shm-usage","--disable-extensions",
+"--disable-hang-monitor","--disable-infobars","--disable-ipc-flooding-protection","--disable-popup-b
+locking","--disable-prompt-on-repost","--disable-renderer-backgrounding","--disable-search-engine-ch
+oice-screen","--disable-sync","--enable-automation","--export-tagged-pdf","--generate-pdf-document-o
+utline","--force-color-profile=srgb","--metrics-recording-only","--no-first-run","--password-store=b
+asic","--use-mock-keychain",`--disable-features=${s.join(",")}`,`--enable-features=${e.join(",")}`].
+filter(c=>c!==""),{devtools:d=!1,headless:A=!d,args:u=[],userDataDir:h}=t;return h&&o.push(`--user-d
+ata-dir=${jLt.default.resolve(h)}`),d&&o.push("--auto-open-devtools-for-tabs"),A&&o.push(A==="shell"
+?"--headless":"--headless=new","--hide-scrollbars","--mute-audio"),u.every(c=>c.startsWith("-"))&&o.
+push("about:blank"),o.push(...u),o}executablePath(t,r){return t?zie({browser:Oa.CHROME,channel:edr(t
+)}):this.resolveExecutablePath(r)}};function edr(a){switch(a){case"chrome":return dn.STABLE;case"chr
+ome-dev":return dn.DEV;case"chrome-beta":return dn.BETA;case"chrome-canary":return dn.CANARY}}functi
+on MLt(a,t=[]){return t.filter(r=>r.startsWith(a.endsWith("=")?a:`${a}=`)).map(r=>r.split(new RegExp
+(`${a}=\\s*`))[1]?.trim()).filter(r=>r)}function OLt(a,t){let r=new RegExp(`^${t}=.*`),n=0;for(;n<a.
+length;)r.test(a[n])?a.splice(n,1):n++;return a}var KLt=Bt(require("fs"),1),Y5=require("fs/promises"
+),_Lt=Bt(require("os"),1),G3e=Bt(require("path"),1);gr();Qn();var gle=class a extends R5{constructor
+(t){super(t,"firefox")}static getPreferences(t,r){return{...t,...r==="webDriverBiDi"?{"remote.active
+-protocols":1}:{"browser.tabs.closeWindowWithLastTab":!1,"network.cookie.cookieBehavior":0,"fission.
+bfcacheInParent":!1,"remote.active-protocols":2},"fission.webContentIsolationStrategy":0}}async comp
+uteLaunchArguments(t={}){let{ignoreDefaultArgs:r=!1,args:n=[],executablePath:s,pipe:I=!1,extraPrefsF
+irefox:e={},debuggingPort:o=null}=t,d=[];r?Array.isArray(r)?d.push(...this.defaultArgs(t).filter(W=>
+!r.includes(W))):d.push(...n):d.push(...this.defaultArgs(t)),d.some(W=>W.startsWith("--remote-debugg
+ing-"))||(I&&jt(o===null,"Browser should be launched with either pipe or debugging port - not both."
+),d.push(`--remote-debugging-port=${o||0}`));let A,u=!0,h=d.findIndex(W=>["-profile","--profile"].in
+cludes(W));if(h!==-1){if(A=d[h+1],!A)throw new Error("Missing value for profile command line argumen
+t");u=!1}else A=await(0,Y5.mkdtemp)(this.getProfilePath()),d.push("--profile"),d.push(A);await xXe(O
+a.FIREFOX,{path:A,preferences:a.getPreferences(e,t.protocol)});let c;return this.puppeteer._isPuppet
+eerCore||s?(jt(s,"An `executablePath` must be specified for `puppeteer-core`"),c=s):c=this.executabl
+ePath(),{isTempUserDataDir:u,userDataDir:A,args:d,executablePath:c}}async cleanUserDataDir(t,r){if(r
+.isTemp)try{await Gle(t)}catch(n){throw ea(n),n}else try{let n=".puppeteer",s=["prefs.js","user.js"]
+,I=await Promise.allSettled(s.map(async e=>{let o=G3e.default.join(t,e+n);if(KLt.default.existsSync(
+o)){let d=G3e.default.join(t,e);await(0,Y5.unlink)(d),await(0,Y5.rename)(o,d)}}));for(let e of I)if(
+e.status==="rejected")throw e.reason}catch(n){ea(n)}}executablePath(){return this.resolveExecutableP
+ath()}defaultArgs(t={}){let{devtools:r=!1,headless:n=!r,args:s=[],userDataDir:I=null}=t,e=[];switch(
+_Lt.default.platform()){case"darwin":e.push("--foreground");break;case"win32":e.push("--wait-for-bro
+wser");break}return I&&(e.push("--profile"),e.push(I)),n&&e.push("--headless"),r&&e.push("--devtools
+"),s.every(o=>o.startsWith("-"))&&e.push("about:blank"),e.push(...s),e}};var fle=class extends Vie{#
+e;#t;defaultBrowserRevision;configuration={};constructor(t){let{configuration:r,...n}=t;switch(super
+(n),r&&(this.configuration=r),this.configuration.defaultBrowser){case"firefox":this.defaultBrowserRe
+vision=f5.firefox;break;default:this.configuration.defaultBrowser="chrome",this.defaultBrowserRevisi
+on=f5.chrome;break}this.connect=this.connect.bind(this),this.launch=this.launch.bind(this),this.exec
+utablePath=this.executablePath.bind(this),this.defaultArgs=this.defaultArgs.bind(this),this.trimCach
+e=this.trimCache.bind(this)}connect(t){return super.connect(t)}launch(t={})
+CONTEXT: ir` is malformed");let c=o;return c||(jt(e||!this.puppeteer._isPuppeteerCore,"An `executabl
+ePath` or `channel` must be specified for `puppeteer-core`"),c=this.executablePath(e,t.headless??!0)
+),{execut
+-----
+MATCH: puppeteer:ffmpeg"),e9t=(()=>{let a=qLt.PassThrough,t=[],r,n,s;return class extends a{static{l
+et e=typeof Symbol=="function"&&Symbol.metadata?Object.create(a[Symbol.metadata]??null):void 0;PLt(t
+his,n={value:adr(async function(o){let d=await new Promise(A=>{this.#t.stdin.write(o,A)});d&&console
+.log(`ffmpeg failed to write: ${d.message}.`)},"#writeFrame")},r,{kind:"method",name:"#writeFrame",s
+tatic:!1,private:!0,access:{has:o=>#i in o,get:o=>o.#i},metadata:e},null,t),PLt(this,null,s,{kind:"m
+ethod",name:"stop",static:!1,private:!1,access:{has:o=>"stop"in o,get:o=>o.stop},metadata:e},null,t)
+,e&&Object.defineProperty(this,Symbol.metadata,{enumerable:!0,configurable:!0,writable:!0,value:e})}
+#e=tdr(this,t);#t;#a=new AbortController;#r;constructor(e,o,d,{speed:A,scale:u,crop:h,format:c,path:
+W}={}){super({allowHalfOpen:!1}),W??="ffmpeg";let{error:Y}=(0,Zle.spawnSync)(W);if(Y)throw Y;this.#t
+=(0,Zle.spawn)(W,[["-loglevel","error"],["-avioflags","direct"],["-fpsprobesize","0","-probesize","3
+2","-analyzeduration","0","-fflags","nobuffer"],["-f","image2pipe","-c:v","png","-i","pipe:0"],["-y"
+,"-an"],["-threads","1"],["-framerate",`${p3e}`],this.#n(c??"webm"),["-b:v","0"],["-vf",`${A?`setpts
+=${1/A}*PTS,`:""}crop='min(${o},iw):min(${d},ih):0:0',pad=${o}:${d}:0:0${h?`,crop=${h.width}:${h.hei
+ght}:${h.x}:${h.y}`:""}${u?`,scale=iw*${u}:-1`:""}`],"pipe:1"].flat(),{stdio:["pipe","pipe","pipe"]}
+),this.#t.stdout.pipe(this),this.#t.stderr.on("data",x=>{ndr(x.toString("utf8"))}),this.#e=e;let{cli
+ent:w}=this.#e.mainFrame();w.once(Xr.Disconnected,()=>{this.stop().catch(ea)}),this.#r=HBt(on(w,"Pag
+e.screencastFrame").pipe(AC(x=>{w.send("Page.screencastFrameAck",{sessionId:x.sessionId})}),yd(x=>x.
+metadata.timestamp!==void 0),ei(x=>({buffer:Buffer.from(x.data,"base64"),timestamp:x.metadata.timest
+amp})),LBt(2,1),DBt(([{timestamp:x,buffer:X},{timestamp:B}])=>Wr(Array(Math.round(p3e*Math.max(B-x,0
+))).fill(X))),ei(x=>(this.#i(x),[x,performance.now()])),$re(Nx(this.#a.signal,"abort"))),{defaultVal
+ue:[Buffer.from([]),performance.now()]})}#n(e){switch(e){case"webm":return[["-c:v","vp9"],["-f","web
+m"],["-crf",`${rdr}`],["-deadline","realtime","-cpu-used","8"]].flat();case"gif":return[["-vf","fps=
+5,split[s0][s1];[s0]palettegen=stats_mode=diff[p];[s1][p]paletteuse"],["-f","gif"]].flat()}}get#i(){
+return n.value}async stop(){if(this.#a.signal.aborted)return;await this.#e._stopScreencast().catch(e
+a),this.#a.abort();let[e,o]=await this.#r;await Promise.all(Array(Math.max(1,Math.round(p3e*(perform
+ance.now()-o)/1e3))).fill(e).map(this.#i.bind(this))),this.#t.stdin.end(),await new Promise(d=>{this
+.#t.once("close",d)})}async[(r=[vD()],s=[vD()],wI)](){await this.stop()}}})();var t9t=Bt(require("fs
+"),1),a9t=Bt(require("path"),1);Jg();Fo.value={fs:t9t.default,path:a9t.default,ScreenRecorder:e9t};v
+ar ldr=new fle({isPuppeteerCore:!0}),{connect:S0n,defaultArgs:U0n,executablePath:M0n,launch:O0n}=ldr
+;var i9t=Bt(_xe());var Wle=class{context;browser;page;currentMousePosition;constructor(t){this.conte
+xt=t}async ensureChromiumExists(){let t=this.context?.globalStorageUri?.fsPath;if(!t)throw new Error
+("Global storage uri is invalid");let r=n9t.join(t,"puppeteer");return await es(r)||await r9t.mkdir(
+r,{recursive:!0}),await(0,i9t.default)({downloadPath:r})}async launchBrowser(){console.log("launch b
+rowser called"),this.browser&&await this.closeBrowser();let t=await this.ensureChromiumExists();this
+.browser=await t.puppeteer.launch({args:["--no-sandbox","--disable-setuid-sandbox","--user-agent=Moz
+illa/5.0 (Macintosh; Intel Mac OS X 10_15_7)
+CONTEXT: (r," ",t):t})},rdr=30,p3e=30,ndr=(0,$Lt.default)("puppeteer:ffmpeg"),e9t=(()=>{let a=qLt.Pa
+ssThrough,t=[],r,n,s;return class extends a{static{let e=typeof Symbol=="function"&&Symbol.metadata?
+Object.cr
+-----
+MATCH: page.pdf()
+CONTEXT: "+n),r=e*Ar.unitToPixels[s]}else throw new Error("page.pdf() Cannot handle parameter type: 
+"+typeof a);return r/Ar.unitToPixels[t]}function DVa(a,t){return new NA.Observable(r=>{let n=s=>{r.n
+ext(s)};r
+-----
+MATCH: page.pdf()
+CONTEXT: eter value: "+n),r=e*pHe[s]}else throw new Error("page.pdf() Cannot handle parameter type: 
+"+typeof a);return r/pHe[t]}function on(a,t){return new ys(r=>{let n=s=>{r.next(s)};return a.on(t,n)
+,()=>{a.o
+-----
+MATCH: page.content()
+CONTEXT: contentloaded","networkidle2"]});let r=await this.page.content(),n=ege(r);return n("script,
+ style, nav, footer, header").remove(),new RXt.default().turndown(n.html())}};var VXt=Bt(require("vs
+code")),x
+-----
+MATCH: page.screenshot({...e,type:"webp"})
+CONTEXT: ch(()=>{});let e={encoding:"base64"},o=await this.page.screenshot({...e,type:"webp"}),d=`da
+ta:image/webp;base64,${o}`;if(o||(console.log("webp screenshot failed, trying png"),o=await this.pag
+e.screens
+-----
+MATCH: page.screenshot({...e,type:"png"})
+CONTEXT: webp screenshot failed, trying png"),o=await this.page.screenshot({...e,type:"png"}),d=`dat
+a:image/png;base64,${o}`),!o)throw new Error("Failed to take screenshot.");return this.page.off("con
+sole",s),
+-----
+
