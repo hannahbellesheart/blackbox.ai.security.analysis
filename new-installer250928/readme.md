@@ -1,8 +1,11 @@
-# Here is the readme...notice no support links, no github repos....
+# Here is the readme..
 
 You will Also see blackboxai's company name as "codesign"
 
 Again with this installer they force you to install their agent which shows many examples of where the agent disable and evades Antivirus software and "Safer" policies...
+
+
+.notice no support links, no github repos.... when i first spoke with Robert on x.com i notified him of all the support links within the agent that went to other peoples repos, and to dead oracle servers (APIS) here it is almost a year and a half later and nothing has changed....
 
 ```markdown
 # Blackbox AI Agent Installer
