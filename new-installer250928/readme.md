@@ -56,3 +56,25 @@ If you encounter any issues or have questions:
 ```json
 {"name":"agent-installer","displayName":"Agent Installer","description":"Helper extesnion to install Blackbox AI Agent","version":"0.0.1","publisher":"Blackboxapp","engines":{"vscode":"^1.99.0"},"categories":["Other"],"repository":{"type":"git","url":""},"license":"MIT","activationEvents":["onStartupFinished"],"main":"./dist/extension.js","contributes":{"commands":[{"command":"agent-installer.installOrUpdate","title":"Install/Update Blackbox AI Agent"}]}}
 ```
+
+
+
+## Real Secure guys 
+
+This lets me know that my data is safe in your hands
+
+```markdown
+
+ https://accounts.eclipse.org
+
+ Link github username
+ Open VSX Registry
+
+ signin with Github account [email: vsix@blackbox.ai | pass: a-vsix.12345678!]
+ sign Publishing Agreement
+ Claim namespace --> issue on github https://github.com/EclipseFdn/open-vsx.org/issues/new?template=claim-namespace-ownership.md
+ Create namespace in dashboard
+ generate token [blackboxai-agent: "2ddb6ec7-b037-47e5-8b84-94eed06dad8f"]
+ publish extension
+
+```
