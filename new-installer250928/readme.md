@@ -1,5 +1,7 @@
 # Here is the readme...notice no support links, no github repos....
 
+You will Also see blackboxai's company name as "codesign"
+
 Again with this installer they force you to install their agent which shows many examples of where the agent disable and evades Antivirus software and "Safer" policies...
 
 ```markdown
