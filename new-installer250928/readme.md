@@ -1,5 +1,7 @@
 # Here is the readme...notice no support links, no github repos....
 
+Again with this installer they force you to install their agent which shows many examples of where the agent disable and evades Antivirus software and "Safer" policies...
+
 ```markdown
 # Blackbox AI Agent Installer
 
@@ -44,4 +46,11 @@ If you encounter any issues or have questions:
 
 **Note**: This extension is an official helper tool for installing the Blackbox AI Agent. For more information about Blackbox AI and its capabilities, please visit our main documentation.
 
+```
+
+
+## The package.json
+
+```json
+{"name":"agent-installer","displayName":"Agent Installer","description":"Helper extesnion to install Blackbox AI Agent","version":"0.0.1","publisher":"Blackboxapp","engines":{"vscode":"^1.99.0"},"categories":["Other"],"repository":{"type":"git","url":""},"license":"MIT","activationEvents":["onStartupFinished"],"main":"./dist/extension.js","contributes":{"commands":[{"command":"agent-installer.installOrUpdate","title":"Install/Update Blackbox AI Agent"}]}}
 ```
