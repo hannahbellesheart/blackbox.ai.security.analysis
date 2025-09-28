@@ -1,0 +1,96 @@
+{
+	"nameShort": "BLACKBOXAI",
+	"nameLong": "BLACKBOXAI",
+	"blackboxVersion": "1.0.2",
+	"applicationName": "blackbox",
+	"dataFolderName": ".blackbox-editor",
+	"win32MutexName": "blackboxeditor",
+	"licenseName": "MIT",
+	"licenseUrl": "https://github.com/blackboxeditor/blackbox/blob/main/LICENSE.txt",
+	"serverLicenseUrl": "https://github.com/blackboxeditor/blackbox/blob/main/LICENSE.txt",
+	"serverGreeting": [],
+	"serverLicense": [],
+	"serverLicensePrompt": "",
+	"serverApplicationName": "blackbox-server",
+	"serverDataFolderName": ".blackbox-server",
+	"tunnelApplicationName": "blackbox-tunnel",
+	"win32DirName": "BLACKBOXAI",
+	"win32NameVersion": "BLACKBOXAI",
+	"win32RegValueName": "BLACKBOXAI",
+	"win32x64AppId": "{{9D394D01-1728-45A7-B997-A6C82C5452C3}",
+	"win32arm64AppId": "{{0668DD58-2BDE-4101-8CDA-40252DF8875D}",
+	"win32x64UserAppId": "{{8BED5DC1-6C55-46E6-9FE6-18F7E6F7C7F1}",
+	"win32arm64UserAppId": "{{F6C87466-BC82-4A8F-B0FF-18CA366BA4D8}",
+	"win32AppUserModelId": "Blackbox.Editor",
+	"win32ShellNameShort": "Blackbox",
+	"win32TunnelServiceMutex": "blackbox-tunnelservice",
+	"win32TunnelMutex": "blackbox-tunnel",
+	"darwinBundleIdentifier": "com.blackboxai.desktopapp",
+	"linuxIconName": "blackbox-editor",
+	"licenseFileName": "LICENSE.txt",
+	"reportIssueUrl": "https://github.com/blackboxeditor/blackbox/issues/new",
+	"nodejsRepository": "https://nodejs.org",
+	"urlProtocol": "blackbox-editor",
+	"extensionsGallery": {
+		"serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+		"itemUrl": "https://marketplace.visualstudio.com/items"
+	},
+	"builtInExtensions": [{
+		"name": "agent-installer",
+		"vsix": "resources/vsix/agent-installer.vsix",
+		"sha256": "24c587e8aec10c84a1e4950446b68c12f23e6ce3bcee3786592624c7f04360c3"
+	}, {
+		"name": "ms-vscode.js-debug-companion",
+		"version": "1.1.3",
+		"sha256": "7380a890787452f14b2db7835dfa94de538caf358ebc263f9d46dd68ac52de93",
+		"metadata": {
+			"id": "99cb0b7f-7354-4278-b8da-6cc79972169d",
+			"publisherId": {
+				"publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+				"publisherName": "ms-vscode",
+				"displayName": "Microsoft",
+				"flags": "verified"
+			},
+			"publisherDisplayName": "Microsoft"
+		}
+	}, {
+		"name": "ms-vscode.js-debug",
+		"version": "1.97.1",
+		"sha256": "977dd854805547702e312e176f68a1b142fa123f228258f47f0964560ad32496",
+		"metadata": {
+			"id": "25629058-ddac-4e17-abba-74678e126c5d",
+			"publisherId": {
+				"publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+				"publisherName": "ms-vscode",
+				"displayName": "Microsoft",
+				"flags": "verified"
+			},
+			"publisherDisplayName": "Microsoft"
+		}
+	}, {
+		"name": "ms-vscode.vscode-js-profile-table",
+		"version": "1.0.10",
+		"sha256": "7361748ddf9fd09d8a2ed1f2a2d7376a2cf9aae708692820b799708385c38e08",
+		"metadata": {
+			"id": "7e52b41b-71ad-457b-ab7e-0620f1fc4feb",
+			"publisherId": {
+				"publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+				"publisherName": "ms-vscode",
+				"displayName": "Microsoft",
+				"flags": "verified"
+			},
+			"publisherDisplayName": "Microsoft"
+		}
+	}],
+	"commit": "219cb2ce564529f971e892df51d6dc436d6692a0",
+	"date": "2025-09-24T05:28:53.602Z",
+	"checksums": {
+		"vs/base/parts/sandbox/electron-sandbox/preload.js": "LYfoH1nP31wzxQTEgGjSTS7zAqTNBOLJSsg+bXR9nCE",
+		"vs/workbench/workbench.desktop.main.js": "/RxIlN5tvlF6LDOV/pM1pSmzQXkhuQ8saIJpI81AMeU",
+		"vs/workbench/workbench.desktop.main.css": "VVCt2gknMAHnwDXQ5WCPc9ODl60Btk4FIR3evgiBZB4",
+		"vs/workbench/api/node/extensionHostProcess.js": "pzgLYU8TQRAXF/JcGvWoWxL7bEzDNpv137EDfsw6oyU",
+		"vs/code/electron-sandbox/workbench/workbench.html": "m2zfDRj07l0rcMxSlWuNHuAxv6XZJSj5sCWNg6We+OY",
+		"vs/code/electron-sandbox/workbench/workbench.js": "ORRY3M91F4/6viz5lGF5FejdTnnMrfEeMQa/ga/5JBI"
+	},
+	"version": "1.99.6"
+}
