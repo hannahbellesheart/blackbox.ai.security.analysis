@@ -1,0 +1,42 @@
+# Blackbox AI Agent Installer
+
+A VS Code extension that automatically installs and keeps the Blackbox AI Agent up to date. This helper tool ensures you always have the latest version of Blackbox AI Agent installed.
+
+## Features
+
+- Automatic installation of Blackbox AI Agent if not already installed
+- Automatic update checks for the Blackbox AI Agent
+- Simple command to manually trigger installation/update
+
+## Requirements
+
+- Visual Studio Code version 1.99.0 or higher
+- Active internet connection for downloading and updating
+
+## How it Works
+
+The extension automatically runs when VS Code starts up and:
+1. Checks if Blackbox AI Agent is installed
+2. Installs it if not present
+3. Checks for available updates if already installed
+
+You can also manually trigger the installation/update process:
+1. Open the Command Palette (Ctrl+Shift+P or Cmd+Shift+P)
+2. Type "Install/Update Blackbox AI Agent"
+3. Press Enter to run the command
+
+## Support
+
+If you encounter any issues or have questions:
+- File an issue on our [GitHub repository]()
+- Visit [Blackbox AI Support]() for additional help
+
+## Release Notes
+
+### 0.0.1
+- Initial release
+- Automatic installation and update functionality
+
+---
+
+**Note**: This extension is an official helper tool for installing the Blackbox AI Agent. For more information about Blackbox AI and its capabilities, please visit our main documentation.
