@@ -1,0 +1,457 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://docs.blackbox.ai/llms.txt
+> Use this file to discover all available pages before exploring further.
+
+# Create Chat Completion
+
+> Send a chat completion request. Find your [API Key](https://blackbox.ai/dashboard).
+
+## Headers
+
+<ParamField header="Authorization" type="string" required>
+  API Key of the from `Bearer <api_key>`,  you can get it from [here](https://blackbox.ai/dashboard).
+</ParamField>
+
+## Request
+
+<ParamField body="model" type="string" required>
+  The model ID to use. See the [Chat Models page](/api-reference/models/chat-models)
+</ParamField>
+
+<ParamField body="messages" type="array" required>
+  Array of message objects containing the conversation history.
+
+  <Expandable title="Message Object">
+    <ParamField body="role" type="string" required>
+      The role of the message author. One of `system`, `user`, `assistant`, or `tool`.
+    </ParamField>
+
+    <ParamField body="content" type="string | array">
+      The content of the message. Can be a string or array of content parts for multimodal inputs.
+    </ParamField>
+
+    <ParamField body="name" type="string">
+      An optional name for the participant. Provides the model information to differentiate between participants of the same role.
+    </ParamField>
+
+    <ParamField body="tool_call_id" type="string">
+      For tool messages, the ID of the tool call this message is responding to.
+    </ParamField>
+  </Expandable>
+</ParamField>
+
+<ParamField body="models" type="array">
+  Alternate list of models for routing overrides.
+</ParamField>
+
+<ParamField body="provider" type="object">
+  Preferences for provider routing.
+</ParamField>
+
+<ParamField body="stream" type="boolean">
+  Enable streaming of results via Server-Sent Events.
+</ParamField>
+
+<ParamField body="max_tokens" type="integer">
+  Maximum number of tokens to generate (range: \[1, context\_length)).
+</ParamField>
+
+<ParamField body="temperature" type="number">
+  Sampling temperature (range: \[0, 2]).
+</ParamField>
+
+<ParamField body="seed" type="integer">
+  Seed for deterministic outputs.
+</ParamField>
+
+<ParamField body="top_p" type="number">
+  Top-p sampling value (range: (0, 1]).
+</ParamField>
+
+<ParamField body="top_k" type="integer">
+  Top-k sampling value (range: \[1, Infinity)).
+</ParamField>
+
+<ParamField body="frequency_penalty" type="number">
+  Frequency penalty (range: \[-2, 2]).
+</ParamField>
+
+<ParamField body="presence_penalty" type="number">
+  Presence penalty (range: \[-2, 2]).
+</ParamField>
+
+<ParamField body="repetition_penalty" type="number">
+  Repetition penalty (range: (0, 2]).
+</ParamField>
+
+<ParamField body="logit_bias" type="object">
+  Mapping of token IDs to bias values.
+</ParamField>
+
+<ParamField body="top_logprobs" type="integer">
+  Number of top log probabilities to return.
+</ParamField>
+
+<ParamField body="min_p" type="number">
+  Minimum probability threshold (range: \[0, 1]).
+</ParamField>
+
+<ParamField body="top_a" type="number">
+  Alternate top sampling parameter (range: \[0, 1]).
+</ParamField>
+
+<ParamField body="stop" type="array">
+  Stop sequences - generation will stop if any of these strings are encountered.
+</ParamField>
+
+<ParamField body="tools" type="array">
+  Tool definitions following OpenAI's tool calling format.
+
+  <Expandable title="Tool Object">
+    <ParamField body="type" type="string">
+      Type of tool, typically `function`.
+    </ParamField>
+
+    <ParamField body="function" type="object">
+      Function definition.
+
+      <Expandable title="Function Definition">
+        <ParamField body="name" type="string">
+          Name of the function.
+        </ParamField>
+
+        <ParamField body="description" type="string">
+          Description of what the function does.
+        </ParamField>
+
+        <ParamField body="parameters" type="object">
+          JSON Schema object defining the function parameters.
+        </ParamField>
+      </Expandable>
+    </ParamField>
+  </Expandable>
+</ParamField>
+
+<ParamField body="tool_choice" type="string | object">
+  Controls which (if any) tool is called by the model.
+
+  * `none` - Model will not call any tool
+  * `auto` - Model can pick between generating a message or calling tools
+  * `required` - Model must call one or more tools
+  * Or specify a particular tool via `{"type": "function", "function": {"name": "function_name"}}`
+</ParamField>
+
+<ParamField body="response_format" type="object">
+  Enforce structured output format.
+</ParamField>
+
+<ParamField body="user" type="string">
+  A stable identifier for your end-users. Used to help detect and prevent abuse.
+</ParamField>
+
+## Response
+
+<ResponseField name="id" type="string">
+  Unique identifier for the chat completion.
+</ResponseField>
+
+<ResponseField name="created" type="integer">
+  Unix timestamp when the completion was created.
+</ResponseField>
+
+<ResponseField name="model" type="string">
+  The model used for the completion.
+</ResponseField>
+
+<ResponseField name="object" type="string">
+  Object type, always `chat.completion` or `chat.completion.chunk` for streaming.
+</ResponseField>
+
+<ResponseField name="system_fingerprint" type="string | null">
+  System fingerprint for the model configuration.
+</ResponseField>
+
+<ResponseField name="choices" type="array">
+  Array of completion choices.
+
+  <Expandable title="Choice Object">
+    <ResponseField name="finish_reason" type="string">
+      Reason the generation stopped. Options: `stop`, `length`, `content_filter`, `tool_calls`, `error`.
+    </ResponseField>
+
+    <ResponseField name="index" type="integer">
+      Index of the choice in the list.
+    </ResponseField>
+
+    <ResponseField name="message" type="object">
+      The generated message.
+
+      <Expandable title="Message Object">
+        <ResponseField name="content" type="string | null">
+          The generated content.
+        </ResponseField>
+
+        <ResponseField name="role" type="string">
+          Role of the message author, typically `assistant`.
+        </ResponseField>
+
+        <ResponseField name="tool_calls" type="array | null">
+          Tool calls made by the assistant.
+
+          <Expandable title="Tool Call Object">
+            <ResponseField name="id" type="string">
+              Unique identifier for the tool call.
+            </ResponseField>
+
+            <ResponseField name="type" type="string">
+              Type of tool, typically `function`.
+            </ResponseField>
+
+            <ResponseField name="function" type="object">
+              The function call details.
+
+              <Expandable title="Function Object">
+                <ResponseField name="name" type="string">
+                  Name of the function being called.
+                </ResponseField>
+
+                <ResponseField name="arguments" type="string">
+                  JSON string of arguments for the function.
+                </ResponseField>
+              </Expandable>
+            </ResponseField>
+          </Expandable>
+        </ResponseField>
+
+        <ResponseField name="annotations" type="array | null">
+          Annotations containing source citations and references. Available when using models with web search capabilities like `blackbox-search`.
+
+          <Expandable title="Annotation Object">
+            <ResponseField name="type" type="string">
+              Type of annotation. Currently supports `url_citation`.
+            </ResponseField>
+
+            <ResponseField name="url_citation" type="object">
+              Citation information for web sources.
+
+              <Expandable title="URL Citation Object">
+                <ResponseField name="url" type="string">
+                  The URL of the cited source.
+                </ResponseField>
+
+                <ResponseField name="title" type="string">
+                  The title of the web page or article.
+                </ResponseField>
+
+                <ResponseField name="content" type="string">
+                  Excerpt or summary of the content from the source (if available).
+                </ResponseField>
+
+                <ResponseField name="start_index" type="integer">
+                  The character index where the citation begins in the message content.
+                </ResponseField>
+
+                <ResponseField name="end_index" type="integer">
+                  The character index where the citation ends in the message content.
+                </ResponseField>
+              </Expandable>
+            </ResponseField>
+          </Expandable>
+        </ResponseField>
+
+        <ResponseField name="function_call" type="object | null">
+          Deprecated function call field (use `tool_calls` instead).
+        </ResponseField>
+      </Expandable>
+    </ResponseField>
+
+    <ResponseField name="provider_specific_fields" type="object">
+      Provider-specific response fields.
+
+      <Expandable title="Provider Specific Fields">
+        <ResponseField name="native_finish_reason" type="string">
+          Raw finish reason from the underlying provider.
+        </ResponseField>
+      </Expandable>
+    </ResponseField>
+  </Expandable>
+</ResponseField>
+
+<ResponseField name="usage" type="object">
+  Token usage information.
+
+  <Expandable title="Usage Object">
+    <ResponseField name="completion_tokens" type="integer">
+      Number of tokens in the completion.
+    </ResponseField>
+
+    <ResponseField name="prompt_tokens" type="integer">
+      Number of tokens in the prompt.
+    </ResponseField>
+
+    <ResponseField name="total_tokens" type="integer">
+      Total number of tokens used (prompt + completion).
+    </ResponseField>
+
+    <ResponseField name="completion_tokens_details" type="object">
+      Detailed breakdown of completion tokens.
+
+      <Expandable title="Completion Tokens Details">
+        <ResponseField name="accepted_prediction_tokens" type="integer | null">
+          Number of accepted prediction tokens.
+        </ResponseField>
+
+        <ResponseField name="audio_tokens" type="integer | null">
+          Number of audio tokens in the completion.
+        </ResponseField>
+
+        <ResponseField name="reasoning_tokens" type="integer">
+          Number of reasoning/thinking tokens used.
+        </ResponseField>
+
+        <ResponseField name="rejected_prediction_tokens" type="integer | null">
+          Number of rejected prediction tokens.
+        </ResponseField>
+      </Expandable>
+    </ResponseField>
+
+    <ResponseField name="prompt_tokens_details" type="object">
+      Detailed breakdown of prompt tokens.
+
+      <Expandable title="Prompt Tokens Details">
+        <ResponseField name="audio_tokens" type="integer">
+          Number of audio tokens in the prompt.
+        </ResponseField>
+
+        <ResponseField name="cached_tokens" type="integer">
+          Number of cached tokens used from previous requests.
+        </ResponseField>
+      </Expandable>
+    </ResponseField>
+  </Expandable>
+</ResponseField>
+
+<ResponseField name="provider" type="string">
+  The provider that served the request.
+</ResponseField>
+
+<RequestExample>
+  ```bash cURL theme={null}
+  curl -X POST https://api.blackbox.ai/chat/completions \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+      "model": "blackboxai/openai/gpt-4",
+      "messages": [
+          {
+              "role": "user",
+              "content": "What is the capital of France?"
+          }
+      ],
+      "temperature": 0.7,
+      "max_tokens": 256,
+      "stream": false
+  }'
+  ```
+
+  ```javascript Node.js theme={null}
+  const API_KEY = "YOUR_API_KEY";
+  const API_URL = "https://api.blackbox.ai/chat/completions";
+
+  const data = {
+      "model": "blackboxai/openai/gpt-4",
+      "messages": [
+          {
+              "role": "user",
+              "content": "What is the capital of France?"
+          }
+      ],
+      "temperature": 0.7,
+      "max_tokens": 256,
+      "stream": false
+  };
+
+  const response = await fetch(API_URL, {
+      method: 'POST',
+      headers: {
+          'Authorization': `Bearer ${API_KEY}`,
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+  });
+
+  const responseData = await response.json();
+  console.log(responseData);
+  ```
+
+  ```python Python theme={null}
+  import requests
+
+  API_KEY = "YOUR_API_KEY"
+  API_URL = "https://api.blackbox.ai/chat/completions"
+
+  headers = {
+    "Authorization": f"Bearer {API_KEY}",
+    "Content-Type": "application/json"
+  }
+
+  data = {
+      "model": "blackboxai/openai/gpt-4",
+      "messages": [
+          {
+              "role": "user",
+              "content": "What is the capital of France?"
+          }
+      ],
+      "temperature": 0.7,
+      "max_tokens": 256,
+      "stream": False
+  }
+
+  response = requests.post(API_URL, headers=headers, json=data)
+  print(response.json())
+  ```
+</RequestExample>
+
+<ResponseExample>
+  ```json Response theme={null}
+  {
+    "id":"gen-...",
+    "created":1757140020,
+    "model":"openai/gpt-4",
+    "object":"chat.completion",
+    "system_fingerprint":"None",
+    "choices":[
+      {
+        "finish_reason":"stop",
+        "index":0,
+        "message":{
+          "content":"The capital of France is Paris.",
+          "role":"assistant",
+          "tool_calls":"None",
+          "function_call":"None"
+        },
+        "provider_specific_fields":{
+          "native_finish_reason":"stop"
+        }
+      }
+    ],
+    "usage":{
+      "completion_tokens":7,
+      "prompt_tokens":14,
+      "total_tokens":21,
+      "completion_tokens_details":{
+        "accepted_prediction_tokens":"None",
+        "audio_tokens":"None",
+        "reasoning_tokens":0,
+        "rejected_prediction_tokens":"None"
+      },
+      "prompt_tokens_details":{
+        "audio_tokens":0,
+        "cached_tokens":0
+      }
+    },
+    "provider":"OpenAI"
+  }
+  ```
+</ResponseExample>
